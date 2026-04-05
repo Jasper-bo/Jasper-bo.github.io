@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" fill="none">
+  <rect width="600" height="800" rx="40" fill="#F4F7FB"/>
+  <rect x="46" y="46" width="508" height="708" rx="30" fill="#FFFFFF" stroke="#DCE4EE"/>
+  <rect x="88" y="92" width="152" height="34" rx="17" fill="#F3F5F8"/>
+  <text x="116" y="114" fill="#5B6472" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="2">THINKING</text>
+  <text x="88" y="236" fill="#111827" font-family="Arial, sans-serif" font-size="52" font-weight="700">Deep Work</text>
+  <text x="88" y="294" fill="#64748B" font-family="Arial, sans-serif" font-size="24">Cal Newport</text>
+  <rect x="88" y="382" width="424" height="252" rx="28" fill="#F6F8FB"/>
+  <rect x="132" y="430" width="142" height="18" rx="9" fill="#111827"/>
+  <rect x="132" y="470" width="234" height="18" rx="9" fill="#9CA3AF"/>
+  <rect x="132" y="510" width="174" height="18" rx="9" fill="#D1D5DB"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" fill="none">
+  <rect width="600" height="800" rx="40" fill="#F5F8FB"/>
+  <rect x="46" y="46" width="508" height="708" rx="30" fill="#FFFFFF" stroke="#DCE4EE"/>
+  <rect x="88" y="92" width="132" height="34" rx="17" fill="#F3F8F6"/>
+  <text x="118" y="114" fill="#2E6D5C" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="2">HABITS</text>
+  <text x="88" y="228" fill="#111827" font-family="Arial, sans-serif" font-size="50" font-weight="700">Atomic</text>
+  <text x="88" y="286" fill="#111827" font-family="Arial, sans-serif" font-size="50" font-weight="700">Habits</text>
+  <text x="88" y="344" fill="#64748B" font-family="Arial, sans-serif" font-size="24">James Clear</text>
+  <circle cx="178" cy="490" r="74" fill="#D7EBDD"/>
+  <circle cx="292" cy="490" r="74" fill="#B3D8C3"/>
+  <circle cx="406" cy="490" r="74" fill="#88C5AD"/>
+</svg>

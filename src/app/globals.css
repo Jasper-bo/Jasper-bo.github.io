@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 20% 98%;
+  --foreground: 220 24% 12%;
+  --muted: 210 18% 94%;
+  --muted-foreground: 220 10% 40%;
+  --border: 220 17% 88%;
+  --card: 0 0% 100%;
+  --accent: 215 69% 54%;
+  --accent-soft: 214 100% 97%;
+  --accent-foreground: 217 56% 26%;
+  --font-manrope: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-newsreader: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply min-h-screen bg-background bg-page-glow text-foreground antialiased;
+  }
+
+  a {
+    @apply transition-colors;
+  }
+
+  ::selection {
+    @apply bg-accent/20 text-foreground;
+  }
+}
+
+@layer components {
+  .surface {
+    @apply rounded-3xl border border-border/80 bg-card/90 shadow-card backdrop-blur-sm;
+  }
+
+  .eyebrow {
+    @apply text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground;
+  }
+
+  .button-primary {
+    @apply inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90;
+  }
+
+  .button-secondary {
+    @apply inline-flex items-center gap-2 rounded-full border border-border bg-white px-5 py-3 text-sm font-semibold text-foreground transition hover:border-foreground/20 hover:bg-muted/80;
+  }
+
+  .filter-button {
+    @apply rounded-full border border-border bg-white px-4 py-2 text-sm font-medium text-muted-foreground transition hover:border-foreground/20 hover:bg-muted/80 hover:text-foreground;
+  }
+
+  .filter-button-active {
+    @apply border-foreground bg-foreground text-white hover:bg-foreground hover:text-white;
+  }
+}

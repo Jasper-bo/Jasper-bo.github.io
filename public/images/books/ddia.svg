@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" fill="none">
+  <rect width="600" height="800" rx="40" fill="#F5F8FB"/>
+  <rect x="46" y="46" width="508" height="708" rx="30" fill="#FFFFFF" stroke="#DCE4EE"/>
+  <rect x="88" y="92" width="172" height="34" rx="17" fill="#EEF4FF"/>
+  <text x="118" y="114" fill="#3158B8" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="2">TECHNOLOGY</text>
+  <text x="88" y="214" fill="#111827" font-family="Arial, sans-serif" font-size="40" font-weight="700">Designing</text>
+  <text x="88" y="264" fill="#111827" font-family="Arial, sans-serif" font-size="40" font-weight="700">Data-Intensive</text>
+  <text x="88" y="314" fill="#111827" font-family="Arial, sans-serif" font-size="40" font-weight="700">Applications</text>
+  <text x="88" y="368" fill="#64748B" font-family="Arial, sans-serif" font-size="22">Martin Kleppmann</text>
+  <rect x="88" y="430" width="424" height="178" rx="28" fill="#EEF4FF"/>
+  <rect x="132" y="476" width="148" height="76" rx="18" fill="#FFFFFF"/>
+  <rect x="298" y="476" width="170" height="18" rx="9" fill="#3158B8"/>
+  <rect x="298" y="514" width="122" height="18" rx="9" fill="#A5B9EE"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 920" fill="none">
+  <rect width="800" height="920" rx="72" fill="#F4F7FB"/>
+  <rect x="56" y="56" width="688" height="808" rx="52" fill="#FFFFFF" stroke="#DCE4EE"/>
+  <circle cx="400" cy="308" r="124" fill="#D8E5F4"/>
+  <path d="M274 700C274 610.53 346.53 538 436 538H364C453.47 538 526 610.53 526 700V722H274V700Z" fill="#CBD8E6"/>
+  <rect x="284" y="532" width="232" height="76" rx="38" fill="#E8EEF6"/>
+  <circle cx="368" cy="284" r="14" fill="#2B3443"/>
+  <circle cx="434" cy="284" r="14" fill="#2B3443"/>
+  <path d="M344 355C358.667 373 377.333 382 400 382C422.667 382 441.333 373 456 355" stroke="#2B3443" stroke-width="14" stroke-linecap="round"/>
+  <path d="M312 228C335.333 194.667 371.333 178 420 178C468.667 178 506 200.333 532 245" stroke="#2B3443" stroke-width="26" stroke-linecap="round"/>
+  <text x="92" y="116" fill="#111827" font-family="Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="3">JUNBO HE</text>
+  <text x="92" y="156" fill="#677489" font-family="Arial, sans-serif" font-size="22">Product-minded Frontend Engineer</text>
+</svg>

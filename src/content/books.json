@@ -1,0 +1,98 @@
+[
+  {
+    "id": "inspired",
+    "title": "Inspired",
+    "author": "Marty Cagan",
+    "cover": "/images/books/inspired.svg",
+    "category": "Product",
+    "status": "completed",
+    "rating": 4.8,
+    "summary": "A practical reminder that product work is not feature delivery, but solving meaningful customer problems with strong teams.",
+    "takeaways": [
+      "Discovery quality usually decides whether delivery matters.",
+      "Good product teams align business, design, and engineering early."
+    ],
+    "recommend": true,
+    "noteUrl": "https://example.com/notes/inspired"
+  },
+  {
+    "id": "atomic-habits",
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "cover": "/images/books/atomic-habits.svg",
+    "category": "Habits",
+    "status": "completed",
+    "rating": 4.7,
+    "summary": "Small behavior shifts compound when the environment and the feedback loop are designed on purpose.",
+    "takeaways": [
+      "Environment design beats motivation when consistency matters.",
+      "Tracking can be a product feature, but identity change is the real engine."
+    ],
+    "recommend": true,
+    "noteUrl": "https://example.com/notes/atomic-habits"
+  },
+  {
+    "id": "the-mom-test",
+    "title": "The Mom Test",
+    "author": "Rob Fitzpatrick",
+    "cover": "/images/books/the-mom-test.svg",
+    "category": "Startup",
+    "status": "completed",
+    "rating": 4.6,
+    "summary": "A concise playbook for asking better product questions and avoiding polite but useless customer feedback.",
+    "takeaways": [
+      "Ask about real behavior, not future intentions.",
+      "Bad customer conversations create false confidence very quickly."
+    ],
+    "recommend": true,
+    "noteUrl": "https://example.com/notes/the-mom-test"
+  },
+  {
+    "id": "ddia",
+    "title": "Designing Data-Intensive Applications",
+    "author": "Martin Kleppmann",
+    "cover": "/images/books/ddia.svg",
+    "category": "Technology",
+    "status": "reading",
+    "rating": 4.9,
+    "summary": "A deep read on reliability, data systems, and the infrastructure tradeoffs that appear once products grow beyond simple CRUD.",
+    "takeaways": [
+      "System design quality comes from understanding tradeoffs, not memorizing components.",
+      "Data flow decisions should reflect user experience priorities."
+    ],
+    "recommend": true,
+    "noteUrl": null
+  },
+  {
+    "id": "deep-work",
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "cover": "/images/books/deep-work.svg",
+    "category": "Thinking",
+    "status": "completed",
+    "rating": 4.4,
+    "summary": "A useful lens for protecting attention and designing work rhythms that support meaningful output.",
+    "takeaways": [
+      "Depth needs system support, not just discipline.",
+      "High-quality work often comes from deliberate constraints."
+    ],
+    "recommend": false,
+    "noteUrl": "https://example.com/notes/deep-work"
+  },
+  {
+    "id": "build",
+    "title": "Build",
+    "author": "Tony Fadell",
+    "cover": "/images/books/build.svg",
+    "category": "Product",
+    "status": "wishlist",
+    "rating": 4.7,
+    "summary": "A candid operator's view on building products, teams, and judgement over time.",
+    "takeaways": [
+      "Taste is developed through repetition and reflection.",
+      "Product decisions get sharper when they stay close to user pain."
+    ],
+    "recommend": true,
+    "noteUrl": null
+  }
+]

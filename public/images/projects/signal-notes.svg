@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" fill="none">
+  <rect width="1200" height="750" rx="48" fill="#F5F7FB"/>
+  <rect x="52" y="52" width="1096" height="646" rx="34" fill="#FFFFFF" stroke="#DCE4EE"/>
+  <text x="96" y="140" fill="#111827" font-family="Arial, sans-serif" font-size="54" font-weight="700">Signal Notes</text>
+  <text x="96" y="184" fill="#64748B" font-family="Arial, sans-serif" font-size="24">Structured knowledge workspace for synthesis</text>
+  <rect x="96" y="248" width="402" height="338" rx="28" fill="#F8FAFD" stroke="#E2E8F0"/>
+  <rect x="548" y="248" width="556" height="144" rx="28" fill="#EEF4FF"/>
+  <rect x="548" y="420" width="266" height="166" rx="28" fill="#F6F4FF"/>
+  <rect x="838" y="420" width="266" height="166" rx="28" fill="#F2F8F6"/>
+  <rect x="140" y="296" width="212" height="18" rx="9" fill="#111827"/>
+  <rect x="140" y="338" width="176" height="16" rx="8" fill="#94A3B8"/>
+  <rect x="140" y="378" width="230" height="16" rx="8" fill="#CBD5E1"/>
+  <rect x="140" y="454" width="144" height="38" rx="19" fill="#D8E3FB"/>
+  <rect x="306" y="454" width="136" height="38" rx="19" fill="#E7EDF5"/>
+  <rect x="594" y="292" width="236" height="18" rx="9" fill="#3158B8"/>
+  <rect x="594" y="332" width="166" height="18" rx="9" fill="#A5B9EE"/>
+  <rect x="594" y="464" width="154" height="18" rx="9" fill="#6D5BB2"/>
+  <rect x="594" y="502" width="118" height="18" rx="9" fill="#C5B9EF"/>
+  <rect x="884" y="464" width="162" height="18" rx="9" fill="#347D68"/>
+  <rect x="884" y="502" width="134" height="18" rx="9" fill="#A9D2C6"/>
+</svg>

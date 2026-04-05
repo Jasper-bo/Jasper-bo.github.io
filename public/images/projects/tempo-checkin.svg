@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" fill="none">
+  <rect width="1200" height="750" rx="48" fill="#F6F8FB"/>
+  <rect x="52" y="52" width="1096" height="646" rx="34" fill="#FFFFFF" stroke="#DCE4EE"/>
+  <text x="96" y="140" fill="#111827" font-family="Arial, sans-serif" font-size="54" font-weight="700">Tempo Check-in</text>
+  <text x="96" y="184" fill="#64748B" font-family="Arial, sans-serif" font-size="24">Weekly reflection tool for solo builders</text>
+  <rect x="96" y="248" width="436" height="338" rx="28" fill="#F8FAFD" stroke="#E2E8F0"/>
+  <rect x="572" y="248" width="532" height="338" rx="28" fill="#EEF4FF"/>
+  <circle cx="220" cy="378" r="62" fill="#D8E3FB"/>
+  <circle cx="356" cy="378" r="62" fill="#BFD0F8"/>
+  <circle cx="288" cy="500" r="62" fill="#9EB5EE"/>
+  <rect x="626" y="314" width="236" height="18" rx="9" fill="#3158B8"/>
+  <rect x="626" y="356" width="182" height="18" rx="9" fill="#A5B9EE"/>
+  <rect x="626" y="428" width="156" height="48" rx="24" fill="#FFFFFF"/>
+  <rect x="804" y="428" width="156" height="48" rx="24" fill="#FFFFFF"/>
+  <rect x="982" y="428" width="74" height="48" rx="24" fill="#FFFFFF"/>
+</svg>

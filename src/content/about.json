@@ -1,0 +1,87 @@
+{
+  "name": "Junbo He",
+  "title": "Independent Builder / Product-minded Frontend Engineer",
+  "tagline": "I design and ship calm, useful digital products where product thinking and frontend craft meet.",
+  "bio": [
+    "I work at the intersection of frontend engineering, product design, and independent product building. I care about turning fuzzy ideas into clear user journeys, structured interfaces, and systems that are pleasant to maintain.",
+    "Most of my recent work lives around fitness, personal knowledge systems, and content-driven products. I enjoy the part where product framing, data structure, interface rhythm, and engineering quality all have to support each other."
+  ],
+  "avatar": "/images/avatar-junbo.svg",
+  "socials": [
+    {
+      "label": "Email",
+      "href": "mailto:hello@junbohe.dev",
+      "value": "hello@junbohe.dev"
+    },
+    {
+      "label": "GitHub",
+      "href": "https://github.com/junbohe",
+      "value": "github.com/junbohe"
+    },
+    {
+      "label": "X",
+      "href": "https://x.com/junbohe",
+      "value": "@junbohe"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/junbohe",
+      "value": "linkedin.com/in/junbohe"
+    }
+  ],
+  "focusAreas": [
+    {
+      "title": "Fitness x Product",
+      "description": "Exploring how training data, habit loops, and progress visualization can become better personal products."
+    },
+    {
+      "title": "Content Systems",
+      "description": "Designing websites and publishing flows where content stays structured and the UI remains easy to extend."
+    },
+    {
+      "title": "Calm Software",
+      "description": "Building interfaces that feel thoughtful, readable, and low-noise without losing product depth."
+    }
+  ],
+  "tools": [
+    {
+      "category": "Core Stack",
+      "items": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js"]
+    },
+    {
+      "category": "Product Workflow",
+      "items": ["Figma", "Linear", "Notion", "Vercel", "GitHub"]
+    },
+    {
+      "category": "AI-assisted Workflow",
+      "items": ["OpenAI API", "Prompt design", "Automation scripts", "Content structuring"]
+    }
+  ],
+  "now": [
+    "Shaping a fitness logging product that makes muscle-group balance visible instead of hiding it inside raw workout tables.",
+    "Refining a personal site architecture that keeps content local-first today and ready for headless CMS tomorrow.",
+    "Writing more in public about the overlap between product taste, UI structure, and engineering quality."
+  ],
+  "timeline": [
+    {
+      "period": "2020",
+      "title": "Moved from shipping pages to thinking in product systems",
+      "description": "Started caring less about isolated screens and more about content modeling, user flow, and maintainable frontend architecture."
+    },
+    {
+      "period": "2022",
+      "title": "Began building small tools for my own workflows",
+      "description": "Created internal tools for notes, planning, and knowledge capture, which made product iteration feel much more practical."
+    },
+    {
+      "period": "2024",
+      "title": "Focused on health and training products",
+      "description": "Turned personal training pain points into product ideas around consistency, progression, and visual feedback."
+    },
+    {
+      "period": "Now",
+      "title": "Building an independent product portfolio with stronger storytelling",
+      "description": "Combining case-study thinking, cleaner frontend systems, and a more intentional personal brand presence."
+    }
+  ]
+}

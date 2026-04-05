@@ -1,0 +1,93 @@
+[
+  {
+    "id": "react",
+    "name": "React",
+    "category": "Frontend Engineering",
+    "level": "expert",
+    "description": "I use React to shape component systems that stay readable as products grow, with a strong focus on composition, state boundaries, and content-driven UI.",
+    "scenarios": [
+      "Designing reusable card and section systems for content-heavy sites",
+      "Building product flows where interaction depth stays manageable"
+    ],
+    "relatedProjects": ["builder-journal", "signal-notes", "tempo-checkin"],
+    "tools": ["React 19", "Hooks", "Server Components", "Composition patterns"]
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "category": "Frontend Engineering",
+    "level": "advanced",
+    "description": "I rely on TypeScript to make content models, component contracts, and UI states explicit enough for long-term maintenance.",
+    "scenarios": [
+      "Defining scalable content schemas for projects, books, and skills",
+      "Reducing ambiguity in larger component interfaces"
+    ],
+    "relatedProjects": ["builder-journal", "musclemap", "signal-notes"],
+    "tools": ["Strict typing", "Typed content models", "Union-based state design"]
+  },
+  {
+    "id": "nextjs",
+    "name": "Next.js",
+    "category": "Full-stack Product",
+    "level": "advanced",
+    "description": "Next.js is my default choice when I need a fast product surface with strong routing, SEO, and a clean path from static content to dynamic product logic.",
+    "scenarios": [
+      "Shipping portfolio and content sites with strong metadata structure",
+      "Building SaaS frontends that can grow from local data to CMS or backend services"
+    ],
+    "relatedProjects": ["builder-journal", "musclemap", "signal-notes"],
+    "tools": ["App Router", "Metadata API", "Server Components", "ISR-ready architecture"]
+  },
+  {
+    "id": "tailwindcss",
+    "name": "Tailwind CSS",
+    "category": "UI Systems",
+    "level": "advanced",
+    "description": "I use Tailwind to build calm interface systems with predictable spacing, responsive behavior, and easy-to-maintain visual tokens.",
+    "scenarios": [
+      "Turning design direction into a reusable visual language quickly",
+      "Maintaining consistent cards, sections, and utility patterns across products"
+    ],
+    "relatedProjects": ["builder-journal", "tempo-checkin", "musclemap"],
+    "tools": ["Design tokens", "Responsive systems", "Utility-first styling"]
+  },
+  {
+    "id": "product-thinking",
+    "name": "Product Thinking",
+    "category": "Product Strategy",
+    "level": "expert",
+    "description": "I frame product work around user pain, job clarity, feedback loops, and what should stay intentionally simple in v1.",
+    "scenarios": [
+      "Prioritizing feature scope for early-stage products",
+      "Turning fuzzy ideas into clear problem-solution narratives"
+    ],
+    "relatedProjects": ["musclemap", "tempo-checkin", "signal-notes"],
+    "tools": ["User problem framing", "Scope design", "Case-study storytelling"]
+  },
+  {
+    "id": "ui-structuring",
+    "name": "UI Structuring",
+    "category": "UI Systems",
+    "level": "advanced",
+    "description": "I care about information hierarchy, visual pacing, and how layout choices help readers understand both products and people faster.",
+    "scenarios": [
+      "Structuring high-density pages so they still feel calm",
+      "Designing landing and portfolio pages that tell a product story quickly"
+    ],
+    "relatedProjects": ["builder-journal", "musclemap"],
+    "tools": ["Information hierarchy", "Grid systems", "Readable content surfaces"]
+  },
+  {
+    "id": "prompt-design",
+    "name": "Prompt Design",
+    "category": "AI Workflow",
+    "level": "proficient",
+    "description": "I use prompt design as part of a workflow toolset: shaping inputs, constraints, and output formats so AI can support real product and content tasks.",
+    "scenarios": [
+      "Generating structured drafts for research and content workflows",
+      "Improving internal tooling through predictable AI-assisted outputs"
+    ],
+    "relatedProjects": ["signal-notes", "builder-journal"],
+    "tools": ["Prompt templates", "Structured outputs", "Workflow automation"]
+  }
+]

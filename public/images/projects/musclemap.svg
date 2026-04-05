@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" fill="none">
+  <rect width="1200" height="750" rx="48" fill="#F4F7FB"/>
+  <rect x="52" y="52" width="1096" height="646" rx="34" fill="#FFFFFF" stroke="#DCE4EE"/>
+  <text x="96" y="140" fill="#111827" font-family="Arial, sans-serif" font-size="54" font-weight="700">MuscleMap</text>
+  <text x="96" y="184" fill="#64748B" font-family="Arial, sans-serif" font-size="24">Visual training journal for balanced progress</text>
+  <rect x="96" y="242" width="310" height="360" rx="28" fill="#F7FAFD" stroke="#E2E8F0"/>
+  <rect x="460" y="242" width="644" height="164" rx="28" fill="#EEF4FF"/>
+  <rect x="460" y="438" width="308" height="164" rx="28" fill="#F2F8F6"/>
+  <rect x="796" y="438" width="308" height="164" rx="28" fill="#F8F6EE"/>
+  <circle cx="205" cy="338" r="42" fill="#9EB5EE"/>
+  <circle cx="302" cy="338" r="42" fill="#6D8EE7"/>
+  <circle cx="205" cy="447" r="42" fill="#89C5B8"/>
+  <circle cx="302" cy="447" r="42" fill="#B7D5CC"/>
+  <rect x="504" y="284" width="258" height="18" rx="9" fill="#3158B8"/>
+  <rect x="504" y="322" width="188" height="18" rx="9" fill="#A5B9EE"/>
+  <rect x="504" y="360" width="224" height="18" rx="9" fill="#D4E0FF"/>
+  <rect x="504" y="480" width="184" height="18" rx="9" fill="#3E7D71"/>
+  <rect x="504" y="518" width="132" height="18" rx="9" fill="#9BD0C4"/>
+  <rect x="840" y="480" width="188" height="18" rx="9" fill="#B68A1F"/>
+  <rect x="840" y="518" width="146" height="18" rx="9" fill="#E6D6A4"/>
+</svg>

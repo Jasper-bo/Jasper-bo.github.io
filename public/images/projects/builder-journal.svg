@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" fill="none">
+  <rect width="1200" height="750" rx="48" fill="#F5F8FB"/>
+  <rect x="52" y="52" width="1096" height="646" rx="34" fill="#FFFFFF" stroke="#DCE4EE"/>
+  <text x="96" y="140" fill="#111827" font-family="Arial, sans-serif" font-size="54" font-weight="700">Builder Journal</text>
+  <text x="96" y="184" fill="#64748B" font-family="Arial, sans-serif" font-size="24">Content architecture for independent builders</text>
+  <rect x="96" y="244" width="1008" height="120" rx="28" fill="#F7FAFD" stroke="#E2E8F0"/>
+  <rect x="96" y="400" width="310" height="202" rx="28" fill="#EEF4FF"/>
+  <rect x="444" y="400" width="310" height="202" rx="28" fill="#F3F8F6"/>
+  <rect x="792" y="400" width="312" height="202" rx="28" fill="#F8F6EE"/>
+  <rect x="136" y="284" width="250" height="18" rx="9" fill="#111827"/>
+  <rect x="136" y="322" width="322" height="18" rx="9" fill="#94A3B8"/>
+  <rect x="136" y="450" width="156" height="18" rx="9" fill="#3158B8"/>
+  <rect x="136" y="488" width="194" height="18" rx="9" fill="#A5B9EE"/>
+  <rect x="484" y="450" width="172" height="18" rx="9" fill="#3E7D71"/>
+  <rect x="484" y="488" width="134" height="18" rx="9" fill="#A8CEC4"/>
+  <rect x="832" y="450" width="182" height="18" rx="9" fill="#B68A1F"/>
+  <rect x="832" y="488" width="148" height="18" rx="9" fill="#E6D6A4"/>
+</svg>
