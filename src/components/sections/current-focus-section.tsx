@@ -1,20 +1,25 @@
 import type { About } from "@/types";
+import type { Locale } from "@/lib/i18n";
 
+import { getDictionary } from "@/lib/dictionaries";
 import { Container } from "@/components/layout/container";
 import { SectionTitle } from "@/components/shared/section-title";
 
 interface CurrentFocusSectionProps {
   about: About;
+  locale: Locale;
 }
 
-export function CurrentFocusSection({ about }: CurrentFocusSectionProps) {
+export function CurrentFocusSection({ about, locale }: CurrentFocusSectionProps) {
+  const dictionary = getDictionary(locale);
+
   return (
     <section className="py-10 sm:py-14">
       <Container className="space-y-8">
         <SectionTitle
-          eyebrow="Current Focus"
-          title="What I am building and learning right now"
-          description="A compact snapshot of the work streams shaping my recent projects, writing, and experiments."
+          eyebrow={dictionary.currentFocus.eyebrow}
+          title={dictionary.currentFocus.title}
+          description={dictionary.currentFocus.description}
         />
 
         <div className="grid gap-5 md:grid-cols-3">

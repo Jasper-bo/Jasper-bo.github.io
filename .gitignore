@@ -12,3 +12,4 @@ out
 .env.production.local
 
 coverage
+*.tsbuildinfo

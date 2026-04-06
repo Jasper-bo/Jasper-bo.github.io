@@ -3,21 +3,27 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 import type { About } from "@/types";
+import type { Locale } from "@/lib/i18n";
+import { getDictionary } from "@/lib/dictionaries";
+import { localizePath } from "@/lib/i18n";
 import { Container } from "@/components/layout/container";
 import { Tag } from "@/components/shared/tag";
 
 interface HeroSectionProps {
   about: About;
+  locale: Locale;
 }
 
-export function HeroSection({ about }: HeroSectionProps) {
+export function HeroSection({ about, locale }: HeroSectionProps) {
+  const dictionary = getDictionary(locale);
+
   return (
     <section className="py-12 sm:py-16">
       <Container>
         <div className="grid gap-8 lg:grid-cols-[minmax(0,1.35fr)_380px]">
           <div className="surface p-8 sm:p-10">
             <div className="space-y-6">
-              <Tag variant="accent">Personal brand website v1</Tag>
+              <Tag variant="accent">{dictionary.hero.badge}</Tag>
               <div className="space-y-4">
                 <p className="font-serif text-xl italic text-muted-foreground sm:text-2xl">
                   {about.title}
@@ -37,12 +43,12 @@ export function HeroSection({ about }: HeroSectionProps) {
               </p>
 
               <div className="flex flex-wrap gap-3">
-                <Link href="/projects" className="button-primary">
-                  View projects
+                <Link href={localizePath("/projects", locale)} className="button-primary">
+                  {dictionary.hero.ctaProjects}
                   <ArrowRight className="h-4 w-4" />
                 </Link>
-                <Link href="/about" className="button-secondary">
-                  About me
+                <Link href={localizePath("/about", locale)} className="button-secondary">
+                  {dictionary.hero.ctaAbout}
                 </Link>
               </div>
             </div>
@@ -63,11 +69,10 @@ export function HeroSection({ about }: HeroSectionProps) {
             <div className="space-y-4">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                  Current focus
+                  {dictionary.hero.focusEyebrow}
                 </p>
                 <p className="mt-2 text-lg font-semibold tracking-tight text-foreground">
-                  Building fitness and knowledge products with clearer information
-                  architecture.
+                  {dictionary.hero.focusTitle}
                 </p>
               </div>
 

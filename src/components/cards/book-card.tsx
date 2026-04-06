@@ -2,20 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
-import type { Book, BookStatus } from "@/types";
+import type { Book } from "@/types";
+import type { Locale } from "@/lib/i18n";
+import { getDictionary } from "@/lib/dictionaries";
 import { Tag } from "@/components/shared/tag";
-
-const statusLabelMap: Record<BookStatus, string> = {
-  wishlist: "Wishlist",
-  reading: "Reading",
-  completed: "Completed"
-};
 
 interface BookCardProps {
   book: Book;
+  locale: Locale;
 }
 
-export function BookCard({ book }: BookCardProps) {
+export function BookCard({ book, locale }: BookCardProps) {
+  const dictionary = getDictionary(locale);
+
   return (
     <article className="group surface flex h-full flex-col overflow-hidden transition-transform duration-300 hover:-translate-y-1">
       <div className="relative aspect-[4/5] overflow-hidden border-b border-border/70 bg-muted">
@@ -30,9 +29,9 @@ export function BookCard({ book }: BookCardProps) {
 
       <div className="flex flex-1 flex-col gap-4 p-6">
         <div className="flex flex-wrap gap-2">
-          <Tag variant="accent">{statusLabelMap[book.status]}</Tag>
+          <Tag variant="accent">{dictionary.bookStatuses[book.status]}</Tag>
           <Tag>{book.category}</Tag>
-          {book.recommend ? <Tag variant="outline">Recommended</Tag> : null}
+          {book.recommend ? <Tag variant="outline">{dictionary.bookCard.recommended}</Tag> : null}
         </div>
 
         <div className="space-y-1">
@@ -43,7 +42,9 @@ export function BookCard({ book }: BookCardProps) {
         <p className="text-sm leading-7 text-muted-foreground">{book.summary}</p>
 
         <div className="space-y-2">
-          <p className="text-sm font-semibold text-foreground">Core takeaways</p>
+          <p className="text-sm font-semibold text-foreground">
+            {dictionary.bookCard.coreTakeaways}
+          </p>
           <ul className="space-y-2 text-sm leading-6 text-muted-foreground">
             {book.takeaways.map((takeaway) => (
               <li key={takeaway} className="flex gap-2">
@@ -56,7 +57,7 @@ export function BookCard({ book }: BookCardProps) {
 
         <div className="mt-auto flex items-center justify-between border-t border-border/70 pt-5">
           <span className="text-sm font-medium text-foreground">
-            Rating {book.rating.toFixed(1)} / 5
+            {dictionary.bookCard.ratingLabel} {book.rating.toFixed(1)} / 5
           </span>
           {book.noteUrl ? (
             <Link
@@ -65,11 +66,11 @@ export function BookCard({ book }: BookCardProps) {
               rel="noreferrer"
               className="inline-flex items-center gap-1 text-sm font-semibold text-foreground transition hover:text-accent"
             >
-              Notes
+              {dictionary.bookCard.notesLabel}
               <ArrowUpRight className="h-4 w-4" />
             </Link>
           ) : (
-            <span className="text-sm text-muted-foreground">Notes coming</span>
+            <span className="text-sm text-muted-foreground">{dictionary.bookCard.notesComing}</span>
           )}
         </div>
       </div>

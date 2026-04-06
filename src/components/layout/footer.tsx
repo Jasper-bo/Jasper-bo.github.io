@@ -1,6 +1,11 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import { getAbout } from "@/lib/about";
+import { getDictionary } from "@/lib/dictionaries";
+import { getLocaleFromPathname } from "@/lib/i18n";
 import { Container } from "@/components/layout/container";
 
 function isExternal(href: string) {
@@ -8,21 +13,23 @@ function isExternal(href: string) {
 }
 
 export function Footer() {
-  const about = getAbout();
+  const pathname = usePathname();
+  const locale = getLocaleFromPathname(pathname);
+  const about = getAbout(locale);
+  const dictionary = getDictionary(locale);
 
   return (
     <footer className="border-t border-border/70 py-10 sm:py-14">
       <Container className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_360px]">
         <div className="space-y-3">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-            Stay connected
+            {dictionary.footer.eyebrow}
           </p>
           <h2 className="max-w-xl text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
-            Building thoughtful web products with a calm, structured visual language.
+            {dictionary.footer.title}
           </h2>
           <p className="max-w-2xl text-base leading-7 text-muted-foreground">
-            This site is designed as a content-first foundation for projects, reading,
-            skills, and longer-form personal brand storytelling.
+            {dictionary.footer.description}
           </p>
         </div>
 
