@@ -7,10 +7,6 @@ interface LocaleBooksPageProps {
   params: Promise<{
     locale: string;
   }>;
-  searchParams: Promise<{
-    status?: string;
-    category?: string;
-  }>;
 }
 
 export async function generateMetadata({
@@ -22,16 +18,9 @@ export async function generateMetadata({
 }
 
 export default async function LocaleBooksPage({
-  params,
-  searchParams
+  params
 }: LocaleBooksPageProps) {
   const { locale } = await params;
 
-  return (
-    <BooksPageView
-      locale={resolveRouteLocale(locale)}
-      searchParams={await searchParams}
-    />
-  );
+  return <BooksPageView locale={resolveRouteLocale(locale)} />;
 }
-

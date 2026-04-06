@@ -11,12 +11,12 @@ import { getDictionary } from "@/lib/dictionaries";
 import { getLocaleFromPathname, localizePath } from "@/lib/i18n";
 import { Container } from "@/components/layout/container";
 
-function isActive(pathname: string, href: string) {
-  if (href === "/") {
-    return pathname === "/";
+function isActive(pathname: string, href: string, exact = false) {
+  if (exact) {
+    return pathname === href;
   }
 
-  return pathname.startsWith(href);
+  return pathname === href || pathname.startsWith(`${href}/`);
 }
 
 function LanguageSwitcherFallback() {
@@ -59,7 +59,7 @@ export function Navbar() {
           <nav aria-label="Primary" className="flex flex-wrap gap-2">
             {siteConfig.navigation.map((item) => {
               const href = localizePath(item.href, locale);
-              const active = isActive(pathname, href);
+              const active = isActive(pathname, href, item.href === "/");
 
               return (
                 <Link
