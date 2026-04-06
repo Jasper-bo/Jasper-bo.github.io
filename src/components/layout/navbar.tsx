@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Suspense } from "react";
 
+import { getAbout } from "@/lib/about";
 import { LanguageSwitcher } from "@/components/i18n/language-switcher";
 import { siteConfig } from "@/lib/site";
 import { cn } from "@/lib/utils";
@@ -36,6 +37,7 @@ export function Navbar() {
   const pathname = usePathname();
   const locale = getLocaleFromPathname(pathname);
   const dictionary = getDictionary(locale);
+  const about = getAbout(locale);
 
   return (
     <header className="sticky top-0 z-50 px-4 pt-4 sm:px-6 lg:px-8">
@@ -47,10 +49,10 @@ export function Navbar() {
             className="flex items-center gap-3 rounded-[1.75rem] p-1.5 text-sm font-semibold tracking-tight"
           >
             <span className="flex h-12 w-12 items-center justify-center rounded-[1.4rem] border border-white/55 bg-white/50 text-base text-foreground shadow-card backdrop-blur-xl">
-              JH
+              HJ
             </span>
             <span className="flex flex-col leading-tight">
-              <span>Junbo He</span>
+              <span>{about.name}</span>
               <span className="text-xs font-medium text-muted-foreground">
                 {dictionary.nav.role}
               </span>

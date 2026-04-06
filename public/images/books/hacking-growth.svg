@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" fill="none">
+  <rect width="600" height="800" rx="40" fill="#101820"/>
+  <rect x="46" y="46" width="508" height="708" rx="30" fill="#111827" stroke="#1F2937"/>
+  <rect x="88" y="92" width="148" height="34" rx="17" fill="#132E25"/>
+  <text x="118" y="114" fill="#4ADE80" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="2">GROWTH</text>
+  <text x="88" y="252" fill="#F9FAFB" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="72" font-weight="700">增长黑客</text>
+  <text x="88" y="314" fill="#94A3B8" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="24">范冰</text>
+  <rect x="88" y="414" width="424" height="192" rx="28" fill="#0F172A"/>
+  <path d="M134 560C184 530 220 522 268 492C316 462 346 446 398 398C428 370 454 344 478 312" stroke="#4ADE80" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="134" cy="560" r="12" fill="#4ADE80"/>
+  <circle cx="268" cy="492" r="12" fill="#4ADE80"/>
+  <circle cx="398" cy="398" r="12" fill="#4ADE80"/>
+  <circle cx="478" cy="312" r="12" fill="#4ADE80"/>
+</svg>

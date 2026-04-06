@@ -7,7 +7,7 @@ export interface Book {
   cover: string;
   category: string;
   status: BookStatus;
-  rating: number;
+  rating?: number | null;
   summary: string;
   takeaways: string[];
   recommend: boolean;

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" fill="none">
+  <rect width="600" height="800" rx="40" fill="#F7F7F8"/>
+  <rect x="46" y="46" width="508" height="708" rx="30" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="88" y="92" width="146" height="34" rx="17" fill="#FFF1E9"/>
+  <text x="122" y="114" fill="#C65E28" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="2">PRODUCT</text>
+  <text x="88" y="236" fill="#111827" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="54" font-weight="700">俞军产品</text>
+  <text x="88" y="298" fill="#111827" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="54" font-weight="700">方法论</text>
+  <text x="88" y="352" fill="#6B7280" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="24">俞军</text>
+  <rect x="88" y="404" width="424" height="8" rx="4" fill="#111827"/>
+  <rect x="88" y="444" width="424" height="190" rx="28" fill="#F9FAFB" stroke="#E5E7EB"/>
+  <rect x="126" y="484" width="142" height="22" rx="11" fill="#111827"/>
+  <rect x="126" y="528" width="110" height="22" rx="11" fill="#374151"/>
+  <rect x="126" y="572" width="172" height="22" rx="11" fill="#C65E28"/>
+  <rect x="352" y="486" width="116" height="116" rx="24" fill="#FFF1E9"/>
+  <path d="M382 544H438" stroke="#C65E28" stroke-width="16" stroke-linecap="round"/>
+  <path d="M410 516V572" stroke="#111827" stroke-width="16" stroke-linecap="round"/>
+</svg>

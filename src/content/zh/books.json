@@ -1,98 +1,130 @@
 [
   {
-    "id": "inspired",
-    "title": "Inspired",
-    "author": "Marty Cagan",
-    "cover": "/images/books/inspired.svg",
-    "category": "产品",
+    "id": "ganfa",
+    "title": "干法",
+    "author": "稻盛和夫",
+    "cover": "/images/books/ganfa.svg",
+    "category": "工作哲学",
     "status": "completed",
-    "rating": 4.8,
-    "summary": "这本书不断提醒我，产品工作不只是交付功能，而是用强团队去解决真正重要的用户问题。",
+    "rating": 3.8,
+    "summary": "这本书围绕劳动观、职业态度与长期主义展开，让我重新理解“认真工作”并不是口号，而是把平凡事情做到极致的方法。",
     "takeaways": [
-      "发现阶段的质量，往往决定后续交付还有没有意义。",
-      "好的产品团队会尽早把业务、设计和工程拉到同一张桌子上。"
+      "先把手上的事情做到位，很多成长来自对日常工作的持续打磨。",
+      "工作不只是谋生方式，也是在重复实践里塑造判断力和人格。"
     ],
     "recommend": true,
-    "noteUrl": "https://example.com/notes/inspired"
+    "noteUrl": "https://book.douban.com/subject/34850503//"
   },
   {
-    "id": "atomic-habits",
-    "title": "Atomic Habits",
-    "author": "James Clear",
-    "cover": "/images/books/atomic-habits.svg",
-    "category": "习惯",
+    "id": "huofa",
+    "title": "活法",
+    "author": "稻盛和夫",
+    "cover": "/images/books/huofa.svg",
+    "category": "人生",
     "status": "completed",
-    "rating": 4.7,
-    "summary": "当环境和反馈回路被有意识地设计后，看似微小的行为变化也会不断复利。",
+    "rating": 3.9,
+    "summary": "它把利他、精进与心性修炼放在同一条线上，提醒我成长不仅是能力变强，也包括价值观和做事方式的稳定。",
     "takeaways": [
-      "当一致性更重要时，环境设计通常比单纯依赖意志力更有效。",
-      "追踪可以是产品功能，但真正驱动改变的是身份认同的转变。"
+      "长期主义不是熬时间，而是持续修正自己的态度与选择。",
+      "做产品之前先做人，这种底层价值观会直接影响判断。"
     ],
     "recommend": true,
-    "noteUrl": "https://example.com/notes/atomic-habits"
+    "noteUrl": "https://books.google.com/books/about/%E6%B4%BB%E6%B3%95.html?id=jfJMQwAACAAJ"
   },
   {
-    "id": "the-mom-test",
-    "title": "The Mom Test",
-    "author": "Rob Fitzpatrick",
-    "cover": "/images/books/the-mom-test.svg",
-    "category": "创业",
+    "id": "seven-habits",
+    "title": "高效能人士的七个习惯",
+    "author": "史蒂芬·柯维",
+    "cover": "/images/books/seven-habits.svg",
+    "category": "成长",
     "status": "completed",
-    "rating": 4.6,
-    "summary": "一本非常精炼的实战手册，帮助我学会提出更有效的产品问题，避开那些礼貌但没价值的用户反馈。",
+    "rating": 4.3,
+    "summary": "从主动积极、要事优先到双赢思维，这本书让我更关注一个人如何建立可持续的自我管理系统。",
     "takeaways": [
-      "要问真实发生过的行为，而不是未来可能会怎样。",
-      "糟糕的用户访谈会非常快地制造出错误自信。"
+      "真正有效率的人，不是把事情塞满，而是先抓住重要而不紧急的部分。",
+      "个人成长和协作能力，最终都要回到原则而不是技巧。"
     ],
     "recommend": true,
-    "noteUrl": "https://example.com/notes/the-mom-test"
+    "noteUrl": "https://book.douban.com/subject/26284789//"
   },
   {
-    "id": "ddia",
-    "title": "Designing Data-Intensive Applications",
-    "author": "Martin Kleppmann",
-    "cover": "/images/books/ddia.svg",
-    "category": "技术",
-    "status": "reading",
-    "rating": 4.9,
-    "summary": "一本关于可靠性、数据系统以及产品从简单 CRUD 走向复杂之后各种基础设施取舍的深度阅读。",
-    "takeaways": [
-      "系统设计的质量来自对取舍的理解，而不是记住了多少组件名词。",
-      "数据流的设计应该反映真正重要的用户体验优先级。"
-    ],
-    "recommend": true,
-    "noteUrl": null
-  },
-  {
-    "id": "deep-work",
-    "title": "Deep Work",
-    "author": "Cal Newport",
-    "cover": "/images/books/deep-work.svg",
-    "category": "思考",
+    "id": "cruel-and-tender",
+    "title": "这世界既残酷也温柔",
+    "author": "孙宇晨",
+    "cover": "/images/books/cruel-and-tender.svg",
+    "category": "时代叙事",
     "status": "completed",
-    "rating": 4.4,
-    "summary": "它给了我一个很有用的视角，去保护注意力，并设计出真正支持高质量输出的工作节奏。",
+    "rating": null,
+    "summary": "这本书带有很强的个人经历和时代机会色彩，让我看到野心、执行力和个人叙事如何被放在同一条线上讨论。",
     "takeaways": [
-      "深度工作需要系统支持，而不只是靠自律硬撑。",
-      "高质量产出往往来自有意识的约束，而不是无限自由。"
+      "在一个既残酷也温柔的时代里，决定差距的往往是持续行动。",
+      "个人叙事一旦和时代机会连接起来，就会形成很强的驱动力。"
     ],
     "recommend": false,
-    "noteUrl": "https://example.com/notes/deep-work"
+    "noteUrl": "https://www.ireader.com.cn/index.php?bid=12037158&ca=bookdetail.index"
   },
   {
-    "id": "build",
-    "title": "Build",
-    "author": "Tony Fadell",
-    "cover": "/images/books/build.svg",
+    "id": "yujun-product-methodology",
+    "title": "俞军产品方法论",
+    "author": "俞军",
+    "cover": "/images/books/yujun-product-methodology.svg",
     "category": "产品",
-    "status": "wishlist",
-    "rating": 4.7,
-    "summary": "一本非常坦诚的操盘手视角作品，谈如何长期构建产品、团队与判断力。",
+    "status": "completed",
+    "rating": 3.9,
+    "summary": "这本书把用户价值、交易模型和产品决策放在一起看，对我理解产品经理如何思考“做什么”和“为什么做”很有帮助。",
     "takeaways": [
-      "品味是通过反复实践和反思慢慢长出来的。",
-      "当产品决策始终贴近用户痛点时，方向会更锋利。"
+      "产品不是功能堆砌，而是围绕用户价值与商业价值的持续权衡。",
+      "想做出更好的产品，必须同时理解用户模型和交易模型。"
     ],
     "recommend": true,
-    "noteUrl": null
+    "noteUrl": "https://book.douban.com/subject/34907971//"
+  },
+  {
+    "id": "thinking-fast-and-slow",
+    "title": "思考，快与慢",
+    "author": "丹尼尔·卡尼曼",
+    "cover": "/images/books/thinking-fast-and-slow.svg",
+    "category": "认知",
+    "status": "reading",
+    "rating": 4.2,
+    "summary": "它帮助我从系统1和系统2的角度重新观察判断、偏差和决策，这对做产品和理解用户都很重要。",
+    "takeaways": [
+      "很多看起来理性的决定，其实早已被直觉和偏见提前塑形。",
+      "做产品时既要警惕自己的判断捷径，也要理解用户同样会受这些偏差影响。"
+    ],
+    "recommend": true,
+    "noteUrl": "https://book.douban.com/subject/37270984/"
+  },
+  {
+    "id": "hacking-growth",
+    "title": "增长黑客",
+    "author": "范冰",
+    "cover": "/images/books/hacking-growth.svg",
+    "category": "增长",
+    "status": "reading",
+    "rating": null,
+    "summary": "它把增长拆成产品、技术、数据与传播协同的问题，让我意识到增长不是营销补丁，而是产品设计的一部分。",
+    "takeaways": [
+      "增长应该被写进产品结构，而不是上线后再额外补一层。",
+      "低成本增长的关键，是找到可验证、可复用的实验路径。"
+    ],
+    "recommend": true,
+    "noteUrl": "https://read.douban.com/ebook/12145181/"
+  },
+  {
+    "id": "contagious",
+    "title": "疯传",
+    "author": "乔纳·伯杰",
+    "cover": "/images/books/contagious.svg",
+    "category": "传播",
+    "status": "reading",
+    "rating": 3.9,
+    "summary": "这本书讨论内容为什么会被分享，它对我包装产品、写 blog 和设计传播点都很有启发。",
+    "takeaways": [
+      "人们分享内容，很多时候不是为了信息本身，而是为了表达自己。",
+      "如果一个想法要传播出去，就需要被设计成更容易复述和触发行动。"
+    ],
+    "recommend": true,
+    "noteUrl": "https://book.douban.com/subject/26830108/"
   }
 ]

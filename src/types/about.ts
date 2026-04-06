@@ -4,6 +4,12 @@ export interface SocialLink {
   value: string;
 }
 
+export interface ProfileHighlight {
+  label: string;
+  value: string;
+  detail: string;
+}
+
 export interface FocusArea {
   title: string;
   description: string;
@@ -20,6 +26,18 @@ export interface TimelineItem {
   description: string;
 }
 
+export interface WorkflowStep {
+  title: string;
+  description: string;
+}
+
+export interface Workflow {
+  title: string;
+  description: string;
+  steps: WorkflowStep[];
+  principles: string[];
+}
+
 export interface About {
   name: string;
   title: string;
@@ -27,8 +45,10 @@ export interface About {
   bio: string[];
   avatar: string;
   socials: SocialLink[];
+  profileHighlights: ProfileHighlight[];
   focusAreas: FocusArea[];
   tools: ToolGroup[];
+  workflow: Workflow;
   now: string[];
   timeline: TimelineItem[];
 }

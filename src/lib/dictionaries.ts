@@ -65,6 +65,13 @@ interface AppDictionary {
     eyebrow: string;
     title: string;
     socials: string;
+    profileEyebrow: string;
+    profileTitle: string;
+    profileDescription: string;
+    workflowEyebrow: string;
+    workflowTitle: string;
+    workflowDescription: string;
+    workflowPrinciples: string;
     focusAreasEyebrow: string;
     focusAreasTitle: string;
     focusAreasDescription: string;
@@ -165,27 +172,27 @@ const dictionaries: Record<Locale, AppDictionary> = {
       home: {
         title: "Home",
         description:
-          "A product-grade personal brand website for projects, reading, skills, and thoughtful frontend work."
+          "A structured personal blog for He Junbo covering a gym-focused fitness app, reading, AI product workflow, and AIPM-oriented growth."
       },
       about: {
         title: "About",
         description:
-          "About Junbo He, current focus areas, tools, timeline, and the thinking behind the products being built."
+          "About He Junbo, his AI-native product workflow, current focus areas, toolkit, and the direction behind the products he is building."
       },
       books: {
         title: "Books",
         description:
-          "Books on product, startup thinking, habits, and technical growth that continue to shape how I build."
+          "Books He Junbo has finished and is currently reading across product, cognition, growth, marketing, and work philosophy."
       },
       projects: {
         title: "Projects",
         description:
-          "A curated project archive covering fitness products, knowledge tools, content systems, and product-minded web experiences."
+          "Current projects centered on a focused fitness app for gym users and a reusable blog system for long-term personal brand building."
       },
       skills: {
         title: "Skills",
         description:
-          "A capability-focused skills page covering frontend engineering, product thinking, UI structuring, and AI-assisted workflows."
+          "A capability map covering AI-native product workflow, frontend delivery, content systems, and structured product thinking."
       },
       projectNotFound: {
         title: "Project not found",
@@ -193,7 +200,7 @@ const dictionaries: Record<Locale, AppDictionary> = {
       }
     },
     nav: {
-      role: "Product-minded Frontend Engineer",
+      role: "AIPM / AI-native product explorer",
       languageLabel: "Language",
       links: {
         home: "Home",
@@ -204,72 +211,81 @@ const dictionaries: Record<Locale, AppDictionary> = {
       }
     },
     footer: {
-      eyebrow: "Stay connected",
-      title: "Building thoughtful web products with a calm, structured visual language.",
+      eyebrow: "Keep in touch",
+      title: "Building AI-native products, reusable content systems, and a long-term personal brand around real shipping practice.",
       description:
-        "This site is designed as a content-first foundation for projects, reading, skills, and longer-form personal brand storytelling."
+        "This blog acts as a structured home for my fitness product experiments, reading notes, AI product workflow, and evolving AIPM narrative."
     },
     hero: {
-      badge: "Personal brand website v1",
+      badge: "AIPM Builder",
       ctaProjects: "View projects",
       ctaAbout: "About me",
       focusEyebrow: "Current focus",
       focusTitle:
-        "Building fitness and knowledge products with clearer information architecture."
+        "Designing a more focused fitness app for gym users with an AI-first product workflow."
     },
     currentFocus: {
       eyebrow: "Current Focus",
-      title: "What I am building and learning right now",
+      title: "What I am building, testing, and refining right now",
       description:
-        "A compact snapshot of the work streams shaping my recent projects, writing, and experiments."
+        "A compact snapshot of the workstreams currently shaping my fitness product, blog, and AI-native product method."
     },
     featuredProjects: {
       eyebrow: "Selected Work",
-      title: "Featured projects with product and engineering depth",
+      title: "Projects that capture how I think, build, and package ideas",
       description:
-        "These projects reflect how I think about product framing, interface structure, and the maintainability of what ships.",
+        "These are the clearest expressions of my current direction: a focused fitness product and a blog system that turns experiments into reusable assets.",
       action: "See all projects"
     },
     readingShelf: {
       eyebrow: "Reading",
-      title: "Books shaping my product and engineering thinking",
+      title: "Books shaping my product judgement and long-term thinking",
       description:
-        "A small reading shelf covering product judgment, systems thinking, habits, and the craft of building with more clarity.",
+        "A reading shelf built around product thinking, cognition, growth, and the kind of work philosophy I want to practice in the AI era.",
       action: "Browse all books"
     },
     coreSkills: {
       eyebrow: "Capabilities",
-      title: "Core skills I bring to product work",
+      title: "Core capabilities behind my current way of building",
       description:
-        "Beyond a tool list, these are the capabilities I rely on most when turning ideas into shippable, maintainable products.",
+        "Beyond tools, these are the product, research, and delivery capabilities I rely on when turning raw ideas into structured execution.",
       action: "Explore all skills"
     },
     aboutPage: {
       eyebrow: "About",
-      title: "Building products with a balance of clarity, structure, and execution",
+      title: "Learning in public while building products with AI, structure, and real user intent",
       socials: "Socials",
+      profileEyebrow: "Profile",
+      profileTitle: "A quick snapshot of who I am right now",
+      profileDescription:
+        "I want this site to communicate both identity and momentum: what I study, what I am building, and what I am optimizing for.",
+      workflowEyebrow: "Workflow",
+      workflowTitle: "The AI-native product workflow I am actively refining",
+      workflowDescription:
+        "Rather than treating AI as a side tool, I use it as a partner across research, product definition, documentation, and code translation.",
+      workflowPrinciples: "Operating principles",
       focusAreasEyebrow: "Focus Areas",
-      focusAreasTitle: "What I care about most right now",
+      focusAreasTitle: "The intersections I care about most",
       focusAreasDescription:
-        "The overlap of product framing, frontend craft, and useful systems keeps shaping the work I choose.",
+        "Fitness scenarios, AI-native product work, and reusable content systems are the three threads shaping most of my current decisions.",
       nowEyebrow: "Now",
       nowTitle: "Current state",
       nowDescription:
-        "A concise snapshot of the work, experiments, and writing threads I am actively moving forward.",
+        "The things I am actively shipping, learning, and turning into long-term personal assets.",
       toolkitEyebrow: "Toolkit",
-      toolkitTitle: "Tools and systems I rely on",
+      toolkitTitle: "Tools and systems I actually use",
       toolkitDescription:
-        "I prefer a focused toolset that supports shipping, iteration, and maintainability without unnecessary process weight.",
+        "I prefer a compact stack that keeps the loop between idea, document, and code as short as possible.",
       timelineEyebrow: "Timeline",
-      timelineTitle: "A short growth path",
+      timelineTitle: "A short path of becoming",
       timelineDescription:
-        "A few milestones that explain how design systems, product thinking, and independent building gradually converged."
+        "A few milestones that explain how computer science study, product curiosity, and AI-native execution started converging."
     },
     booksPage: {
       eyebrow: "Books",
-      title: "Reading that informs product judgement and personal growth",
+      title: "A reading shelf built around product, cognition, growth, and work philosophy",
       description:
-        "A structured bookshelf with reading status, category filters, key takeaways, and recommendations worth revisiting.",
+        "This page packages the books I have finished and the ones I am currently reading into a reusable, updatable reading system.",
       filterStatusLabel: "Filter by status",
       filterStatusAll: "All status",
       filterCategoryLabel: "Filter by category",
@@ -279,13 +295,13 @@ const dictionaries: Record<Locale, AppDictionary> = {
     },
     projectsPage: {
       eyebrow: "Projects",
-      title: "Products and systems built with both product thinking and frontend depth",
+      title: "The products and systems that currently define my direction",
       description:
-        "The work here ranges from fitness-focused SaaS ideas to content systems and workflow tools. Each project aims to show what problem it solves, who it serves, and how the implementation supports that story.",
+        "Right now my work centers on two things: building a more focused fitness app for gym users, and building a blog system that can carry my methods, reading, and product narrative forward.",
       featuredEyebrow: "Featured",
-      featuredTitle: "Projects worth starting with",
+      featuredTitle: "The work to start with",
       featuredDescription:
-        "These are the strongest examples of how I connect problem framing, UI structure, and engineering decisions.",
+        "These are the most representative pieces of how I combine user focus, AI workflow, and structured frontend delivery.",
       archiveEyebrow: "Archive",
       archiveTitle: "More experiments and case studies",
       archiveDescription:
@@ -308,9 +324,9 @@ const dictionaries: Record<Locale, AppDictionary> = {
     bookCard: {
       recommended: "Recommended",
       coreTakeaways: "Core takeaways",
-      ratingLabel: "Rating",
-      notesLabel: "Notes",
-      notesComing: "Notes coming"
+      ratingLabel: "Reference score",
+      notesLabel: "Book page",
+      notesComing: "Link pending"
     },
     skillCard: {
       whereItHelps: "Where it helps",
@@ -367,23 +383,23 @@ const dictionaries: Record<Locale, AppDictionary> = {
     metadata: {
       home: {
         title: "首页",
-        description: "一个用于展示项目、阅读、技能与前端思考的产品化个人网站。"
+        description: "一个围绕 fitness app、读书、AI 产品流程与 AIPM 成长路径搭建的结构化个人博客。"
       },
       about: {
         title: "关于我",
-        description: "关于何君博、当前关注方向、工具体系、成长轨迹，以及我做产品时的思考方式。"
+        description: "关于贺俊博、他的 AI 原生产品工作流、当前关注方向、工具体系与正在形成中的产品方法。"
       },
       books: {
         title: "读书",
-        description: "那些持续影响我做产品、理解增长习惯与技术判断的书。"
+        description: "整理我已经读过和正在读的书，主题覆盖产品、认知、增长、传播与工作哲学。"
       },
       projects: {
         title: "项目",
-        description: "一个覆盖健身产品、知识工具、内容系统与产品型网站体验的项目档案。"
+        description: "目前重点围绕健身房用户的 fitness app 与长期可复用的 blog 系统展开。"
       },
       skills: {
         title: "技能",
-        description: "围绕前端工程、产品思维、界面结构与 AI 工作流的能力页面。"
+        description: "围绕 AI 原生产品工作流、前端交付、内容系统与结构化产品思考的能力地图。"
       },
       projectNotFound: {
         title: "项目不存在",
@@ -391,7 +407,7 @@ const dictionaries: Record<Locale, AppDictionary> = {
       }
     },
     nav: {
-      role: "产品思维驱动的前端工程师",
+      role: "AIPM / AI 原生产品探索者",
       languageLabel: "切换语言",
       links: {
         home: "首页",
@@ -402,62 +418,69 @@ const dictionaries: Record<Locale, AppDictionary> = {
       }
     },
     footer: {
-      eyebrow: "保持联系",
-      title: "用冷静、有结构的视觉语言，构建更耐看的 Web 产品。",
+      eyebrow: "继续连接",
+      title: "围绕真实产品实践，持续构建 AI 原生产品、可复用内容系统和长期个人品牌。",
       description:
-        "这个网站被设计成一套以内容为先的基础设施，用来承载项目、阅读、技能，以及更完整的个人品牌叙事。"
+        "这个 blog 既是我的个人品牌主页，也是一个方法论仓库，用来沉淀 fitness app、读书、AI 产品流程和持续迭代中的判断。"
     },
     hero: {
-      badge: "个人品牌网站 v1",
+      badge: "AIPM 进行中",
       ctaProjects: "查看项目",
       ctaAbout: "了解我",
       focusEyebrow: "当前聚焦",
-      focusTitle: "在更清晰的信息架构上，持续打磨健身与知识类产品。"
+      focusTitle: "用 AI 原生工作流，打磨一款更聚焦健身房用户的 Fitness App。"
     },
     currentFocus: {
       eyebrow: "当前关注",
-      title: "我现在正在构建和学习什么",
-      description: "一份简短快照，展示最近项目、写作与实验背后的核心工作流。"
+      title: "我现在正在构建、验证与沉淀什么",
+      description: "一份简短快照，展示当前 fitness 产品、blog 系统与 AI 产品方法论的核心进展。"
     },
     featuredProjects: {
       eyebrow: "精选作品",
-      title: "兼具产品思维与工程深度的代表项目",
-      description: "这些项目体现了我如何思考问题定义、界面结构，以及上线后长期维护的可持续性。",
+      title: "最能代表我当下方向的两个项目",
+      description: "它们分别承载产品验证和内容沉淀：一个面向健身房用户，一个面向长期个人品牌建设。",
       action: "查看全部项目"
     },
     readingShelf: {
       eyebrow: "阅读",
-      title: "塑造我产品判断与工程思维的书",
-      description: "一个小型书架，涵盖产品判断、系统思维、习惯设计，以及更清晰构建产品的方法。",
+      title: "正在塑造我产品判断和长期思考方式的书",
+      description: "书架围绕产品、认知、增长、传播与工作哲学展开，也会持续补进我真正读过和正在读的书。",
       action: "查看全部书单"
     },
     coreSkills: {
       eyebrow: "核心能力",
-      title: "我带到产品工作里的关键能力",
-      description: "不只是工具清单，而是我把想法变成可上线、可维护产品时最常依赖的能力。",
+      title: "支撑我当前构建方式的关键能力",
+      description: "不只是会用什么工具，而是我如何把需求、文档、代码和内容系统串成一个闭环。",
       action: "查看全部技能"
     },
     aboutPage: {
       eyebrow: "关于",
-      title: "在清晰、结构与执行力之间寻找平衡，持续构建产品",
+      title: "一边学习，一边把 AI、产品和真实项目连接起来",
       socials: "社交链接",
+      profileEyebrow: "个人快照",
+      profileTitle: "关于我目前最重要的几件事",
+      profileDescription: "我希望这个页面既能说明我是谁，也能说明我现在正在往哪里走。",
+      workflowEyebrow: "方法系统",
+      workflowTitle: "我正在打磨的 AI 原生产品工作流",
+      workflowDescription: "我把 AI 当作产品团队的一部分，让它参与需求抓取、产品定义、文档生成和代码转译。",
+      workflowPrinciples: "核心原则",
       focusAreasEyebrow: "关注方向",
-      focusAreasTitle: "我当下最在意的几件事",
-      focusAreasDescription: "产品 framing、前端表达与有用系统之间的交叉地带，持续影响着我选择的工作。",
+      focusAreasTitle: "我最想长期深挖的交叉地带",
+      focusAreasDescription: "健身房场景、AI 原生产品方法和可复用内容系统，正在一起塑造我的选择。",
       nowEyebrow: "现在",
       nowTitle: "当前状态",
-      nowDescription: "一份简洁概览，展示我正在推进的工作、实验与写作线索。",
+      nowDescription: "一份简洁概览，展示我正在推进的项目、方法论与内容沉淀。",
       toolkitEyebrow: "工具栈",
-      toolkitTitle: "我依赖的工具与系统",
-      toolkitDescription: "我偏好一套足够聚焦的工具组合，既支持快速交付，也不牺牲后续迭代和维护性。",
+      toolkitTitle: "我真正依赖的工具和系统",
+      toolkitDescription: "我会尽量保持工具栈简洁，让需求、文档和代码之间的距离更短，后续维护也更轻。",
       timelineEyebrow: "成长路径",
-      timelineTitle: "一条简短的成长轨迹",
-      timelineDescription: "几个关键节点，说明设计系统、产品思维与独立构建是如何逐步汇合到一起的。"
+      timelineTitle: "一条正在形成中的成长轨迹",
+      timelineDescription: "几个关键节点，说明计算机学习、产品意识和 AI 原生实践是怎样逐渐汇合在一起的。"
     },
     booksPage: {
       eyebrow: "读书",
-      title: "影响我产品判断与个人成长的阅读",
-      description: "一个带有阅读状态、分类筛选、关键收获与推荐标记的结构化书架。",
+      title: "围绕产品、认知、增长与工作哲学搭起来的书架",
+      description: "这里整理了我已经读过和正在读的书，也把每本书转成可继续维护的摘要与收获。",
       filterStatusLabel: "按状态筛选",
       filterStatusAll: "全部状态",
       filterCategoryLabel: "按分类筛选",
@@ -467,12 +490,12 @@ const dictionaries: Record<Locale, AppDictionary> = {
     },
     projectsPage: {
       eyebrow: "项目",
-      title: "兼具产品思考与前端深度的产品与系统",
+      title: "目前最能定义我方向的产品与系统",
       description:
-        "这里既有面向健身场景的 SaaS 想法，也有内容系统与工作流工具。每个项目都在说明它解决什么问题、服务谁，以及实现方式如何支撑这个故事。",
+        "现阶段我的重心很明确：一边做一款只服务健身房用户的 fitness app，一边把个人 blog 打造成长期可复用的内容与品牌系统。",
       featuredEyebrow: "重点项目",
       featuredTitle: "最适合先看的项目",
-      featuredDescription: "这些项目最能代表我如何把问题定义、界面结构与工程决策连接起来。",
+      featuredDescription: "这两个项目分别承载了我的产品验证和内容沉淀，也最能说明我现在如何工作。",
       archiveEyebrow: "项目归档",
       archiveTitle: "更多实验与案例",
       archiveDescription: "更小的产品、原型与概念性尝试，同样体现了我塑造清晰软件体验的方式。"
@@ -493,9 +516,9 @@ const dictionaries: Record<Locale, AppDictionary> = {
     bookCard: {
       recommended: "推荐",
       coreTakeaways: "核心收获",
-      ratingLabel: "评分",
-      notesLabel: "笔记",
-      notesComing: "笔记整理中"
+      ratingLabel: "参考评分",
+      notesLabel: "图书页",
+      notesComing: "链接待补"
     },
     skillCard: {
       whereItHelps: "适用场景",
@@ -553,4 +576,3 @@ const dictionaries: Record<Locale, AppDictionary> = {
 export function getDictionary(locale: Locale) {
   return dictionaries[locale];
 }
-

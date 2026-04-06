@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" fill="none">
+  <defs>
+    <linearGradient id="g" x1="90" y1="120" x2="510" y2="680" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFDFC7"/>
+      <stop offset="1" stop-color="#DDE8FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="800" rx="40" fill="#F8F8FB"/>
+  <rect x="46" y="46" width="508" height="708" rx="30" fill="url(#g)" stroke="#E5E7EB"/>
+  <rect x="88" y="92" width="176" height="34" rx="17" fill="#FFFFFF" fill-opacity=".55"/>
+  <text x="112" y="114" fill="#725446" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="2">MEMOIR</text>
+  <text x="88" y="230" fill="#1F2937" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="56" font-weight="700">这世界既</text>
+  <text x="88" y="292" fill="#1F2937" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="56" font-weight="700">残酷也温柔</text>
+  <text x="88" y="346" fill="#6B7280" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="24">孙宇晨</text>
+  <rect x="88" y="438" width="424" height="170" rx="28" fill="#FFFFFF" fill-opacity=".52"/>
+  <circle cx="178" cy="524" r="56" fill="#F7B486"/>
+  <circle cx="300" cy="524" r="56" fill="#F2D8C3"/>
+  <circle cx="422" cy="524" r="56" fill="#ABC3F4"/>
+</svg>

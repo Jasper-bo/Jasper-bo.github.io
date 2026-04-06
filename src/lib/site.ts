@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import { defaultLocale, getMetadataLocale, localizePath, locales, type Locale } from "@/lib/i18n";
 
 export const siteConfig = {
-  name: "Junbo He",
+  name: "He Junbo",
   description:
-    "Product-minded frontend engineer building calm digital products around fitness, knowledge, and personal systems.",
+    "AI-native product explorer building a focused fitness app, a reusable content system, and a long-term personal brand around AIPM practice.",
   url: "https://junbohe.dev",
   navigation: [
     { href: "/", key: "home" },
