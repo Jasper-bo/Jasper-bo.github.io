@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" fill="none">
+  <rect width="600" height="800" rx="40" fill="#F2F6FB"/>
+  <rect x="46" y="46" width="508" height="708" rx="30" fill="#FFFFFF" stroke="#D8E3F0"/>
+  <rect x="88" y="92" width="118" height="34" rx="17" fill="#E8F1FF"/>
+  <text x="122" y="114" fill="#3566A8" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="2">LIFE</text>
+  <circle cx="392" cy="248" r="92" fill="#E4EEF9"/>
+  <path d="M356 210C378 188 410 188 430 214C450 240 446 274 420 300C398 322 370 320 350 296C328 270 332 236 356 210Z" fill="#7BA1D7" opacity=".85"/>
+  <text x="88" y="286" fill="#15324E" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="96" font-weight="700">活法</text>
+  <text x="88" y="348" fill="#5D728A" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="24">稻盛和夫</text>
+  <rect x="88" y="430" width="424" height="158" rx="28" fill="#EEF5FD"/>
+  <rect x="126" y="472" width="156" height="18" rx="9" fill="#3566A8"/>
+  <rect x="126" y="514" width="122" height="18" rx="9" fill="#8FAFDA"/>
+  <rect x="126" y="556" width="176" height="18" rx="9" fill="#C9DAF0"/>
+</svg>

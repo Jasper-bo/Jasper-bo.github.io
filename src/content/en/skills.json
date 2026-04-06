@@ -1,93 +1,80 @@
 [
   {
-    "id": "react",
-    "name": "React",
-    "category": "Frontend Engineering",
+    "id": "ai-product-workflow",
+    "name": "AI Product Workflow",
+    "category": "AI Product",
     "level": "expert",
-    "description": "I use React to shape component systems that stay readable as products grow, with a strong focus on composition, state boundaries, and content-driven UI.",
+    "description": "I treat AI as part of the product team, not just a place to write prompts. It participates in research capture, product definition, document chaining, and code translation.",
     "scenarios": [
-      "Designing reusable card and section systems for content-heavy sites",
-      "Building product flows where interaction depth stays manageable"
+      "Turning raw user-demand samples into a clearer product direction quickly",
+      "Keeping MRD, BRD, PRD, and MVP scope inside one continuous context"
     ],
-    "relatedProjects": ["builder-journal", "signal-notes", "tempo-checkin"],
-    "tools": ["React 19", "Hooks", "Server Components", "Composition patterns"]
-  },
-  {
-    "id": "typescript",
-    "name": "TypeScript",
-    "category": "Frontend Engineering",
-    "level": "advanced",
-    "description": "I rely on TypeScript to make content models, component contracts, and UI states explicit enough for long-term maintenance.",
-    "scenarios": [
-      "Defining scalable content schemas for projects, books, and skills",
-      "Reducing ambiguity in larger component interfaces"
-    ],
-    "relatedProjects": ["builder-journal", "musclemap", "signal-notes"],
-    "tools": ["Strict typing", "Typed content models", "Union-based state design"]
-  },
-  {
-    "id": "nextjs",
-    "name": "Next.js",
-    "category": "Full-stack Product",
-    "level": "advanced",
-    "description": "Next.js is my default choice when I need a fast product surface with strong routing, SEO, and a clean path from static content to dynamic product logic.",
-    "scenarios": [
-      "Shipping portfolio and content sites with strong metadata structure",
-      "Building SaaS frontends that can grow from local data to CMS or backend services"
-    ],
-    "relatedProjects": ["builder-journal", "musclemap", "signal-notes"],
-    "tools": ["App Router", "Metadata API", "Server Components", "ISR-ready architecture"]
-  },
-  {
-    "id": "tailwindcss",
-    "name": "Tailwind CSS",
-    "category": "UI Systems",
-    "level": "advanced",
-    "description": "I use Tailwind to build calm interface systems with predictable spacing, responsive behavior, and easy-to-maintain visual tokens.",
-    "scenarios": [
-      "Turning design direction into a reusable visual language quickly",
-      "Maintaining consistent cards, sections, and utility patterns across products"
-    ],
-    "relatedProjects": ["builder-journal", "tempo-checkin", "musclemap"],
-    "tools": ["Design tokens", "Responsive systems", "Utility-first styling"]
+    "relatedProjects": ["fitness-app", "aipm-blog"],
+    "tools": ["AI crawling", "Structured prompts", "MRD / BRD / PRD / MVP", "Markdown-to-Code"]
   },
   {
     "id": "product-thinking",
     "name": "Product Thinking",
     "category": "Product Strategy",
     "level": "expert",
-    "description": "I frame product work around user pain, job clarity, feedback loops, and what should stay intentionally simple in v1.",
+    "description": "I define products around user value, transaction logic, scope boundaries, and deliberate subtraction instead of starting from a long feature list.",
     "scenarios": [
-      "Prioritizing feature scope for early-stage products",
-      "Turning fuzzy ideas into clear problem-solution narratives"
+      "Narrowing the problem space for vertical scenarios such as gym users",
+      "Turning fuzzy ideas into clear narratives around problem, user, and value"
     ],
-    "relatedProjects": ["musclemap", "tempo-checkin", "signal-notes"],
-    "tools": ["User problem framing", "Scope design", "Case-study storytelling"]
+    "relatedProjects": ["fitness-app", "aipm-blog"],
+    "tools": ["User value", "Transaction logic", "Scope design", "Problem framing"]
   },
   {
-    "id": "ui-structuring",
-    "name": "UI Structuring",
-    "category": "UI Systems",
+    "id": "content-modeling",
+    "name": "Content Modeling",
+    "category": "Content Systems",
     "level": "advanced",
-    "description": "I care about information hierarchy, visual pacing, and how layout choices help readers understand both products and people faster.",
+    "description": "I like to structure content into explicit fields before shaping the UI, so projects, books, and personal narrative can stay reusable and easy to extend.",
     "scenarios": [
-      "Structuring high-density pages so they still feel calm",
-      "Designing landing and portfolio pages that tell a product story quickly"
+      "Designing maintainable schemas for about, projects, books, and skills",
+      "Turning personal-brand expression into a system instead of a one-off refresh"
     ],
-    "relatedProjects": ["builder-journal", "musclemap"],
-    "tools": ["Information hierarchy", "Grid systems", "Readable content surfaces"]
+    "relatedProjects": ["aipm-blog"],
+    "tools": ["JSON-first thinking", "Content schema design", "Bilingual organization", "Reusable sections"]
   },
   {
-    "id": "prompt-design",
-    "name": "Prompt Design",
-    "category": "AI Workflow",
-    "level": "proficient",
-    "description": "I use prompt design as part of a workflow toolset: shaping inputs, constraints, and output formats so AI can support real product and content tasks.",
+    "id": "nextjs",
+    "name": "Next.js",
+    "category": "Frontend Engineering",
+    "level": "advanced",
+    "description": "When I need to balance content pages, SEO, product storytelling, and future expansion, Next.js is the delivery layer I trust most.",
     "scenarios": [
-      "Generating structured drafts for research and content workflows",
-      "Improving internal tooling through predictable AI-assisted outputs"
+      "Shipping personal sites that combine a content system with product narrative",
+      "Preparing a scalable frontend surface for a product still in active iteration"
     ],
-    "relatedProjects": ["signal-notes", "builder-journal"],
-    "tools": ["Prompt templates", "Structured outputs", "Workflow automation"]
+    "relatedProjects": ["fitness-app", "aipm-blog"],
+    "tools": ["App Router", "Metadata API", "Server Components", "Static-content foundations"]
+  },
+  {
+    "id": "react",
+    "name": "React",
+    "category": "Frontend Engineering",
+    "level": "advanced",
+    "description": "I use React to keep component structure and state boundaries clear so the site can grow in content without turning harder to maintain.",
+    "scenarios": [
+      "Building reusable cards and sections for profile, project, and reading pages",
+      "Leaving room for future product interaction without breaking the page system"
+    ],
+    "relatedProjects": ["fitness-app", "aipm-blog"],
+    "tools": ["Composition", "State boundaries", "Reusable UI", "Content-driven pages"]
+  },
+  {
+    "id": "prototype-translation",
+    "name": "Prototype Translation",
+    "category": "AI Delivery",
+    "level": "advanced",
+    "description": "I am actively practicing a shorter path from design intent to working UI by translating markdown and HTML prototypes more directly into code.",
+    "scenarios": [
+      "Handing structured markdown to AI and turning it into pages or components",
+      "Using HTML files as a fast visual checkpoint before full implementation"
+    ],
+    "relatedProjects": ["fitness-app", "aipm-blog"],
+    "tools": ["Markdown design specs", "HTML prototypes", "AI code translation", "Fast iteration"]
   }
 ]

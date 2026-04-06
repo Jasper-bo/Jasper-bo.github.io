@@ -1,98 +1,130 @@
 [
   {
-    "id": "inspired",
-    "title": "Inspired",
-    "author": "Marty Cagan",
-    "cover": "/images/books/inspired.svg",
-    "category": "Product",
+    "id": "ganfa",
+    "title": "Gan Fa",
+    "author": "Kazuo Inamori",
+    "cover": "/images/books/ganfa.svg",
+    "category": "Work Philosophy",
     "status": "completed",
-    "rating": 4.8,
-    "summary": "A practical reminder that product work is not feature delivery, but solving meaningful customer problems with strong teams.",
+    "rating": 3.8,
+    "summary": "This book reframes work, discipline, and long-term commitment in a way that makes serious effort feel less like a slogan and more like a method.",
     "takeaways": [
-      "Discovery quality usually decides whether delivery matters.",
-      "Good product teams align business, design, and engineering early."
+      "A lot of growth comes from doing ordinary work with unusual consistency.",
+      "Work is not only how we make a living; it is also where judgement and character get shaped."
     ],
     "recommend": true,
-    "noteUrl": "https://example.com/notes/inspired"
+    "noteUrl": "https://book.douban.com/subject/34850503//"
   },
   {
-    "id": "atomic-habits",
-    "title": "Atomic Habits",
-    "author": "James Clear",
-    "cover": "/images/books/atomic-habits.svg",
-    "category": "Habits",
+    "id": "huofa",
+    "title": "Huo Fa",
+    "author": "Kazuo Inamori",
+    "cover": "/images/books/huofa.svg",
+    "category": "Life",
     "status": "completed",
-    "rating": 4.7,
-    "summary": "Small behavior shifts compound when the environment and the feedback loop are designed on purpose.",
+    "rating": 3.9,
+    "summary": "It connects altruism, self-discipline, and personal cultivation, reminding me that growth is not only about ability but also about values and how one lives.",
     "takeaways": [
-      "Environment design beats motivation when consistency matters.",
-      "Tracking can be a product feature, but identity change is the real engine."
+      "Long-term thinking is not just about waiting; it is about repeatedly correcting attitude and choice.",
+      "The way you build products is deeply shaped by the kind of person you are becoming."
     ],
     "recommend": true,
-    "noteUrl": "https://example.com/notes/atomic-habits"
+    "noteUrl": "https://books.google.com/books/about/%E6%B4%BB%E6%B3%95.html?id=jfJMQwAACAAJ"
   },
   {
-    "id": "the-mom-test",
-    "title": "The Mom Test",
-    "author": "Rob Fitzpatrick",
-    "cover": "/images/books/the-mom-test.svg",
-    "category": "Startup",
+    "id": "seven-habits",
+    "title": "The 7 Habits of Highly Effective People",
+    "author": "Stephen R. Covey",
+    "cover": "/images/books/seven-habits.svg",
+    "category": "Growth",
     "status": "completed",
-    "rating": 4.6,
-    "summary": "A concise playbook for asking better product questions and avoiding polite but useless customer feedback.",
+    "rating": 4.3,
+    "summary": "From proactivity to first-things-first and win-win thinking, this book keeps pulling me back toward building a sustainable system for personal effectiveness.",
     "takeaways": [
-      "Ask about real behavior, not future intentions.",
-      "Bad customer conversations create false confidence very quickly."
+      "Real effectiveness is less about filling the schedule and more about protecting what matters before it becomes urgent.",
+      "Growth and collaboration both work better when they sit on principles instead of tricks."
     ],
     "recommend": true,
-    "noteUrl": "https://example.com/notes/the-mom-test"
+    "noteUrl": "https://book.douban.com/subject/26284789//"
   },
   {
-    "id": "ddia",
-    "title": "Designing Data-Intensive Applications",
-    "author": "Martin Kleppmann",
-    "cover": "/images/books/ddia.svg",
-    "category": "Technology",
-    "status": "reading",
-    "rating": 4.9,
-    "summary": "A deep read on reliability, data systems, and the infrastructure tradeoffs that appear once products grow beyond simple CRUD.",
-    "takeaways": [
-      "System design quality comes from understanding tradeoffs, not memorizing components.",
-      "Data flow decisions should reflect user experience priorities."
-    ],
-    "recommend": true,
-    "noteUrl": null
-  },
-  {
-    "id": "deep-work",
-    "title": "Deep Work",
-    "author": "Cal Newport",
-    "cover": "/images/books/deep-work.svg",
-    "category": "Thinking",
+    "id": "cruel-and-tender",
+    "title": "This World Is Both Cruel and Tender",
+    "author": "Justin Sun",
+    "cover": "/images/books/cruel-and-tender.svg",
+    "category": "Era Narrative",
     "status": "completed",
-    "rating": 4.4,
-    "summary": "A useful lens for protecting attention and designing work rhythms that support meaningful output.",
+    "rating": null,
+    "summary": "This book is strongly shaped by personal ambition and the context of its era, which made me think more about execution, drive, and narrative at the same time.",
     "takeaways": [
-      "Depth needs system support, not just discipline.",
-      "High-quality work often comes from deliberate constraints."
+      "In an era that feels both harsh and generous, steady action often decides the gap.",
+      "Personal narrative becomes powerful when it aligns with timing and opportunity."
     ],
     "recommend": false,
-    "noteUrl": "https://example.com/notes/deep-work"
+    "noteUrl": "https://www.ireader.com.cn/index.php?bid=12037158&ca=bookdetail.index"
   },
   {
-    "id": "build",
-    "title": "Build",
-    "author": "Tony Fadell",
-    "cover": "/images/books/build.svg",
+    "id": "yujun-product-methodology",
+    "title": "Yu Jun's Product Methodology",
+    "author": "Yu Jun",
+    "cover": "/images/books/yujun-product-methodology.svg",
     "category": "Product",
-    "status": "wishlist",
-    "rating": 4.7,
-    "summary": "A candid operator's view on building products, teams, and judgement over time.",
+    "status": "completed",
+    "rating": 3.9,
+    "summary": "This book helps me connect user value, transaction models, and product decisions into one way of thinking about what to build and why.",
     "takeaways": [
-      "Taste is developed through repetition and reflection.",
-      "Product decisions get sharper when they stay close to user pain."
+      "Products are not feature piles; they are ongoing tradeoffs between user value and business value.",
+      "Better product work requires understanding both user models and transaction models."
     ],
     "recommend": true,
-    "noteUrl": null
+    "noteUrl": "https://book.douban.com/subject/34907971//"
+  },
+  {
+    "id": "thinking-fast-and-slow",
+    "title": "Thinking, Fast and Slow",
+    "author": "Daniel Kahneman",
+    "cover": "/images/books/thinking-fast-and-slow.svg",
+    "category": "Cognition",
+    "status": "reading",
+    "rating": 4.2,
+    "summary": "It helps me re-examine decision-making, bias, and judgement through the lens of fast and slow thinking, which matters a lot in both product work and user understanding.",
+    "takeaways": [
+      "Many decisions that look rational are shaped much earlier by intuition and bias.",
+      "In product work, I need to watch both my own mental shortcuts and the ones users bring with them."
+    ],
+    "recommend": true,
+    "noteUrl": "https://book.douban.com/subject/37270984/"
+  },
+  {
+    "id": "hacking-growth",
+    "title": "Hacking Growth",
+    "author": "Fan Bing",
+    "cover": "/images/books/hacking-growth.svg",
+    "category": "Growth",
+    "status": "reading",
+    "rating": null,
+    "summary": "It breaks growth into a coordination problem across product, technology, data, and distribution, which keeps reminding me that growth should be built into the product itself.",
+    "takeaways": [
+      "Growth should live inside the product structure instead of being attached later as marketing.",
+      "Low-cost growth depends on repeatable experiments that can actually be tested and learned from."
+    ],
+    "recommend": true,
+    "noteUrl": "https://read.douban.com/ebook/12145181/"
+  },
+  {
+    "id": "contagious",
+    "title": "Contagious",
+    "author": "Jonah Berger",
+    "cover": "/images/books/contagious.svg",
+    "category": "Marketing",
+    "status": "reading",
+    "rating": 3.9,
+    "summary": "This book examines why ideas spread, which is highly relevant to how I package products, write publicly, and design hooks for communication.",
+    "takeaways": [
+      "People often share ideas not only for the information itself, but to express something about themselves.",
+      "If an idea needs to travel, it has to be designed so it is easier to retell and easier to act on."
+    ],
+    "recommend": true,
+    "noteUrl": "https://book.douban.com/subject/26830108/"
   }
 ]

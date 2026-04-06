@@ -1,93 +1,80 @@
 [
   {
-    "id": "react",
-    "name": "React",
-    "category": "前端工程",
+    "id": "ai-product-workflow",
+    "name": "AI Product Workflow",
+    "category": "AI 产品",
     "level": "expert",
-    "description": "我用 React 构建会随着产品增长仍保持可读性的组件系统，尤其关注组合方式、状态边界和内容驱动型 UI。",
+    "description": "我把 AI 视为产品团队的一部分，让它参与需求抓取、产品定义、文档串联和代码转译，而不只是写几个 Prompt。",
     "scenarios": [
-      "为内容密集型网站设计可复用的卡片与区块系统",
-      "构建交互深度可控的产品流程"
+      "从用户需求样本出发，快速构建问题定义与产品方向",
+      "让 MRD、BRD、PRD 和 MVP 保持在同一份上下文里推进"
     ],
-    "relatedProjects": ["builder-journal", "signal-notes", "tempo-checkin"],
-    "tools": ["React 19", "Hooks", "Server Components", "组合模式"]
-  },
-  {
-    "id": "typescript",
-    "name": "TypeScript",
-    "category": "前端工程",
-    "level": "advanced",
-    "description": "我依赖 TypeScript 把内容模型、组件契约和 UI 状态表达得足够明确，为长期维护留出空间。",
-    "scenarios": [
-      "为项目、书单和技能页定义可扩展的内容 schema",
-      "降低复杂组件接口中的歧义"
-    ],
-    "relatedProjects": ["builder-journal", "musclemap", "signal-notes"],
-    "tools": ["严格类型", "类型化内容模型", "基于联合类型的状态设计"]
-  },
-  {
-    "id": "nextjs",
-    "name": "Next.js",
-    "category": "全栈产品",
-    "level": "advanced",
-    "description": "当我需要一个兼顾速度、路由、SEO，以及从静态内容平滑走向动态产品逻辑的表面层时，Next.js 通常是默认选择。",
-    "scenarios": [
-      "交付元数据结构完善的作品集与内容型网站",
-      "构建可以从本地数据逐步过渡到 CMS 或后端服务的 SaaS 前端"
-    ],
-    "relatedProjects": ["builder-journal", "musclemap", "signal-notes"],
-    "tools": ["App Router", "Metadata API", "Server Components", "可扩展到 ISR 的架构"]
-  },
-  {
-    "id": "tailwindcss",
-    "name": "Tailwind CSS",
-    "category": "UI 系统",
-    "level": "advanced",
-    "description": "我用 Tailwind 搭建冷静的界面系统，让间距、响应式行为和视觉 token 都保持可预测且易维护。",
-    "scenarios": [
-      "把设计方向快速翻译成可复用的视觉语言",
-      "在不同产品之间维护一致的卡片、区块和工具类模式"
-    ],
-    "relatedProjects": ["builder-journal", "tempo-checkin", "musclemap"],
-    "tools": ["设计 token", "响应式系统", "Utility-first 样式方法"]
+    "relatedProjects": ["fitness-app", "aipm-blog"],
+    "tools": ["AI 爬虫", "结构化 Prompt", "MRD / BRD / PRD / MVP", "Markdown-to-Code"]
   },
   {
     "id": "product-thinking",
     "name": "Product Thinking",
     "category": "产品策略",
     "level": "expert",
-    "description": "我会围绕用户痛点、任务清晰度、反馈回路，以及哪些地方在 v1 应该刻意保持简单来定义产品工作。",
+    "description": "我会围绕用户价值、交易逻辑、功能边界和做减法的必要性来定义产品，而不是先从功能清单开始。",
     "scenarios": [
-      "为早期产品确定合理的功能优先级",
-      "把模糊想法整理成清晰的问题与解决方案叙事"
+      "为健身房用户这样的垂直场景收敛问题范围",
+      "把模糊的想法整理成清晰的问题、用户和价值叙事"
     ],
-    "relatedProjects": ["musclemap", "tempo-checkin", "signal-notes"],
-    "tools": ["用户问题 framing", "范围设计", "案例式叙事"]
+    "relatedProjects": ["fitness-app", "aipm-blog"],
+    "tools": ["用户价值", "交易模型", "范围设计", "问题 framing"]
   },
   {
-    "id": "ui-structuring",
-    "name": "UI Structuring",
-    "category": "UI 系统",
+    "id": "content-modeling",
+    "name": "Content Modeling",
+    "category": "内容系统",
     "level": "advanced",
-    "description": "我很在意信息层级、视觉节奏，以及布局选择如何帮助读者更快理解产品与构建者本人。",
+    "description": "我习惯先把内容拆成结构化字段，再去做界面表达，这样项目、书单和个人叙事都能持续复用和扩展。",
     "scenarios": [
-      "在高信息密度页面中仍保留冷静感",
-      "设计能快速讲清产品故事的落地页和作品集页面"
+      "为 blog 设计长期可维护的 about、projects、books 和 skills schema",
+      "让个人品牌表达从一次性包装变成持续更新的系统"
     ],
-    "relatedProjects": ["builder-journal", "musclemap"],
-    "tools": ["信息层级", "网格系统", "可阅读的内容承载面"]
+    "relatedProjects": ["aipm-blog"],
+    "tools": ["JSON Schema 思维", "内容建模", "双语内容组织", "可复用区块"]
   },
   {
-    "id": "prompt-design",
-    "name": "Prompt Design",
-    "category": "AI 工作流",
-    "level": "proficient",
-    "description": "我把 Prompt 设计当作工作流工具的一部分，通过约束输入、条件和输出格式，让 AI 真正支持产品与内容任务。",
+    "id": "nextjs",
+    "name": "Next.js",
+    "category": "前端工程",
+    "level": "advanced",
+    "description": "当我需要同时兼顾内容页面、SEO、产品展示和后续扩展时，Next.js 是我最稳定的交付底座。",
     "scenarios": [
-      "为研究和内容工作流生成结构化初稿",
-      "通过更可预测的 AI 输出增强内部工具"
+      "快速搭建兼具内容系统和产品叙事能力的个人网站",
+      "为仍在迭代中的产品准备一个可扩展的前端表层"
     ],
-    "relatedProjects": ["signal-notes", "builder-journal"],
-    "tools": ["Prompt 模板", "结构化输出", "工作流自动化"]
+    "relatedProjects": ["fitness-app", "aipm-blog"],
+    "tools": ["App Router", "Metadata API", "Server Components", "静态内容驱动"]
+  },
+  {
+    "id": "react",
+    "name": "React",
+    "category": "前端工程",
+    "level": "advanced",
+    "description": "我用 React 组织组件和状态边界，让页面在内容增长后仍然保持清晰、可拆分和便于维护。",
+    "scenarios": [
+      "把个人 brand、项目卡片和书籍卡片做成可复用组件系统",
+      "为产品界面预留后续扩展与交互升级空间"
+    ],
+    "relatedProjects": ["fitness-app", "aipm-blog"],
+    "tools": ["组件组合", "状态边界", "可复用 UI", "内容驱动页面"]
+  },
+  {
+    "id": "prototype-translation",
+    "name": "Prototype Translation",
+    "category": "AI 交付",
+    "level": "advanced",
+    "description": "我正在练习把设计说明、markdown 和 HTML 原型更直接地转成代码，尽量缩短从想法到可运行界面的距离。",
+    "scenarios": [
+      "把结构化 markdown 直接交给 AI 转成页面或组件",
+      "用 HTML 文件快速验证视觉和交互，再继续进入正式开发"
+    ],
+    "relatedProjects": ["fitness-app", "aipm-blog"],
+    "tools": ["Markdown 设计说明", "HTML 原型", "AI 代码转译", "快速迭代"]
   }
 ]

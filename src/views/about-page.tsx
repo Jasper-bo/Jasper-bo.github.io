@@ -79,6 +79,91 @@ export function AboutPageView({ locale }: AboutPageViewProps) {
           </aside>
         </section>
 
+        <section className="grid gap-6 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)]">
+          <div className="surface p-8">
+            <SectionTitle
+              eyebrow={dictionary.aboutPage.profileEyebrow}
+              title={dictionary.aboutPage.profileTitle}
+              description={dictionary.aboutPage.profileDescription}
+            />
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              {about.profileHighlights.map((item) => (
+                <article
+                  key={item.label}
+                  data-liquid
+                  className="surface surface-subtle rounded-[1.75rem] p-5"
+                >
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                    {item.label}
+                  </p>
+                  <h3 className="mt-4 text-lg font-semibold tracking-[-0.03em] text-foreground">
+                    {item.value}
+                  </h3>
+                  <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                    {item.detail}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </div>
+
+          <div className="surface surface-strong p-8">
+            <SectionTitle
+              eyebrow={dictionary.aboutPage.workflowEyebrow}
+              title={dictionary.aboutPage.workflowTitle}
+              description={dictionary.aboutPage.workflowDescription}
+            />
+
+            <div className="mt-8 space-y-5">
+              <div className="surface surface-subtle rounded-[1.75rem] p-6">
+                <h3 className="text-xl font-semibold tracking-[-0.03em] text-foreground">
+                  {about.workflow.title}
+                </h3>
+                <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                  {about.workflow.description}
+                </p>
+              </div>
+
+              <div className="grid gap-4 md:grid-cols-2">
+                {about.workflow.steps.map((step, index) => (
+                  <article
+                    key={step.title}
+                    data-liquid
+                    className="surface surface-subtle rounded-[1.75rem] p-5"
+                  >
+                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                      0{index + 1}
+                    </p>
+                    <h3 className="mt-4 text-lg font-semibold tracking-[-0.03em] text-foreground">
+                      {step.title}
+                    </h3>
+                    <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                      {step.description}
+                    </p>
+                  </article>
+                ))}
+              </div>
+
+              <div className="surface surface-subtle rounded-[1.75rem] p-6">
+                <p className="text-sm font-semibold text-foreground">
+                  {dictionary.aboutPage.workflowPrinciples}
+                </p>
+                <ul className="mt-4 space-y-3">
+                  {about.workflow.principles.map((item) => (
+                    <li
+                      key={item}
+                      className="flex gap-3 text-sm leading-7 text-muted-foreground"
+                    >
+                      <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-foreground/80" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
           <div className="surface p-8">
             <SectionTitle

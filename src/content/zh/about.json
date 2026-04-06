@@ -1,46 +1,63 @@
 {
-  "name": "何君博",
-  "title": "独立构建者 / 产品思维驱动的前端工程师",
-  "tagline": "我设计并交付冷静、好用的数字产品，让产品思考与前端表达在同一个界面里相遇。",
+  "name": "贺俊博",
+  "title": "AIPM / 计算机科学与技术专业学生 / AI 时代的探索者",
+  "tagline": "我用 AI 驱动用户研究、产品定义与代码交付，正在把一款只面向健身房用户的 Fitness App 从真实需求直接推进到可运行产品。",
   "bio": [
-    "我的工作横跨前端工程、产品设计与独立产品构建。我很在意把模糊的想法整理成清晰的用户路径、结构化界面，以及长期维护起来仍然舒服的系统。",
-    "最近的大部分工作集中在健身、个人知识系统以及内容驱动型产品上。我很享受这样一个交汇点：产品 framing、数据结构、界面节奏与工程质量必须彼此支撑。"
+    "目前我是计算机科学与技术专业的大二学生。我把写代码、做产品和写 blog 放在同一个成长系统里：一边用真实项目检验理解，一边把方法论沉淀成长期可复用的内容资产。",
+    "我更关注 AI 时代的产品经理会如何工作。对我来说，AIPM 不是一个标签，而是一套正在持续打磨的实践：让 AI 参与需求抓取、产品定义、文档生成、设计转译与代码落地。"
   ],
   "avatar": "/images/avatar-junbo.svg",
   "socials": [
     {
       "label": "邮箱",
-      "href": "mailto:hello@junbohe.dev",
-      "value": "hello@junbohe.dev"
+      "href": "mailto:2909066560@qq.com",
+      "value": "2909066560@qq.com"
     },
     {
       "label": "GitHub",
-      "href": "https://github.com/junbohe",
-      "value": "github.com/junbohe"
+      "href": "https://github.com/Jasper-bo",
+      "value": "github.com/Jasper-bo"
     },
     {
       "label": "X",
-      "href": "https://x.com/junbohe",
-      "value": "@junbohe"
+      "href": "https://x.com/mniu61934",
+      "value": "@mniu61934"
+    }
+  ],
+  "profileHighlights": [
+    {
+      "label": "当前身份",
+      "value": "计算机科学与技术专业大二学生",
+      "detail": "我希望把课堂里的工程训练，直接转成真实产品和长期有效的个人能力。"
     },
     {
-      "label": "LinkedIn",
-      "href": "https://www.linkedin.com/in/junbohe",
-      "value": "linkedin.com/in/junbohe"
+      "label": "长期目标",
+      "value": "AIPM AI 时代的探索者",
+      "detail": "持续观察 AI 如何改变产品经理的研究、判断、协作和交付方式。"
+    },
+    {
+      "label": "当前产品",
+      "value": "Fitness App",
+      "detail": "只服务健身房用户，尽量在复杂市场里做减法，目前仍在开发中。"
+    },
+    {
+      "label": "内容方向",
+      "value": "Blog + Reading + Product Notes",
+      "detail": "把项目、书单、方法论和成长过程都沉淀为后续可复用的内容资产。"
     }
   ],
   "focusAreas": [
     {
-      "title": "健身 x 产品",
-      "description": "探索训练数据、习惯回路与进度可视化，如何变成更好的个人产品。"
+      "title": "健身房场景产品",
+      "description": "围绕健身房用户的真实训练流程做产品收敛，只保留真正影响体验和决策的功能。"
     },
     {
-      "title": "内容系统",
-      "description": "设计结构稳定、界面易扩展的网站与发布流程，让内容增长不会把 UI 弄乱。"
+      "title": "AI 原生产品工作流",
+      "description": "把 AI 从辅助工具升级为流程参与者，让需求、文档、设计和代码之间保持连续。"
     },
     {
-      "title": "冷静软件",
-      "description": "构建有思考、可阅读、低噪音的界面，同时不牺牲产品深度。"
+      "title": "可复用内容系统",
+      "description": "让 blog 不只是展示页，而是一个长期可扩展的内容中枢，承载项目、阅读和方法论。"
     }
   ],
   "tools": [
@@ -49,39 +66,75 @@
       "items": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js"]
     },
     {
-      "category": "产品工作流",
-      "items": ["Figma", "Linear", "Notion", "Vercel", "GitHub"]
+      "category": "AI 产品工作流",
+      "items": ["AI 爬虫", "结构化 Prompt", "MRD / BRD / PRD / MVP", "Markdown-to-Code"]
     },
     {
-      "category": "AI 辅助工作流",
-      "items": ["OpenAI API", "Prompt 设计", "自动化脚本", "内容结构化"]
+      "category": "发布与沉淀",
+      "items": ["GitHub", "Markdown", "Vercel", "内容建模", "Blog 系统"]
     }
   ],
+  "workflow": {
+    "title": "AI 原生产品工作流",
+    "description": "我更倾向于把 AI 当成产品团队的一部分，而不是单点提效工具。当前方法论围绕真实需求、结构化文档和直接交付展开。",
+    "steps": [
+      {
+        "title": "AI 爬虫抓需求",
+        "description": "先用 AI 爬虫抓取健身房用户的真实需求、吐槽与重复出现的问题，尽量在做功能之前先获得一手样本。"
+      },
+      {
+        "title": "AI 定义产品问题",
+        "description": "基于需求数据，让 AI 协助回答为什么值得做、为谁做、靠什么赚钱，以及什么功能才算真正有必要。"
+      },
+      {
+        "title": "串联 MRD 到 MVP",
+        "description": "围绕同一份上下文持续生成 MRD、BRD、PRD 和 MVP 范围，减少信息在不同文档之间反复丢失。"
+      },
+      {
+        "title": "尽量一次完成核心版本",
+        "description": "我更偏向先想清楚关键闭环，再一次性把核心能力做完整，而不是频繁用版本更新来修补方向。"
+      },
+      {
+        "title": "Markdown 直接给 AI 读",
+        "description": "产品设计不再停留在传统原型图上，而是尽量转成结构化 markdown，让 AI 能直接理解和执行。"
+      },
+      {
+        "title": "HTML 原型继续转代码",
+        "description": "需要视觉验证时，用 AI 先把设计原型转成 HTML 文件，再继续推进成正式的前端代码和交互。"
+      }
+    ],
+    "principles": [
+      "只做对健身房用户真正必要的功能，而不是复制市面上泛健身产品的大而全。",
+      "先把用户价值和交易逻辑说清楚，再讨论功能细节和界面表达。",
+      "所有关键输出尽量结构化，方便复用、复盘和后续维护。",
+      "让 blog 和产品一起迭代，把方法论沉淀成能持续增长的个人资产。"
+    ]
+  },
   "now": [
-    "正在打磨一个健身记录产品，让肌群平衡不再隐藏在原始训练表格里，而是能够被直观看见。",
-    "持续优化个人网站架构，让内容今天可以本地优先，未来也能平滑过渡到 headless CMS。",
-    "更频繁地公开写作，记录产品品味、界面结构与工程质量之间的重叠地带。"
+    "正在开发一款只面向健身房用户的 Fitness App，希望在过度复杂的健身产品市场里真正做减法。",
+    "持续把“AI 爬虫 -> 需求数据 -> 产品定义 -> 文档生成 -> 代码交付”沉淀成可复用的方法系统。",
+    "让个人 blog 成为长期可迭代的品牌中枢，承载项目、书单、方法论和成长记录。"
   ],
   "timeline": [
     {
-      "period": "2020",
-      "title": "从“交付页面”转向“思考产品系统”",
-      "description": "开始不再只关注单个页面，而是更在意内容建模、用户流程，以及可维护的前端架构。"
+      "period": "起点",
+      "title": "从学写代码，逐渐转向理解产品和用户",
+      "description": "开始意识到写出功能只是起点，更重要的是理解人为什么会用、为什么会留下，以及为什么愿意持续使用。"
     },
     {
-      "period": "2022",
-      "title": "开始为自己的工作流做小工具",
-      "description": "做了一些笔记、规划和知识收集的小工具，让产品迭代从想法变得更具体。"
+      "period": "大学阶段",
+      "title": "把计算机专业训练和产品意识结合起来",
+      "description": "一边学习工程基础，一边通过真实项目验证自己对需求、结构和交付的理解。"
     },
     {
-      "period": "2024",
-      "title": "把注意力集中到健康与训练产品",
-      "description": "把自己在训练中的痛点转成产品想法，围绕一致性、进步反馈和可视化展开。"
+      "period": "公开表达",
+      "title": "开始用 blog 沉淀阅读、项目和方法论",
+      "description": "把个人网站从展示页面转成一个可持续积累的内容系统，让输入和输出都更有结构。"
     },
     {
       "period": "现在",
-      "title": "构建一个带有更强叙事力的独立产品作品集",
-      "description": "把案例化表达、更干净的前端系统以及更明确的个人品牌叙事结合起来。"
+      "title": "围绕健身房产品和 AIPM 路线持续迭代",
+      "description": "把 AI 原生工作流真正跑进产品研发过程中，同时持续打磨个人品牌表达与项目叙事。"
     }
   ]
 }

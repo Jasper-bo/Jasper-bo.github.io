@@ -49,20 +49,21 @@ export function ProjectsPageView({ locale }: ProjectsPageViewProps) {
           </div>
         </section>
 
-        <section className="space-y-8">
-          <SectionTitle
-            eyebrow={dictionary.projectsPage.archiveEyebrow}
-            title={dictionary.projectsPage.archiveTitle}
-            description={dictionary.projectsPage.archiveDescription}
-          />
-          <div className="grid gap-6 xl:grid-cols-2">
-            {archiveProjects.map((project) => (
-              <ProjectCard key={project.id} project={project} locale={locale} />
-            ))}
-          </div>
-        </section>
+        {archiveProjects.length ? (
+          <section className="space-y-8">
+            <SectionTitle
+              eyebrow={dictionary.projectsPage.archiveEyebrow}
+              title={dictionary.projectsPage.archiveTitle}
+              description={dictionary.projectsPage.archiveDescription}
+            />
+            <div className="grid gap-6 xl:grid-cols-2">
+              {archiveProjects.map((project) => (
+                <ProjectCard key={project.id} project={project} locale={locale} />
+              ))}
+            </div>
+          </section>
+        ) : null}
       </Container>
     </div>
   );
 }
-

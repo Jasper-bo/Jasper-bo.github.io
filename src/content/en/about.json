@@ -1,87 +1,140 @@
 {
   "name": "Junbo He",
-  "title": "Independent Builder / Product-minded Frontend Engineer",
-  "tagline": "I design and ship calm, useful digital products where product thinking and frontend craft meet.",
+  "title": "AIPM / Computer Science Student / AI-native Product Explorer",
+  "tagline": "I use AI across user research, product definition, and code delivery, and I am currently building a fitness app designed specifically for gym users.",
   "bio": [
-    "I work at the intersection of frontend engineering, product design, and independent product building. I care about turning fuzzy ideas into clear user journeys, structured interfaces, and systems that are pleasant to maintain.",
-    "Most of my recent work lives around fitness, personal knowledge systems, and content-driven products. I enjoy the part where product framing, data structure, interface rhythm, and engineering quality all have to support each other."
+    "I am currently a sophomore majoring in Computer Science and Technology. I treat coding, product building, and blogging as one connected growth system: real projects sharpen my judgement, and the lessons become reusable content assets.",
+    "What I care about most is how product work changes in the AI era. For me, AIPM is not a label but an evolving practice: using AI for research capture, product definition, document generation, design translation, and code implementation."
   ],
   "avatar": "/images/avatar-junbo.svg",
   "socials": [
     {
       "label": "Email",
-      "href": "mailto:hello@junbohe.dev",
-      "value": "hello@junbohe.dev"
+      "href": "mailto:2909066560@qq.com",
+      "value": "2909066560@qq.com"
     },
     {
       "label": "GitHub",
-      "href": "https://github.com/junbohe",
-      "value": "github.com/junbohe"
+      "href": "https://github.com/Jasper-bo",
+      "value": "github.com/Jasper-bo"
     },
     {
       "label": "X",
-      "href": "https://x.com/junbohe",
-      "value": "@junbohe"
+      "href": "https://x.com/mniu61934",
+      "value": "@mniu61934"
+    }
+  ],
+  "profileHighlights": [
+    {
+      "label": "Current identity",
+      "value": "Sophomore in Computer Science and Technology",
+      "detail": "I want my academic training in engineering to turn into real products and lasting capabilities."
     },
     {
-      "label": "LinkedIn",
-      "href": "https://www.linkedin.com/in/junbohe",
-      "value": "linkedin.com/in/junbohe"
+      "label": "Long-term goal",
+      "value": "An AIPM explorer for the AI era",
+      "detail": "I am tracking how AI changes the way product managers research, decide, collaborate, and ship."
+    },
+    {
+      "label": "Current product",
+      "value": "Fitness App",
+      "detail": "Built only for gym users, deliberately narrowed down, and currently under development."
+    },
+    {
+      "label": "Content direction",
+      "value": "Blog + Reading + Product Notes",
+      "detail": "I want projects, books, methods, and growth to become assets I can continuously reuse and improve."
     }
   ],
   "focusAreas": [
     {
-      "title": "Fitness x Product",
-      "description": "Exploring how training data, habit loops, and progress visualization can become better personal products."
+      "title": "Gym-specific products",
+      "description": "I want to design software around the real flow of gym users and keep only the features that truly matter inside that context."
     },
     {
-      "title": "Content Systems",
-      "description": "Designing websites and publishing flows where content stays structured and the UI remains easy to extend."
+      "title": "AI-native product workflow",
+      "description": "I treat AI as a participant in the process so research, documents, design intent, and code stay connected."
     },
     {
-      "title": "Calm Software",
-      "description": "Building interfaces that feel thoughtful, readable, and low-noise without losing product depth."
+      "title": "Reusable content systems",
+      "description": "I want the blog to be more than a portfolio page: it should become a durable system for projects, reading, and methods."
     }
   ],
   "tools": [
     {
-      "category": "Core Stack",
+      "category": "Core stack",
       "items": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js"]
     },
     {
-      "category": "Product Workflow",
-      "items": ["Figma", "Linear", "Notion", "Vercel", "GitHub"]
+      "category": "AI product workflow",
+      "items": ["AI crawling", "Structured prompts", "MRD / BRD / PRD / MVP", "Markdown-to-Code"]
     },
     {
-      "category": "AI-assisted Workflow",
-      "items": ["OpenAI API", "Prompt design", "Automation scripts", "Content structuring"]
+      "category": "Publishing and capture",
+      "items": ["GitHub", "Markdown", "Vercel", "Content modeling", "Blog system"]
     }
   ],
+  "workflow": {
+    "title": "AI-native product workflow",
+    "description": "I prefer treating AI as part of the product team instead of a one-off efficiency tool. The current method is built around real demand, structured documents, and direct delivery.",
+    "steps": [
+      {
+        "title": "Use AI crawlers to capture demand",
+        "description": "I start by collecting recurring complaints, needs, and patterns from gym users so product decisions begin with real samples instead of assumptions."
+      },
+      {
+        "title": "Let AI define the product question",
+        "description": "Based on the demand data, I use AI to pressure-test why the product should exist, who it serves, how it can make money, and which features are truly necessary."
+      },
+      {
+        "title": "Chain MRD through MVP",
+        "description": "I keep one connected context moving from MRD to BRD to PRD to MVP scope so product meaning does not get lost between documents."
+      },
+      {
+        "title": "Complete the core version in one pass",
+        "description": "I prefer clarifying the key loop first and then finishing the core version more completely, instead of relying on frequent version updates to repair direction."
+      },
+      {
+        "title": "Turn markdown into AI-readable design",
+        "description": "Instead of stopping at a traditional prototype, I express design intent in structured markdown so AI can read and act on it directly."
+      },
+      {
+        "title": "Translate HTML prototypes into production code",
+        "description": "When I need visual validation, I let AI convert prototype intent into HTML first, then keep pushing it into actual frontend code."
+      }
+    ],
+    "principles": [
+      "Only build what is truly necessary for gym users instead of copying broad fitness apps.",
+      "Clarify user value and transaction logic before expanding features or interface detail.",
+      "Keep important outputs structured so they are easier to reuse, review, and maintain.",
+      "Let the blog evolve alongside the product so the method becomes part of a lasting personal asset."
+    ]
+  },
   "now": [
-    "Shaping a fitness logging product that makes muscle-group balance visible instead of hiding it inside raw workout tables.",
-    "Refining a personal site architecture that keeps content local-first today and ready for headless CMS tomorrow.",
-    "Writing more in public about the overlap between product taste, UI structure, and engineering quality."
+    "Building a fitness app specifically for gym users and trying to remove as much unnecessary complexity as possible.",
+    "Refining a reusable method built around AI crawling, demand data, product definition, document generation, and code delivery.",
+    "Turning the personal blog into a long-term brand hub that can carry projects, reading, methods, and growth over time."
   ],
   "timeline": [
     {
-      "period": "2020",
-      "title": "Moved from shipping pages to thinking in product systems",
-      "description": "Started caring less about isolated screens and more about content modeling, user flow, and maintainable frontend architecture."
+      "period": "Starting point",
+      "title": "Moved from learning code toward understanding products and users",
+      "description": "I began to see that shipping features is only the beginning; what matters more is understanding why people use something and why they stay."
     },
     {
-      "period": "2022",
-      "title": "Began building small tools for my own workflows",
-      "description": "Created internal tools for notes, planning, and knowledge capture, which made product iteration feel much more practical."
+      "period": "University phase",
+      "title": "Connected computer science training with product awareness",
+      "description": "I kept building up engineering basics while using real projects to test my understanding of demand, structure, and delivery."
     },
     {
-      "period": "2024",
-      "title": "Focused on health and training products",
-      "description": "Turned personal training pain points into product ideas around consistency, progression, and visual feedback."
+      "period": "Public writing",
+      "title": "Started using a blog to store reading, projects, and methods",
+      "description": "The website gradually shifted from a showcase page into a system for long-term knowledge capture and clearer storytelling."
     },
     {
       "period": "Now",
-      "title": "Building an independent product portfolio with stronger storytelling",
-      "description": "Combining case-study thinking, cleaner frontend systems, and a more intentional personal brand presence."
+      "title": "Iterating around gym products and an AIPM path",
+      "description": "I am pushing an AI-native workflow into real product building while continuously improving how I present my work and thinking."
     }
   ]
 }

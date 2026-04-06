@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" fill="none">
+  <rect width="1200" height="750" rx="48" fill="#F6F7FB"/>
+  <rect x="52" y="52" width="1096" height="646" rx="34" fill="#FFFFFF" stroke="#DCE4EE"/>
+  <text x="96" y="136" fill="#111827" font-family="Arial, sans-serif" font-size="56" font-weight="700">AIPM Blog</text>
+  <text x="96" y="184" fill="#64748B" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="24">Projects, books, workflow, and personal brand in one content system</text>
+  <rect x="96" y="238" width="316" height="168" rx="28" fill="#EEF4FF"/>
+  <rect x="444" y="238" width="316" height="168" rx="28" fill="#F2F8F6"/>
+  <rect x="792" y="238" width="312" height="168" rx="28" fill="#FFF4EA"/>
+  <rect x="96" y="438" width="484" height="180" rx="28" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <rect x="612" y="438" width="492" height="180" rx="28" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="130" y="288" fill="#3158B8" font-family="Arial, sans-serif" font-size="24" font-weight="700">Projects</text>
+  <text x="478" y="288" fill="#3E7D71" font-family="Arial, sans-serif" font-size="24" font-weight="700">Books</text>
+  <text x="824" y="288" fill="#C97232" font-family="Arial, sans-serif" font-size="24" font-weight="700">Workflow</text>
+  <rect x="130" y="320" width="168" height="16" rx="8" fill="#9EB5EE"/>
+  <rect x="130" y="352" width="132" height="16" rx="8" fill="#D4E0FF"/>
+  <rect x="478" y="320" width="182" height="16" rx="8" fill="#8CCBB7"/>
+  <rect x="478" y="352" width="120" height="16" rx="8" fill="#CFE9E0"/>
+  <rect x="824" y="320" width="184" height="16" rx="8" fill="#EAB17D"/>
+  <rect x="824" y="352" width="136" height="16" rx="8" fill="#F7D5B5"/>
+  <text x="130" y="490" fill="#111827" font-family="Arial, sans-serif" font-size="28" font-weight="700">Structured profile</text>
+  <rect x="130" y="526" width="216" height="18" rx="9" fill="#CBD5E1"/>
+  <rect x="130" y="562" width="168" height="18" rx="9" fill="#E2E8F0"/>
+  <text x="646" y="490" fill="#111827" font-family="Arial, sans-serif" font-size="28" font-weight="700">Reusable content model</text>
+  <rect x="646" y="526" width="244" height="18" rx="9" fill="#CBD5E1"/>
+  <rect x="646" y="562" width="198" height="18" rx="9" fill="#E2E8F0"/>
+</svg>

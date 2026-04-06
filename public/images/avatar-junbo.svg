@@ -8,6 +8,6 @@
   <circle cx="434" cy="284" r="14" fill="#2B3443"/>
   <path d="M344 355C358.667 373 377.333 382 400 382C422.667 382 441.333 373 456 355" stroke="#2B3443" stroke-width="14" stroke-linecap="round"/>
   <path d="M312 228C335.333 194.667 371.333 178 420 178C468.667 178 506 200.333 532 245" stroke="#2B3443" stroke-width="26" stroke-linecap="round"/>
-  <text x="92" y="116" fill="#111827" font-family="Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="3">JUNBO HE</text>
-  <text x="92" y="156" fill="#677489" font-family="Arial, sans-serif" font-size="22">Product-minded Frontend Engineer</text>
+  <text x="92" y="116" fill="#111827" font-family="Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="3">HE JUNBO</text>
+  <text x="92" y="156" fill="#677489" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="22">AIPM / AI Product Explorer</text>
 </svg>

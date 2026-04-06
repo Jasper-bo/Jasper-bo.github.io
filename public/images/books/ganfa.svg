@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" fill="none">
+  <rect width="600" height="800" rx="40" fill="#F9F3EB"/>
+  <rect x="46" y="46" width="508" height="708" rx="30" fill="#FFF9F1" stroke="#EED4B0"/>
+  <rect x="88" y="92" width="124" height="34" rx="17" fill="#FFE1C2"/>
+  <text x="120" y="114" fill="#A54B16" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="2">WORK</text>
+  <text x="88" y="274" fill="#1F2937" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="104" font-weight="700">干法</text>
+  <text x="88" y="342" fill="#7C5A3A" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="24">稻盛和夫</text>
+  <rect x="88" y="412" width="424" height="180" rx="28" fill="#F7D1A7"/>
+  <rect x="124" y="452" width="88" height="96" rx="18" fill="#C85D1C"/>
+  <rect x="236" y="452" width="88" height="96" rx="18" fill="#D97A35"/>
+  <rect x="348" y="452" width="128" height="26" rx="13" fill="#8F3E12"/>
+  <rect x="348" y="500" width="96" height="26" rx="13" fill="#BE6A2F"/>
+  <rect x="348" y="548" width="132" height="26" rx="13" fill="#E8A76A"/>
+</svg>

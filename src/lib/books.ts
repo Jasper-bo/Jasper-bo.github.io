@@ -27,7 +27,13 @@ export function getBooks(locale: Locale = defaultLocale) {
       return byStatus;
     }
 
-    return right.rating - left.rating;
+    const byRecommendation = Number(right.recommend) - Number(left.recommend);
+
+    if (byRecommendation !== 0) {
+      return byRecommendation;
+    }
+
+    return (right.rating ?? 0) - (left.rating ?? 0);
   });
 }
 

@@ -14,6 +14,7 @@ interface BookCardProps {
 
 export function BookCard({ book, locale }: BookCardProps) {
   const dictionary = getDictionary(locale);
+  const hasRating = typeof book.rating === "number";
 
   return (
     <article data-liquid className="group surface surface-strong flex h-full flex-col overflow-hidden">
@@ -55,10 +56,16 @@ export function BookCard({ book, locale }: BookCardProps) {
           </ul>
         </div>
 
-        <div className="mt-auto flex items-center justify-between border-t border-white/18 pt-5">
-          <span className="text-sm font-medium text-foreground">
-            {dictionary.bookCard.ratingLabel} {book.rating.toFixed(1)} / 5
-          </span>
+        <div
+          className={`mt-auto flex items-center gap-4 border-t border-white/18 pt-5 ${
+            hasRating ? "justify-between" : "justify-end"
+          }`}
+        >
+          {hasRating ? (
+            <span className="text-sm font-medium text-foreground">
+              {dictionary.bookCard.ratingLabel} {book.rating?.toFixed(1)} / 5
+            </span>
+          ) : null}
           {book.noteUrl ? (
             <Link
               href={book.noteUrl}

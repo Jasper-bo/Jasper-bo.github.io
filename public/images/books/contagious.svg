@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" fill="none">
+  <rect width="600" height="800" rx="40" fill="#FFF1EC"/>
+  <rect x="46" y="46" width="508" height="708" rx="30" fill="#FFF8F5" stroke="#F3C6B6"/>
+  <rect x="88" y="92" width="156" height="34" rx="17" fill="#FFE2D8"/>
+  <text x="116" y="114" fill="#D9593D" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="2">SHARING</text>
+  <text x="88" y="266" fill="#B83920" font-family="Arial, sans-serif" font-size="84" font-weight="700">Contagious</text>
+  <text x="88" y="324" fill="#6B7280" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="24">乔纳·伯杰</text>
+  <circle cx="304" cy="520" r="108" fill="#FFD1C4"/>
+  <circle cx="304" cy="520" r="74" fill="#FFAF9B"/>
+  <circle cx="304" cy="520" r="40" fill="#D9593D"/>
+  <rect x="88" y="650" width="156" height="20" rx="10" fill="#D9593D"/>
+  <rect x="88" y="688" width="118" height="20" rx="10" fill="#F48C74"/>
+</svg>

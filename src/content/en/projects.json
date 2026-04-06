@@ -1,141 +1,73 @@
 [
   {
-    "id": "musclemap",
-    "title": "MuscleMap",
-    "slug": "musclemap",
-    "tagline": "A visual training journal that shows where your effort actually goes.",
-    "description": "MuscleMap turns raw workout logs into a clear weekly picture of muscle-group coverage, helping lifters spot imbalance before progress stalls.",
-    "goal": "Make strength training feedback more visual, less spreadsheet-like, and easier to act on after every week of training.",
-    "coverImage": "/images/projects/musclemap.svg",
-    "tags": ["Fitness", "SaaS", "Visualization"],
+    "id": "fitness-app",
+    "title": "Fitness App",
+    "slug": "fitness-app",
+    "tagline": "A training product narrowed specifically for gym users.",
+    "description": "This is the product I am currently building. The goal is not to make a bigger fitness app, but to reduce the experience down to the core tasks that truly matter inside a gym workflow.",
+    "goal": "Build a lighter, more direct, lower-noise product loop around the single scenario of gym training.",
+    "coverImage": "/images/projects/fitness-app.svg",
+    "tags": ["Fitness", "Gym", "AI Product"],
     "status": "beta",
-    "role": "Product strategy, UX structure, frontend architecture, implementation",
-    "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Chart.js"],
-    "targetUsers": ["Intermediate lifters", "Self-coached trainees", "Coaches with lean workflows"],
-    "problem": "Most workout trackers record exercises well but fail to show whether overall training volume is balanced across muscle groups and movement patterns.",
-    "solution": "I designed a training dashboard that translates logged sets into muscle-group distribution, weekly trends, and simple prompts about what may be under-trained.",
+    "role": "User research, product definition, requirements writing, AI-assisted development",
+    "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "Markdown", "AI Workflow"],
+    "targetUsers": ["Gym trainees", "Consistency-focused lifters who want fewer choices", "People who care more about training efficiency than feature overload"],
+    "problem": "Many fitness apps serve an overly broad audience. Features keep expanding, while the core tasks of serious gym users become diluted.",
+    "solution": "I am starting from subtraction: collect real demand, use AI to connect product definition with documents and code delivery, and narrow the experience around the most frequent jobs of gym users.",
     "features": [
-      "Weekly muscle-group heatmap for quick imbalance scanning",
-      "Session logging flow optimized for repeat exercises and saved templates",
-      "Progress summary cards for volume, consistency, and focus areas",
-      "Responsive dashboard designed for both desktop planning and phone check-ins"
+      "A tighter feature set centered on gym training instead of broad lifestyle fitness",
+      "Continuous user-demand capture and synthesis through AI crawling",
+      "A markdown-first delivery flow that shortens the distance between design intent and code",
+      "Priority given to high-frequency jobs such as workout logging, plan review, and key feedback"
     ],
     "challenges": [
-      "Mapping compound exercises to muscle groups without making the model too complex for end users",
-      "Keeping the UI dense enough for serious tracking while still feeling calm and readable",
-      "Designing data displays that encourage action instead of passive chart consumption"
+      "Keeping strong training value while removing a large amount of non-essential scope",
+      "Turning scattered complaints and requests into high-confidence product judgement",
+      "Making AI-generated documents, design instructions, and code share the same product meaning"
     ],
     "learnings": [
-      "Users understand training insights faster when the visualization mirrors how they already think about body parts and weekly split balance.",
-      "The data model for product flexibility should be decided early, especially if different exercise taxonomies may appear later."
-    ],
-    "demoUrl": "https://musclemap-demo.vercel.app",
-    "githubUrl": "https://github.com/junbohe/musclemap",
-    "featured": true,
-    "createdAt": "2024-06-20",
-    "updatedAt": "2025-02-16"
-  },
-  {
-    "id": "signal-notes",
-    "title": "Signal Notes",
-    "slug": "signal-notes",
-    "tagline": "A lightweight knowledge workspace built for synthesis, not storage.",
-    "description": "Signal Notes is a structured thinking tool for turning scattered reading notes into themes, prompts, and reusable ideas.",
-    "goal": "Reduce the friction between capturing information and using it to write, decide, or build.",
-    "coverImage": "/images/projects/signal-notes.svg",
-    "tags": ["Knowledge", "Productivity", "Internal Tool"],
-    "status": "live",
-    "role": "Founder, product designer, frontend and backend implementation",
-    "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
-    "targetUsers": ["Indie makers", "Writers", "Operators who read heavily"],
-    "problem": "Most note apps are excellent at storing content but weak at helping people revisit, connect, and operationalize what matters.",
-    "solution": "The product organizes notes into themes, highlights unresolved ideas, and creates lightweight pathways from reading to output.",
-    "features": [
-      "Theme-based note grouping instead of purely chronological storage",
-      "Idea queue for turning saved highlights into writing prompts",
-      "Weekly review view with note resurfacing and lightweight tagging",
-      "Clean markdown-first editing with structured metadata"
-    ],
-    "challenges": [
-      "Avoiding feature bloat in a category where users easily confuse flexibility with value",
-      "Designing a taxonomy that supports both quick capture and long-term retrieval"
-    ],
-    "learnings": [
-      "Knowledge products become more useful when they privilege retrieval and synthesis over raw archive growth.",
-      "Users care deeply about input speed, but they stay for clarity on the output side."
-    ],
-    "demoUrl": "https://signal-notes.vercel.app",
-    "githubUrl": "https://github.com/junbohe/signal-notes",
-    "featured": true,
-    "createdAt": "2023-09-10",
-    "updatedAt": "2025-01-08"
-  },
-  {
-    "id": "builder-journal",
-    "title": "Builder Journal",
-    "slug": "builder-journal",
-    "tagline": "A content site template for independent builders who want clearer storytelling.",
-    "description": "Builder Journal is a publishing-focused site system for sharing essays, experiments, changelogs, and product case studies under one consistent structure.",
-    "goal": "Create a flexible content architecture that supports long-form writing, product pages, and portfolio storytelling without theme sprawl.",
-    "coverImage": "/images/projects/builder-journal.svg",
-    "tags": ["Content", "Brand", "Website"],
-    "status": "live",
-    "role": "Frontend system design, content modeling, visual direction",
-    "techStack": ["Next.js", "MDX", "TypeScript", "Tailwind CSS", "Vercel"],
-    "targetUsers": ["Independent developers", "Design engineers", "Product-focused freelancers"],
-    "problem": "Many personal websites feel split across separate templates, making projects, writing, and personal narrative feel disconnected.",
-    "solution": "I built a unified content system with consistent card patterns, metadata structure, and page layouts that scale with new content types.",
-    "features": [
-      "Shared content schema across essays, projects, and changelogs",
-      "SEO-friendly page templates with reusable metadata patterns",
-      "Modular sections for hero blocks, archives, and editorial summaries"
-    ],
-    "challenges": [
-      "Balancing storytelling flexibility with a page system that stays maintainable",
-      "Creating strong defaults without locking future content formats too early"
-    ],
-    "learnings": [
-      "Good content architecture behaves like product design: it should reduce decision fatigue for both the builder and the reader.",
-      "Reusable page sections only work when the content model behind them is also consistent."
-    ],
-    "demoUrl": "https://builder-journal.vercel.app",
-    "githubUrl": "https://github.com/junbohe/builder-journal",
-    "featured": true,
-    "createdAt": "2024-01-14",
-    "updatedAt": "2024-12-04"
-  },
-  {
-    "id": "tempo-checkin",
-    "title": "Tempo Check-in",
-    "slug": "tempo-checkin",
-    "tagline": "A weekly self-review tool for founders and solo builders.",
-    "description": "Tempo Check-in helps independent builders reflect on momentum, blockers, energy, and priorities through a simple weekly ritual.",
-    "goal": "Turn reflection into a practical product habit instead of an abandoned template in a notes app.",
-    "coverImage": "/images/projects/tempo-checkin.svg",
-    "tags": ["SaaS", "Reflection", "Habit"],
-    "status": "case-study",
-    "role": "Product framing, interface design, prototype implementation",
-    "techStack": ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
-    "targetUsers": ["Solo founders", "Independent makers", "Team leads running personal reviews"],
-    "problem": "Weekly reflection is valuable but often feels too open-ended, which causes inconsistency and low follow-through.",
-    "solution": "The product narrows reflection into a short weekly flow with signals, prompts, and a progress memory that carries context forward.",
-    "features": [
-      "Short weekly questionnaire with consistency tracking",
-      "Visual mood and momentum trend snapshots",
-      "Prompt library for energy, focus, and decision review"
-    ],
-    "challenges": [
-      "Keeping the ritual lightweight enough to repeat while still capturing signal-rich data",
-      "Designing progress views that feel supportive instead of evaluative"
-    ],
-    "learnings": [
-      "Reflection tools need emotional ergonomics just as much as functional clarity.",
-      "A product can be small in scope and still deserve strong information architecture."
+      "The more vertical the user scenario, the more useful it is to start with one tightly defined task loop.",
+      "The biggest early value of AI is not only speed, but continuity across demand, documentation, and implementation."
     ],
     "demoUrl": null,
-    "githubUrl": "https://github.com/junbohe/tempo-checkin",
-    "featured": false,
-    "createdAt": "2023-11-02",
-    "updatedAt": "2024-10-18"
+    "githubUrl": null,
+    "featured": true,
+    "createdAt": "2026-01-12",
+    "updatedAt": "2026-04-06"
+  },
+  {
+    "id": "aipm-blog",
+    "title": "AIPM Blog",
+    "slug": "aipm-blog",
+    "tagline": "A content system for projects, reading, methods, and personal brand storytelling.",
+    "description": "This blog is more than an about page. It is the structured home for my projects, books, AI product workflow, and the longer arc of how I am growing as a builder.",
+    "goal": "Unify personal brand expression, content management, and project storytelling inside one maintainable content model.",
+    "coverImage": "/images/projects/aipm-blog.svg",
+    "tags": ["Blog", "Content System", "Personal Brand"],
+    "status": "live",
+    "role": "Content modeling, frontend implementation, brand storytelling",
+    "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "JSON Content Model", "SVG"],
+    "targetUsers": ["People who want to understand what I am building", "My future self", "Potential collaborators and peers"],
+    "problem": "Many personal sites only show fragmented information. Projects, reading, methods, and direction end up disconnected, and the site becomes hard to maintain over time.",
+    "solution": "I split personal profile, projects, books, and capabilities into structured content layers, then built one page system around them so the site can express the present and keep scaling with future content.",
+    "features": [
+      "Independent schemas for profile, projects, books, and skills to keep updates manageable",
+      "Locally managed SVG book covers for a more unified visual system and easier asset maintenance",
+      "A dedicated module for the AI-native product workflow so it can keep evolving over time",
+      "Parallel Chinese and English content support for future-facing presentation"
+    ],
+    "challenges": [
+      "Keeping personal expression warm while still making the content system structured and reusable",
+      "Avoiding a one-off personal-brand refresh and turning the site into a true long-term workspace"
+    ],
+    "learnings": [
+      "The most convincing part of a personal brand is not a slogan, but consistently updated projects and methods.",
+      "Once content is modeled first, redesigning, expanding, and repackaging later becomes much easier."
+    ],
+    "demoUrl": null,
+    "githubUrl": null,
+    "featured": true,
+    "createdAt": "2026-04-01",
+    "updatedAt": "2026-04-06"
   }
 ]

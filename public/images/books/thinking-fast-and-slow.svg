@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" fill="none">
+  <rect width="600" height="800" rx="40" fill="#F8F7F4"/>
+  <rect x="46" y="46" width="508" height="708" rx="30" fill="#FFFDF8" stroke="#E7E2D7"/>
+  <rect x="88" y="92" width="162" height="34" rx="17" fill="#FDEBD8"/>
+  <text x="118" y="114" fill="#C06C25" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="2">COGNITION</text>
+  <path d="M398 164L474 374" stroke="#202938" stroke-width="10" stroke-linecap="round"/>
+  <path d="M474 374L356 582" stroke="#D75C32" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="474" cy="374" r="16" fill="#F4A261"/>
+  <text x="88" y="268" fill="#1F2937" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="54" font-weight="700">思考，快与慢</text>
+  <text x="88" y="324" fill="#6B7280" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="24">丹尼尔·卡尼曼</text>
+  <rect x="88" y="448" width="320" height="22" rx="11" fill="#202938"/>
+  <rect x="88" y="492" width="242" height="22" rx="11" fill="#64748B"/>
+  <rect x="88" y="536" width="278" height="22" rx="11" fill="#D75C32"/>
+</svg>

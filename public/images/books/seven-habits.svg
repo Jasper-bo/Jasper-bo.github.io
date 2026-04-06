@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" fill="none">
+  <rect width="600" height="800" rx="40" fill="#F6F8FB"/>
+  <rect x="46" y="46" width="508" height="708" rx="30" fill="#FFFFFF" stroke="#DDE5EE"/>
+  <rect x="88" y="92" width="172" height="34" rx="17" fill="#EDF7F6"/>
+  <text x="116" y="114" fill="#2F7B76" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="2">7 HABITS</text>
+  <text x="88" y="220" fill="#111827" font-family="Arial, sans-serif" font-size="48" font-weight="700">The 7 Habits</text>
+  <text x="88" y="280" fill="#111827" font-family="Arial, sans-serif" font-size="48" font-weight="700">of Highly Effective</text>
+  <text x="88" y="340" fill="#111827" font-family="Arial, sans-serif" font-size="48" font-weight="700">People</text>
+  <text x="88" y="394" fill="#64748B" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="22">史蒂芬·柯维</text>
+  <rect x="88" y="452" width="78" height="200" rx="24" fill="#2F7B76"/>
+  <rect x="182" y="420" width="78" height="232" rx="24" fill="#6CB7B2"/>
+  <rect x="276" y="388" width="78" height="264" rx="24" fill="#B6DDD9"/>
+  <rect x="370" y="456" width="114" height="28" rx="14" fill="#D9793C"/>
+  <rect x="370" y="506" width="156" height="28" rx="14" fill="#E6B07A"/>
+  <rect x="370" y="556" width="132" height="28" rx="14" fill="#F0D0AE"/>
+</svg>
