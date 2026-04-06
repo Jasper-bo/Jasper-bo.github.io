@@ -52,11 +52,12 @@ export function FilterBar({
 
   return (
     <div className={cn("flex flex-col gap-3", className)}>
-      <span className="text-sm font-medium text-foreground">{label}</span>
+      <span className="text-sm font-medium tracking-[0.04em] text-foreground">{label}</span>
       <div className="flex flex-wrap gap-2">
         <button
           type="button"
           onClick={() => updateFilter("")}
+          data-liquid
           className={cn(
             "filter-button",
             selectedValue === "" && "filter-button-active"
@@ -72,6 +73,7 @@ export function FilterBar({
               key={option.value}
               type="button"
               onClick={() => updateFilter(option.value)}
+              data-liquid
               className={cn("filter-button", active && "filter-button-active")}
             >
               {option.label}

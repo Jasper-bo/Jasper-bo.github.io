@@ -27,7 +27,11 @@ export function FeaturedProjectsSection({
           title={dictionary.featuredProjects.title}
           description={dictionary.featuredProjects.description}
           action={
-            <Link href={localizePath("/projects", locale)} className="button-secondary">
+            <Link
+              href={localizePath("/projects", locale)}
+              data-liquid
+              className="button-secondary"
+            >
               {dictionary.featuredProjects.action}
             </Link>
           }

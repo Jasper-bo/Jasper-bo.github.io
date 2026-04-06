@@ -23,7 +23,7 @@ export function LanguageSwitcher({ className }: LanguageSwitcherProps) {
       role="group"
       aria-label={dictionary.nav.languageLabel}
       className={cn(
-        "inline-flex items-center gap-1 rounded-full border border-border/80 bg-white/90 p-1 shadow-sm",
+        "surface surface-subtle inline-flex items-center gap-1 rounded-full p-1",
         className
       )}
     >
@@ -37,11 +37,12 @@ export function LanguageSwitcher({ className }: LanguageSwitcherProps) {
             key={value}
             href={nextHref}
             aria-current={active ? "page" : undefined}
+            data-liquid
             className={cn(
               "rounded-full px-3 py-1.5 text-xs font-semibold tracking-[0.08em] transition-colors",
               active
-                ? "bg-foreground text-white"
-                : "text-muted-foreground hover:bg-muted hover:text-foreground"
+                ? "border border-white/20 bg-foreground/88 text-white shadow-[0_16px_34px_-24px_rgba(24,38,60,0.44)]"
+                : "text-muted-foreground hover:text-foreground"
             )}
             title={meta.nativeLabel}
           >

@@ -20,18 +20,19 @@ export function ProjectCard({ project, locale, className }: ProjectCardProps) {
 
   return (
     <article
+      data-liquid
       className={cn(
-        "group surface flex h-full flex-col overflow-hidden transition-transform duration-300 hover:-translate-y-1",
+        "group surface surface-strong flex h-full flex-col overflow-hidden",
         project.featured && "border-foreground/10",
         className
       )}
     >
-      <div className="relative aspect-[16/10] overflow-hidden border-b border-border/70 bg-muted">
+      <div className="relative aspect-[16/10] overflow-hidden border-b border-white/25 bg-white/18">
         <Image
           src={project.coverImage}
           alt={project.title}
           fill
-          className="object-cover transition duration-500 group-hover:scale-[1.02]"
+          className="object-cover transition duration-700 group-hover:scale-[1.04]"
           sizes="(max-width: 1024px) 100vw, 33vw"
         />
       </div>
@@ -46,8 +47,8 @@ export function ProjectCard({ project, locale, className }: ProjectCardProps) {
         </div>
 
         <div className="space-y-3">
-          <div className="space-y-1">
-            <h3 className="text-xl font-semibold tracking-tight text-foreground">
+          <div className="space-y-2">
+            <h3 className="text-xl font-semibold tracking-[-0.03em] text-foreground">
               {project.title}
             </h3>
             <p className="text-sm font-medium text-muted-foreground">{project.tagline}</p>
@@ -59,14 +60,14 @@ export function ProjectCard({ project, locale, className }: ProjectCardProps) {
           {project.techStack.slice(0, 4).map((item) => (
             <span
               key={item}
-              className="rounded-full border border-border bg-white px-3 py-1 text-xs font-medium text-muted-foreground"
+              className="rounded-full border border-white/36 bg-white/22 px-3 py-1 text-xs font-medium text-muted-foreground backdrop-blur-xl"
             >
               {item}
             </span>
           ))}
         </div>
 
-        <div className="mt-auto flex items-center justify-between gap-4 border-t border-border/70 pt-5">
+        <div className="mt-auto flex items-center justify-between gap-4 border-t border-white/18 pt-5">
           <span className="text-sm text-muted-foreground">{project.role}</span>
           <Link
             href={localizePath(`/projects/${project.slug}`, locale)}

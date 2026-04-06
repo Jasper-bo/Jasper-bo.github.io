@@ -24,11 +24,15 @@ export function CurrentFocusSection({ about, locale }: CurrentFocusSectionProps)
 
         <div className="grid gap-5 md:grid-cols-3">
           {about.now.map((item, index) => (
-            <article key={item} className="surface p-6">
-              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+            <article
+              key={item}
+              data-liquid
+              className="surface surface-subtle min-h-[220px] p-6"
+            >
+              <p className="mb-5 text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground">
                 0{index + 1}
               </p>
-              <p className="text-base leading-8 text-foreground/90">{item}</p>
+              <p className="text-base leading-8 text-foreground/88">{item}</p>
             </article>
           ))}
         </div>

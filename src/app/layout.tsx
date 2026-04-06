@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import "@/app/globals.css";
 
 import { Footer } from "@/components/layout/footer";
+import { LiquidGlassController } from "@/components/layout/liquid-glass-controller";
 import { Navbar } from "@/components/layout/navbar";
 import { siteConfig } from "@/lib/site";
 import { defaultLocale, getMetadataLocale } from "@/lib/i18n";
@@ -49,7 +50,14 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="font-sans">
-        <div className="relative flex min-h-screen flex-col">
+        <LiquidGlassController />
+        <div aria-hidden className="site-backdrop">
+          <div className="ambient-orb ambient-orb-1" />
+          <div className="ambient-orb ambient-orb-2" />
+          <div className="ambient-orb ambient-orb-3" />
+          <div className="ambient-beam" />
+        </div>
+        <div className="relative z-10 flex min-h-screen flex-col">
           <Navbar />
           <main className="flex-1">{children}</main>
           <Footer />
