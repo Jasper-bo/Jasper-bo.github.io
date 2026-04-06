@@ -7,9 +7,6 @@ interface LocaleSkillsPageProps {
   params: Promise<{
     locale: string;
   }>;
-  searchParams: Promise<{
-    category?: string;
-  }>;
 }
 
 export async function generateMetadata({
@@ -21,15 +18,9 @@ export async function generateMetadata({
 }
 
 export default async function LocaleSkillsPage({
-  params,
-  searchParams
+  params
 }: LocaleSkillsPageProps) {
   const { locale } = await params;
 
-  return (
-    <SkillsPageView
-      locale={resolveRouteLocale(locale)}
-      searchParams={await searchParams}
-    />
-  );
+  return <SkillsPageView locale={resolveRouteLocale(locale)} />;
 }

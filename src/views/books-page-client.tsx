@@ -1,43 +1,44 @@
-import { Suspense } from "react";
+"use client";
+
+import { useSearchParams } from "next/navigation";
 
 import { BookCard } from "@/components/cards/book-card";
 import { Container } from "@/components/layout/container";
+import { EmptyState } from "@/components/shared/empty-state";
 import { FilterBar } from "@/components/shared/filter-bar";
 import { SectionTitle } from "@/components/shared/section-title";
-import { getBookCategories, getBooks, getBookStatuses } from "@/lib/books";
 import { getDictionary } from "@/lib/dictionaries";
 import type { Locale } from "@/lib/i18n";
-import { buildMetadata } from "@/lib/site";
 import type { Book, BookStatus } from "@/types";
-import { BooksPageClient } from "@/views/books-page-client";
 
-export function getBooksPageMetadata(locale: Locale) {
-  const metadata = getDictionary(locale).metadata.books;
-
-  return buildMetadata({
-    title: metadata.title,
-    description: metadata.description,
-    path: "/books",
-    locale
-  });
-}
-
-interface BooksPageViewProps {
-  locale: Locale;
-}
-
-function BooksPageFallback({
-  locale,
-  books,
-  categories,
-  statuses
-}: {
+interface BooksPageClientProps {
   locale: Locale;
   books: Book[];
   categories: string[];
   statuses: BookStatus[];
-}) {
+}
+
+export function BooksPageClient({
+  locale,
+  books,
+  categories,
+  statuses
+}: BooksPageClientProps) {
   const dictionary = getDictionary(locale);
+  const searchParams = useSearchParams();
+  const searchParamsString = searchParams.toString();
+  const statusParam = searchParams.get("status");
+  const categoryParam = searchParams.get("category");
+  const status = statuses.includes(statusParam as BookStatus)
+    ? (statusParam as BookStatus)
+    : null;
+  const category = categories.includes(categoryParam ?? "") ? categoryParam : null;
+  const filteredBooks = books.filter((book) => {
+    const matchesStatus = !status || book.status === status;
+    const matchesCategory = !category || book.category === category;
+
+    return matchesStatus && matchesCategory;
+  });
 
   return (
     <div className="py-12 sm:py-16">
@@ -54,7 +55,8 @@ function BooksPageFallback({
               label={dictionary.booksPage.filterStatusLabel}
               paramKey="status"
               allLabel={dictionary.booksPage.filterStatusAll}
-              searchParamsString=""
+              activeValue={status}
+              searchParamsString={searchParamsString}
               options={statuses.map((item) => ({
                 label: dictionary.bookStatuses[item],
                 value: item
@@ -64,7 +66,8 @@ function BooksPageFallback({
               label={dictionary.booksPage.filterCategoryLabel}
               paramKey="category"
               allLabel={dictionary.booksPage.filterCategoryAll}
-              searchParamsString=""
+              activeValue={category}
+              searchParamsString={searchParamsString}
               options={categories.map((item) => ({
                 label: item,
                 value: item
@@ -73,38 +76,20 @@ function BooksPageFallback({
           </div>
         </section>
 
-        <section className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {books.map((book) => (
-            <BookCard key={book.id} book={book} locale={locale} />
-          ))}
-        </section>
+        {filteredBooks.length > 0 ? (
+          <section className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {filteredBooks.map((book) => (
+              <BookCard key={book.id} book={book} locale={locale} />
+            ))}
+          </section>
+        ) : (
+          <EmptyState
+            title={dictionary.booksPage.emptyTitle}
+            description={dictionary.booksPage.emptyDescription}
+          />
+        )}
       </Container>
     </div>
   );
 }
 
-export function BooksPageView({ locale }: BooksPageViewProps) {
-  const books = getBooks(locale);
-  const categories = getBookCategories(locale);
-  const statuses = getBookStatuses(locale);
-
-  return (
-    <Suspense
-      fallback={
-        <BooksPageFallback
-          locale={locale}
-          books={books}
-          categories={categories}
-          statuses={statuses}
-        />
-      }
-    >
-      <BooksPageClient
-        locale={locale}
-        books={books}
-        categories={categories}
-        statuses={statuses}
-      />
-    </Suspense>
-  );
-}
