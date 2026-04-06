@@ -23,14 +23,14 @@ export function SkillCard({ skill, locale, relatedProjects }: SkillCardProps) {
   const dictionary = getDictionary(locale);
 
   return (
-    <article className="surface flex h-full flex-col gap-5 p-6 transition-transform duration-300 hover:-translate-y-1">
+    <article data-liquid className="surface surface-strong flex h-full flex-col gap-5 p-6">
       <div className="flex flex-wrap items-center gap-2">
         <Tag variant="accent">{skill.category}</Tag>
         <Tag variant="outline">{dictionary.skillLevels[skill.level]}</Tag>
       </div>
 
       <div className="space-y-2">
-        <h3 className="text-xl font-semibold tracking-tight text-foreground">{skill.name}</h3>
+        <h3 className="text-xl font-semibold tracking-[-0.03em] text-foreground">{skill.name}</h3>
         <p className="text-sm leading-7 text-muted-foreground">{skill.description}</p>
       </div>
 
@@ -50,14 +50,14 @@ export function SkillCard({ skill, locale, relatedProjects }: SkillCardProps) {
         {skill.tools.map((tool) => (
           <span
             key={tool}
-            className="rounded-full border border-border bg-white px-3 py-1 text-xs font-medium text-muted-foreground"
+            className="rounded-full border border-white/36 bg-white/22 px-3 py-1 text-xs font-medium text-muted-foreground backdrop-blur-xl"
           >
             {tool}
           </span>
         ))}
       </div>
 
-      <div className="mt-auto border-t border-border/70 pt-5">
+      <div className="mt-auto border-t border-white/18 pt-5">
         <p className="mb-3 text-sm font-semibold text-foreground">
           {dictionary.skillCard.relatedProjects}
         </p>

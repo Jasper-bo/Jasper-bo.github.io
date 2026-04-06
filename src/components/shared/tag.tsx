@@ -16,12 +16,13 @@ export function Tag({
   return (
     <span
       className={cn(
-        "inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold tracking-wide",
+        "inline-flex items-center rounded-full px-3 py-1 text-[0.72rem] font-semibold tracking-[0.16em] backdrop-blur-xl",
         variant === "accent" &&
-          "bg-accent-soft text-accent-foreground ring-1 ring-inset ring-accent/10",
-        variant === "neutral" && "bg-muted text-foreground",
+          "border border-white/46 bg-[linear-gradient(135deg,rgba(255,255,255,0.65),rgba(217,229,236,0.32))] text-accent-foreground shadow-[inset_0_1px_0_rgba(255,255,255,0.68)]",
+        variant === "neutral" &&
+          "border border-white/36 bg-[linear-gradient(135deg,rgba(255,255,255,0.44),rgba(233,239,245,0.18))] text-foreground/88 shadow-[inset_0_1px_0_rgba(255,255,255,0.56)]",
         variant === "outline" &&
-          "border border-border bg-white text-muted-foreground",
+          "border border-white/34 bg-white/16 text-muted-foreground shadow-[inset_0_1px_0_rgba(255,255,255,0.4)]",
         className
       )}
     >

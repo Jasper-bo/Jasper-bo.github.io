@@ -16,13 +16,13 @@ export function BookCard({ book, locale }: BookCardProps) {
   const dictionary = getDictionary(locale);
 
   return (
-    <article className="group surface flex h-full flex-col overflow-hidden transition-transform duration-300 hover:-translate-y-1">
-      <div className="relative aspect-[4/5] overflow-hidden border-b border-border/70 bg-muted">
+    <article data-liquid className="group surface surface-strong flex h-full flex-col overflow-hidden">
+      <div className="relative aspect-[4/5] overflow-hidden border-b border-white/25 bg-white/18">
         <Image
           src={book.cover}
           alt={book.title}
           fill
-          className="object-cover transition duration-500 group-hover:scale-[1.03]"
+          className="object-cover transition duration-700 group-hover:scale-[1.04]"
           sizes="(max-width: 1024px) 100vw, 25vw"
         />
       </div>
@@ -35,7 +35,7 @@ export function BookCard({ book, locale }: BookCardProps) {
         </div>
 
         <div className="space-y-1">
-          <h3 className="text-xl font-semibold tracking-tight text-foreground">{book.title}</h3>
+          <h3 className="text-xl font-semibold tracking-[-0.03em] text-foreground">{book.title}</h3>
           <p className="text-sm font-medium text-muted-foreground">{book.author}</p>
         </div>
 
@@ -55,7 +55,7 @@ export function BookCard({ book, locale }: BookCardProps) {
           </ul>
         </div>
 
-        <div className="mt-auto flex items-center justify-between border-t border-border/70 pt-5">
+        <div className="mt-auto flex items-center justify-between border-t border-white/18 pt-5">
           <span className="text-sm font-medium text-foreground">
             {dictionary.bookCard.ratingLabel} {book.rating.toFixed(1)} / 5
           </span>

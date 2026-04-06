@@ -24,7 +24,11 @@ export function ReadingShelfSection({ books, locale }: ReadingShelfSectionProps)
           title={dictionary.readingShelf.title}
           description={dictionary.readingShelf.description}
           action={
-            <Link href={localizePath("/books", locale)} className="button-secondary">
+            <Link
+              href={localizePath("/books", locale)}
+              data-liquid
+              className="button-secondary"
+            >
               {dictionary.readingShelf.action}
             </Link>
           }

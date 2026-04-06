@@ -35,7 +35,11 @@ export function CoreSkillsSection({
           title={dictionary.coreSkills.title}
           description={dictionary.coreSkills.description}
           action={
-            <Link href={localizePath("/skills", locale)} className="button-secondary">
+            <Link
+              href={localizePath("/skills", locale)}
+              data-liquid
+              className="button-secondary"
+            >
               {dictionary.coreSkills.action}
             </Link>
           }

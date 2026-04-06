@@ -33,7 +33,7 @@ export function AboutPageView({ locale }: AboutPageViewProps) {
     <div className="py-12 sm:py-16">
       <Container className="space-y-12">
         <section className="grid gap-8 lg:grid-cols-[minmax(0,1.2fr)_380px]">
-          <div className="surface p-8 sm:p-10">
+          <div className="surface surface-strong p-8 sm:p-10">
             <SectionTitle
               eyebrow={dictionary.aboutPage.eyebrow}
               title={dictionary.aboutPage.title}
@@ -48,7 +48,7 @@ export function AboutPageView({ locale }: AboutPageViewProps) {
           </div>
 
           <aside className="surface flex flex-col gap-6 p-6 sm:p-8">
-            <div className="relative aspect-[4/4.8] overflow-hidden rounded-[1.75rem] bg-muted">
+            <div className="relative aspect-[4/4.8] overflow-hidden rounded-[1.75rem] border border-white/40 bg-white/22 shadow-card">
               <Image
                 src={about.avatar}
                 alt={about.name}
@@ -67,7 +67,8 @@ export function AboutPageView({ locale }: AboutPageViewProps) {
                     href={item.href}
                     target={item.href.startsWith("http") ? "_blank" : undefined}
                     rel={item.href.startsWith("http") ? "noreferrer" : undefined}
-                    className="rounded-2xl border border-border bg-white px-4 py-3 transition hover:border-foreground/20 hover:bg-muted/80"
+                    data-liquid
+                    className="surface surface-subtle rounded-[1.5rem] px-4 py-3"
                   >
                     <p className="text-sm font-semibold text-foreground">{item.label}</p>
                     <p className="text-sm text-muted-foreground">{item.value}</p>
@@ -87,8 +88,12 @@ export function AboutPageView({ locale }: AboutPageViewProps) {
             />
             <div className="mt-8 grid gap-4">
               {about.focusAreas.map((item) => (
-                <article key={item.title} className="rounded-3xl border border-border bg-white p-6">
-                  <h3 className="text-lg font-semibold tracking-tight text-foreground">
+                <article
+                  key={item.title}
+                  data-liquid
+                  className="surface surface-subtle rounded-[1.75rem] p-6"
+                >
+                  <h3 className="text-lg font-semibold tracking-[-0.03em] text-foreground">
                     {item.title}
                   </h3>
                   <p className="mt-2 text-sm leading-7 text-muted-foreground">
@@ -107,8 +112,12 @@ export function AboutPageView({ locale }: AboutPageViewProps) {
             />
             <ul className="mt-8 space-y-4">
               {about.now.map((item) => (
-                <li key={item} className="flex gap-3 text-sm leading-7 text-muted-foreground">
-                  <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-foreground" />
+                <li
+                  key={item}
+                  data-liquid
+                  className="surface surface-subtle flex gap-3 rounded-[1.5rem] px-4 py-4 text-sm leading-7 text-muted-foreground"
+                >
+                  <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-foreground/80" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -124,8 +133,12 @@ export function AboutPageView({ locale }: AboutPageViewProps) {
           />
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             {about.tools.map((group) => (
-              <article key={group.category} className="rounded-3xl border border-border bg-white p-6">
-                <h3 className="text-lg font-semibold tracking-tight text-foreground">
+              <article
+                key={group.category}
+                data-liquid
+                className="surface surface-subtle rounded-[1.75rem] p-6"
+              >
+                <h3 className="text-lg font-semibold tracking-[-0.03em] text-foreground">
                   {group.category}
                 </h3>
                 <div className="mt-4 flex flex-wrap gap-2">
@@ -138,7 +151,7 @@ export function AboutPageView({ locale }: AboutPageViewProps) {
           </div>
         </section>
 
-        <section className="surface p-8 sm:p-10">
+        <section className="surface surface-strong p-8 sm:p-10">
           <SectionTitle
             eyebrow={dictionary.aboutPage.timelineEyebrow}
             title={dictionary.aboutPage.timelineTitle}
@@ -152,4 +165,3 @@ export function AboutPageView({ locale }: AboutPageViewProps) {
     </div>
   );
 }
-

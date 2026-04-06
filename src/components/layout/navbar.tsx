@@ -21,8 +21,8 @@ function isActive(pathname: string, href: string, exact = false) {
 
 function LanguageSwitcherFallback() {
   return (
-    <div className="inline-flex items-center gap-1 rounded-full border border-border/80 bg-white/90 p-1 shadow-sm">
-      <span className="rounded-full bg-muted px-3 py-1.5 text-xs font-semibold text-muted-foreground">
+    <div className="surface surface-subtle inline-flex items-center gap-1 rounded-full p-1">
+      <span className="rounded-full border border-white/50 bg-white/55 px-3 py-1.5 text-xs font-semibold text-foreground shadow-sm">
         EN
       </span>
       <span className="rounded-full px-3 py-1.5 text-xs font-semibold text-muted-foreground">
@@ -38,48 +38,52 @@ export function Navbar() {
   const dictionary = getDictionary(locale);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/70 bg-background/88 backdrop-blur-xl">
-      <Container className="flex flex-col gap-4 py-4 sm:flex-row sm:items-center sm:justify-between">
-        <Link
-          href={localizePath("/", locale)}
-          className="flex items-center gap-3 text-sm font-semibold tracking-tight"
-        >
-          <span className="flex h-11 w-11 items-center justify-center rounded-2xl border border-border bg-white text-base text-foreground shadow-sm">
-            JH
-          </span>
-          <span className="flex flex-col leading-tight">
-            <span>Junbo He</span>
-            <span className="text-xs font-medium text-muted-foreground">
-              {dictionary.nav.role}
+    <header className="sticky top-0 z-50 px-4 pt-4 sm:px-6 lg:px-8">
+      <Container className="max-w-7xl px-0">
+        <div className="surface surface-strong flex flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-5">
+          <Link
+            href={localizePath("/", locale)}
+            data-liquid
+            className="flex items-center gap-3 rounded-[1.75rem] p-1.5 text-sm font-semibold tracking-tight"
+          >
+            <span className="flex h-12 w-12 items-center justify-center rounded-[1.4rem] border border-white/55 bg-white/50 text-base text-foreground shadow-card backdrop-blur-xl">
+              JH
             </span>
-          </span>
-        </Link>
+            <span className="flex flex-col leading-tight">
+              <span>Junbo He</span>
+              <span className="text-xs font-medium text-muted-foreground">
+                {dictionary.nav.role}
+              </span>
+            </span>
+          </Link>
 
-        <div className="flex flex-wrap items-center gap-3">
-          <nav aria-label="Primary" className="flex flex-wrap gap-2">
-            {siteConfig.navigation.map((item) => {
-              const href = localizePath(item.href, locale);
-              const active = isActive(pathname, href, item.href === "/");
+          <div className="flex flex-wrap items-center gap-3">
+            <nav aria-label="Primary" className="flex flex-wrap gap-2">
+              {siteConfig.navigation.map((item) => {
+                const href = localizePath(item.href, locale);
+                const active = isActive(pathname, href, item.href === "/");
 
-              return (
-                <Link
-                  key={item.href}
-                  href={href}
-                  className={cn(
-                    "rounded-full px-4 py-2 text-sm font-medium transition-all",
-                    active
-                      ? "bg-foreground text-white shadow-sm"
-                      : "text-muted-foreground hover:bg-white hover:text-foreground"
-                  )}
-                >
-                  {dictionary.nav.links[item.key as keyof typeof dictionary.nav.links]}
-                </Link>
-              );
-            })}
-          </nav>
-          <Suspense fallback={<LanguageSwitcherFallback />}>
-            <LanguageSwitcher />
-          </Suspense>
+                return (
+                  <Link
+                    key={item.href}
+                    href={href}
+                    data-liquid
+                    className={cn(
+                      "nav-pill",
+                      active
+                        ? "nav-pill-active"
+                        : "border border-white/30 bg-white/18 shadow-[inset_0_1px_0_rgba(255,255,255,0.56)] backdrop-blur-xl hover:text-foreground"
+                    )}
+                  >
+                    {dictionary.nav.links[item.key as keyof typeof dictionary.nav.links]}
+                  </Link>
+                );
+              })}
+            </nav>
+            <Suspense fallback={<LanguageSwitcherFallback />}>
+              <LanguageSwitcher />
+            </Suspense>
+          </div>
         </div>
       </Container>
     </header>

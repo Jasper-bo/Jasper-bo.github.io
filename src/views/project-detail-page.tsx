@@ -21,7 +21,7 @@ function renderLink(
 ) {
   if (!href) {
     return (
-      <span className="inline-flex items-center gap-1 text-sm font-medium text-muted-foreground">
+      <span className="surface surface-subtle inline-flex items-center gap-1 rounded-full px-4 py-3 text-sm font-medium text-muted-foreground">
         {label} {unavailableSuffix}
       </span>
     );
@@ -32,7 +32,8 @@ function renderLink(
       href={href}
       target="_blank"
       rel="noreferrer"
-      className="inline-flex items-center gap-1 text-sm font-semibold text-foreground transition hover:text-accent"
+      data-liquid
+      className="surface surface-subtle inline-flex items-center gap-1 rounded-full px-4 py-3 text-sm font-semibold text-foreground transition hover:text-accent"
     >
       {label}
       <ArrowUpRight className="h-4 w-4" />
@@ -86,8 +87,8 @@ function DetailSection({
   children: ReactNode;
 }) {
   return (
-    <section className="space-y-4">
-      <h2 className="text-2xl font-semibold tracking-tight text-foreground">{title}</h2>
+    <section className="surface surface-subtle space-y-4 rounded-[1.75rem] p-6 sm:p-8">
+      <h2 className="text-2xl font-semibold tracking-[-0.04em] text-foreground">{title}</h2>
       <div className="space-y-4 text-base leading-8 text-muted-foreground">{children}</div>
     </section>
   );
@@ -111,7 +112,7 @@ function ProjectSidebar({ locale, project }: { locale: Locale; project: Project 
 
   return (
     <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
-      <div className="surface p-6">
+      <div className="surface surface-strong p-6">
         <dl className="space-y-5">
           <div>
             <dt className="text-sm font-semibold text-foreground">
@@ -172,8 +173,8 @@ function ProjectSidebar({ locale, project }: { locale: Locale; project: Project 
         </dl>
       </div>
 
-      <div className="surface p-6">
-        <h2 className="text-lg font-semibold tracking-tight text-foreground">
+      <div className="surface surface-strong p-6">
+        <h2 className="text-lg font-semibold tracking-[-0.03em] text-foreground">
           {dictionary.projectDetail.sidebar.links}
         </h2>
         <div className="mt-4 flex flex-col gap-3">
@@ -207,7 +208,8 @@ export function ProjectDetailPageView({ locale, slug }: ProjectDetailPageViewPro
       <Container className="space-y-10">
         <Link
           href={localizePath("/projects", locale)}
-          className="inline-flex items-center gap-2 text-sm font-semibold text-muted-foreground transition hover:text-foreground"
+          data-liquid
+          className="surface surface-subtle inline-flex items-center gap-2 rounded-full px-4 py-3 text-sm font-semibold text-muted-foreground transition hover:text-foreground"
         >
           <ArrowLeft className="h-4 w-4" />
           {dictionary.projectDetail.backToProjects}
@@ -222,7 +224,7 @@ export function ProjectDetailPageView({ locale, slug }: ProjectDetailPageViewPro
               ))}
             </div>
             <div className="space-y-3">
-              <h1 className="max-w-4xl text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
+              <h1 className="max-w-4xl text-4xl font-semibold tracking-[-0.05em] text-foreground sm:text-5xl">
                 {project.title}
               </h1>
               <p className="text-xl leading-8 text-foreground/90">{project.tagline}</p>
@@ -232,13 +234,13 @@ export function ProjectDetailPageView({ locale, slug }: ProjectDetailPageViewPro
             </p>
           </div>
 
-          <div className="surface p-6">
+          <div className="surface surface-strong p-6">
             <p className="eyebrow">{dictionary.projectDetail.goalEyebrow}</p>
             <p className="mt-3 text-base leading-8 text-foreground/90">{project.goal}</p>
           </div>
         </header>
 
-        <div className="relative aspect-[16/9] overflow-hidden rounded-[2rem] border border-border/80 bg-muted shadow-card">
+        <div className="relative aspect-[16/9] overflow-hidden rounded-[2rem] border border-white/34 bg-white/18 shadow-card">
           <Image
             src={project.coverImage}
             alt={project.title}
