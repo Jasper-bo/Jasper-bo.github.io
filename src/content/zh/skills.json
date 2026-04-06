@@ -1,0 +1,93 @@
+[
+  {
+    "id": "react",
+    "name": "React",
+    "category": "前端工程",
+    "level": "expert",
+    "description": "我用 React 构建会随着产品增长仍保持可读性的组件系统，尤其关注组合方式、状态边界和内容驱动型 UI。",
+    "scenarios": [
+      "为内容密集型网站设计可复用的卡片与区块系统",
+      "构建交互深度可控的产品流程"
+    ],
+    "relatedProjects": ["builder-journal", "signal-notes", "tempo-checkin"],
+    "tools": ["React 19", "Hooks", "Server Components", "组合模式"]
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "category": "前端工程",
+    "level": "advanced",
+    "description": "我依赖 TypeScript 把内容模型、组件契约和 UI 状态表达得足够明确，为长期维护留出空间。",
+    "scenarios": [
+      "为项目、书单和技能页定义可扩展的内容 schema",
+      "降低复杂组件接口中的歧义"
+    ],
+    "relatedProjects": ["builder-journal", "musclemap", "signal-notes"],
+    "tools": ["严格类型", "类型化内容模型", "基于联合类型的状态设计"]
+  },
+  {
+    "id": "nextjs",
+    "name": "Next.js",
+    "category": "全栈产品",
+    "level": "advanced",
+    "description": "当我需要一个兼顾速度、路由、SEO，以及从静态内容平滑走向动态产品逻辑的表面层时，Next.js 通常是默认选择。",
+    "scenarios": [
+      "交付元数据结构完善的作品集与内容型网站",
+      "构建可以从本地数据逐步过渡到 CMS 或后端服务的 SaaS 前端"
+    ],
+    "relatedProjects": ["builder-journal", "musclemap", "signal-notes"],
+    "tools": ["App Router", "Metadata API", "Server Components", "可扩展到 ISR 的架构"]
+  },
+  {
+    "id": "tailwindcss",
+    "name": "Tailwind CSS",
+    "category": "UI 系统",
+    "level": "advanced",
+    "description": "我用 Tailwind 搭建冷静的界面系统，让间距、响应式行为和视觉 token 都保持可预测且易维护。",
+    "scenarios": [
+      "把设计方向快速翻译成可复用的视觉语言",
+      "在不同产品之间维护一致的卡片、区块和工具类模式"
+    ],
+    "relatedProjects": ["builder-journal", "tempo-checkin", "musclemap"],
+    "tools": ["设计 token", "响应式系统", "Utility-first 样式方法"]
+  },
+  {
+    "id": "product-thinking",
+    "name": "Product Thinking",
+    "category": "产品策略",
+    "level": "expert",
+    "description": "我会围绕用户痛点、任务清晰度、反馈回路，以及哪些地方在 v1 应该刻意保持简单来定义产品工作。",
+    "scenarios": [
+      "为早期产品确定合理的功能优先级",
+      "把模糊想法整理成清晰的问题与解决方案叙事"
+    ],
+    "relatedProjects": ["musclemap", "tempo-checkin", "signal-notes"],
+    "tools": ["用户问题 framing", "范围设计", "案例式叙事"]
+  },
+  {
+    "id": "ui-structuring",
+    "name": "UI Structuring",
+    "category": "UI 系统",
+    "level": "advanced",
+    "description": "我很在意信息层级、视觉节奏，以及布局选择如何帮助读者更快理解产品与构建者本人。",
+    "scenarios": [
+      "在高信息密度页面中仍保留冷静感",
+      "设计能快速讲清产品故事的落地页和作品集页面"
+    ],
+    "relatedProjects": ["builder-journal", "musclemap"],
+    "tools": ["信息层级", "网格系统", "可阅读的内容承载面"]
+  },
+  {
+    "id": "prompt-design",
+    "name": "Prompt Design",
+    "category": "AI 工作流",
+    "level": "proficient",
+    "description": "我把 Prompt 设计当作工作流工具的一部分，通过约束输入、条件和输出格式，让 AI 真正支持产品与内容任务。",
+    "scenarios": [
+      "为研究和内容工作流生成结构化初稿",
+      "通过更可预测的 AI 输出增强内部工具"
+    ],
+    "relatedProjects": ["signal-notes", "builder-journal"],
+    "tools": ["Prompt 模板", "结构化输出", "工作流自动化"]
+  }
+]

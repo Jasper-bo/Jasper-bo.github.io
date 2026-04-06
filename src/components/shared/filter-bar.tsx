@@ -1,7 +1,7 @@
 "use client";
 
 import { startTransition } from "react";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 import { cn } from "@/lib/utils";
 
@@ -15,6 +15,8 @@ interface FilterBarProps {
   paramKey: string;
   options: FilterOption[];
   allLabel?: string;
+  activeValue?: string | null;
+  searchParamsString?: string;
   className?: string;
 }
 
@@ -23,15 +25,16 @@ export function FilterBar({
   paramKey,
   options,
   allLabel = "All",
+  activeValue = "",
+  searchParamsString = "",
   className
 }: FilterBarProps) {
   const pathname = usePathname();
   const router = useRouter();
-  const searchParams = useSearchParams();
-  const activeValue = searchParams.get(paramKey) ?? "";
+  const selectedValue = activeValue ?? "";
 
   function updateFilter(value: string) {
-    const nextParams = new URLSearchParams(searchParams.toString());
+    const nextParams = new URLSearchParams(searchParamsString);
 
     if (!value) {
       nextParams.delete(paramKey);
@@ -56,13 +59,13 @@ export function FilterBar({
           onClick={() => updateFilter("")}
           className={cn(
             "filter-button",
-            activeValue === "" && "filter-button-active"
+            selectedValue === "" && "filter-button-active"
           )}
         >
           {allLabel}
         </button>
         {options.map((option) => {
-          const active = activeValue === option.value;
+          const active = selectedValue === option.value;
 
           return (
             <button

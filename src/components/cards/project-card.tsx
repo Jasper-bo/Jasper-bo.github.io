@@ -2,23 +2,22 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
-import type { Project, ProjectStatus } from "@/types";
+import type { Project } from "@/types";
+import type { Locale } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
+import { getDictionary } from "@/lib/dictionaries";
+import { localizePath } from "@/lib/i18n";
 import { Tag } from "@/components/shared/tag";
-
-const statusLabelMap: Record<ProjectStatus, string> = {
-  live: "Live",
-  beta: "Beta",
-  "case-study": "Case Study",
-  archived: "Archived"
-};
 
 interface ProjectCardProps {
   project: Project;
+  locale: Locale;
   className?: string;
 }
 
-export function ProjectCard({ project, className }: ProjectCardProps) {
+export function ProjectCard({ project, locale, className }: ProjectCardProps) {
+  const dictionary = getDictionary(locale);
+
   return (
     <article
       className={cn(
@@ -39,8 +38,8 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
 
       <div className="flex flex-1 flex-col gap-5 p-6">
         <div className="flex flex-wrap items-center gap-2">
-          <Tag variant="accent">{statusLabelMap[project.status]}</Tag>
-          {project.featured ? <Tag variant="outline">Featured</Tag> : null}
+          <Tag variant="accent">{dictionary.projectStatuses[project.status]}</Tag>
+          {project.featured ? <Tag variant="outline">{dictionary.projectCard.featured}</Tag> : null}
           {project.tags.slice(0, 2).map((tag) => (
             <Tag key={tag}>{tag}</Tag>
           ))}
@@ -70,10 +69,10 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
         <div className="mt-auto flex items-center justify-between gap-4 border-t border-border/70 pt-5">
           <span className="text-sm text-muted-foreground">{project.role}</span>
           <Link
-            href={`/projects/${project.slug}`}
+            href={localizePath(`/projects/${project.slug}`, locale)}
             className="inline-flex items-center gap-1 text-sm font-semibold text-foreground transition hover:text-accent"
           >
-            View detail
+            {dictionary.projectCard.viewDetail}
             <ArrowUpRight className="h-4 w-4" />
           </Link>
         </div>

@@ -6,6 +6,7 @@ import "@/app/globals.css";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { siteConfig } from "@/lib/site";
+import { defaultLocale, getMetadataLocale } from "@/lib/i18n";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     type: "website",
     url: siteConfig.url,
-    locale: siteConfig.locale
+    locale: getMetadataLocale(defaultLocale)
   },
   twitter: {
     card: "summary_large_image"

@@ -1,12 +1,14 @@
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
+import { defaultLocale, getIntlLocale, type Locale } from "@/lib/i18n";
+
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function formatDate(dateString: string) {
-  return new Intl.DateTimeFormat("en-US", {
+export function formatDate(dateString: string, locale: Locale = defaultLocale) {
+  return new Intl.DateTimeFormat(getIntlLocale(locale), {
     year: "numeric",
     month: "short",
     day: "numeric"

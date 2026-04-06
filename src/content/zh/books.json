@@ -1,0 +1,98 @@
+[
+  {
+    "id": "inspired",
+    "title": "Inspired",
+    "author": "Marty Cagan",
+    "cover": "/images/books/inspired.svg",
+    "category": "产品",
+    "status": "completed",
+    "rating": 4.8,
+    "summary": "这本书不断提醒我，产品工作不只是交付功能，而是用强团队去解决真正重要的用户问题。",
+    "takeaways": [
+      "发现阶段的质量，往往决定后续交付还有没有意义。",
+      "好的产品团队会尽早把业务、设计和工程拉到同一张桌子上。"
+    ],
+    "recommend": true,
+    "noteUrl": "https://example.com/notes/inspired"
+  },
+  {
+    "id": "atomic-habits",
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "cover": "/images/books/atomic-habits.svg",
+    "category": "习惯",
+    "status": "completed",
+    "rating": 4.7,
+    "summary": "当环境和反馈回路被有意识地设计后，看似微小的行为变化也会不断复利。",
+    "takeaways": [
+      "当一致性更重要时，环境设计通常比单纯依赖意志力更有效。",
+      "追踪可以是产品功能，但真正驱动改变的是身份认同的转变。"
+    ],
+    "recommend": true,
+    "noteUrl": "https://example.com/notes/atomic-habits"
+  },
+  {
+    "id": "the-mom-test",
+    "title": "The Mom Test",
+    "author": "Rob Fitzpatrick",
+    "cover": "/images/books/the-mom-test.svg",
+    "category": "创业",
+    "status": "completed",
+    "rating": 4.6,
+    "summary": "一本非常精炼的实战手册，帮助我学会提出更有效的产品问题，避开那些礼貌但没价值的用户反馈。",
+    "takeaways": [
+      "要问真实发生过的行为，而不是未来可能会怎样。",
+      "糟糕的用户访谈会非常快地制造出错误自信。"
+    ],
+    "recommend": true,
+    "noteUrl": "https://example.com/notes/the-mom-test"
+  },
+  {
+    "id": "ddia",
+    "title": "Designing Data-Intensive Applications",
+    "author": "Martin Kleppmann",
+    "cover": "/images/books/ddia.svg",
+    "category": "技术",
+    "status": "reading",
+    "rating": 4.9,
+    "summary": "一本关于可靠性、数据系统以及产品从简单 CRUD 走向复杂之后各种基础设施取舍的深度阅读。",
+    "takeaways": [
+      "系统设计的质量来自对取舍的理解，而不是记住了多少组件名词。",
+      "数据流的设计应该反映真正重要的用户体验优先级。"
+    ],
+    "recommend": true,
+    "noteUrl": null
+  },
+  {
+    "id": "deep-work",
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "cover": "/images/books/deep-work.svg",
+    "category": "思考",
+    "status": "completed",
+    "rating": 4.4,
+    "summary": "它给了我一个很有用的视角，去保护注意力，并设计出真正支持高质量输出的工作节奏。",
+    "takeaways": [
+      "深度工作需要系统支持，而不只是靠自律硬撑。",
+      "高质量产出往往来自有意识的约束，而不是无限自由。"
+    ],
+    "recommend": false,
+    "noteUrl": "https://example.com/notes/deep-work"
+  },
+  {
+    "id": "build",
+    "title": "Build",
+    "author": "Tony Fadell",
+    "cover": "/images/books/build.svg",
+    "category": "产品",
+    "status": "wishlist",
+    "rating": 4.7,
+    "summary": "一本非常坦诚的操盘手视角作品，谈如何长期构建产品、团队与判断力。",
+    "takeaways": [
+      "品味是通过反复实践和反思慢慢长出来的。",
+      "当产品决策始终贴近用户痛点时，方向会更锋利。"
+    ],
+    "recommend": true,
+    "noteUrl": null
+  }
+]

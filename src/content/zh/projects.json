@@ -1,0 +1,141 @@
+[
+  {
+    "id": "musclemap",
+    "title": "MuscleMap",
+    "slug": "musclemap",
+    "tagline": "一个能直观看见训练投入去了哪里的可视化训练日志。",
+    "description": "MuscleMap 会把原始训练记录转成清晰的周视图，帮助力量训练者在进步停滞前更早发现肌群负荷失衡。",
+    "goal": "让力量训练反馈更可视化、更少表格感，并且在每周训练结束后更容易采取行动。",
+    "coverImage": "/images/projects/musclemap.svg",
+    "tags": ["健身", "SaaS", "可视化"],
+    "status": "beta",
+    "role": "产品策略、体验结构、前端架构、落地实现",
+    "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Chart.js"],
+    "targetUsers": ["有一定基础的训练者", "自我编程训练者", "流程精简的教练"],
+    "problem": "大多数训练记录工具擅长记录动作，却无法直观展示整体训练量是否在不同肌群和动作模式之间保持平衡。",
+    "solution": "我设计了一个训练仪表盘，把已记录的组数转换成肌群分布、每周趋势，以及对潜在训练不足区域的简单提示。",
+    "features": [
+      "按周展示肌群热力图，快速扫出失衡区域",
+      "针对重复动作和常用模板优化的训练记录流程",
+      "围绕训练量、一致性和重点区域的进度摘要卡片",
+      "同时兼顾桌面规划与手机打卡的响应式仪表盘"
+    ],
+    "challenges": [
+      "在不让终端用户觉得模型过于复杂的前提下，把复合动作映射到肌群上",
+      "让界面既能承载严肃追踪所需的信息密度，又保持冷静和可读",
+      "设计真正促使行动的数据展示，而不是让图表变成被动观看对象"
+    ],
+    "learnings": [
+      "当可视化方式贴近用户既有的身体部位和周训练分配思维时，他们理解训练洞察会快很多。",
+      "如果未来可能引入不同训练分类体系，数据模型的灵活性必须尽早决定。"
+    ],
+    "demoUrl": "https://musclemap-demo.vercel.app",
+    "githubUrl": "https://github.com/junbohe/musclemap",
+    "featured": true,
+    "createdAt": "2024-06-20",
+    "updatedAt": "2025-02-16"
+  },
+  {
+    "id": "signal-notes",
+    "title": "Signal Notes",
+    "slug": "signal-notes",
+    "tagline": "一个为“提炼”而不是“囤积”设计的轻量知识工作台。",
+    "description": "Signal Notes 是一款结构化思考工具，用来把零散阅读笔记整理成主题、提示和可复用的想法。",
+    "goal": "降低“收集信息”和“真正拿来写、拿来判断、拿来构建”之间的摩擦。",
+    "coverImage": "/images/projects/signal-notes.svg",
+    "tags": ["知识管理", "效率", "内部工具"],
+    "status": "live",
+    "role": "发起人、产品设计、前后端实现",
+    "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
+    "targetUsers": ["独立开发者", "写作者", "高频阅读的操盘者"],
+    "problem": "大多数笔记应用很擅长存储内容，却不擅长帮助用户重新看到、建立连接，并把真正重要的东西转化成行动。",
+    "solution": "这个产品会把笔记组织进主题、标记尚未解决的想法，并为“从阅读走向输出”搭出一条轻量路径。",
+    "features": [
+      "按主题聚合笔记，而不是只按时间顺序堆叠",
+      "把收藏高亮转成写作提示的 idea queue",
+      "带有笔记回流和轻量标签的周回顾视图",
+      "干净的 markdown-first 编辑体验和结构化元数据"
+    ],
+    "challenges": [
+      "在一个很容易把“灵活”误认为“有价值”的品类里避免功能膨胀",
+      "设计同时支持快速记录和长期检索的分类体系"
+    ],
+    "learnings": [
+      "知识型产品在优先支持“回看与提炼”时，往往比单纯扩充归档更有用。",
+      "用户在意输入速度，但真正留下来，是因为输出侧足够清晰。"
+    ],
+    "demoUrl": "https://signal-notes.vercel.app",
+    "githubUrl": "https://github.com/junbohe/signal-notes",
+    "featured": true,
+    "createdAt": "2023-09-10",
+    "updatedAt": "2025-01-08"
+  },
+  {
+    "id": "builder-journal",
+    "title": "Builder Journal",
+    "slug": "builder-journal",
+    "tagline": "一套为独立构建者准备的内容型网站模板，让叙事更清晰。",
+    "description": "Builder Journal 是一个以发布为中心的网站系统，用统一结构承载文章、实验、更新日志和产品案例。",
+    "goal": "构建一套灵活的内容架构，让长文写作、产品页面和作品集叙事可以共存，而不会陷入主题碎片化。",
+    "coverImage": "/images/projects/builder-journal.svg",
+    "tags": ["内容", "品牌", "网站"],
+    "status": "live",
+    "role": "前端系统设计、内容建模、视觉方向",
+    "techStack": ["Next.js", "MDX", "TypeScript", "Tailwind CSS", "Vercel"],
+    "targetUsers": ["独立开发者", "设计工程师", "以产品为导向的自由职业者"],
+    "problem": "很多个人网站由多个彼此割裂的模板拼起来，导致项目、写作和个人叙事之间始终像分开的频道。",
+    "solution": "我做了一套统一内容系统，用一致的卡片模式、元数据结构和页面布局去承载不断增加的内容类型。",
+    "features": [
+      "文章、项目和更新日志共享一套内容 schema",
+      "面向 SEO 的页面模板与可复用的元数据模式",
+      "适用于 hero、归档和编辑型摘要的模块化区块"
+    ],
+    "challenges": [
+      "在保持可维护性的同时，给叙事保留足够的灵活度",
+      "建立足够强的默认值，但又不太早锁死未来内容形态"
+    ],
+    "learnings": [
+      "好的内容架构和产品设计很像，都应该同时减少构建者和读者的决策疲劳。",
+      "页面区块是否真的可复用，取决于背后的内容模型是否同样一致。"
+    ],
+    "demoUrl": "https://builder-journal.vercel.app",
+    "githubUrl": "https://github.com/junbohe/builder-journal",
+    "featured": true,
+    "createdAt": "2024-01-14",
+    "updatedAt": "2024-12-04"
+  },
+  {
+    "id": "tempo-checkin",
+    "title": "Tempo Check-in",
+    "slug": "tempo-checkin",
+    "tagline": "一个给创始人和独立构建者使用的每周自我复盘工具。",
+    "description": "Tempo Check-in 通过一个简单的每周仪式，帮助独立构建者回看势能、阻碍、能量状态与优先级。",
+    "goal": "把复盘从笔记软件里常被遗弃的模板，变成真正可持续的产品习惯。",
+    "coverImage": "/images/projects/tempo-checkin.svg",
+    "tags": ["SaaS", "复盘", "习惯"],
+    "status": "case-study",
+    "role": "产品 framing、界面设计、原型实现",
+    "techStack": ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
+    "targetUsers": ["独立创始人", "独立构建者", "做个人复盘的团队负责人"],
+    "problem": "每周复盘本身很有价值，但它常常太开放，最终导致难以坚持、跟进率也很低。",
+    "solution": "这个产品把复盘收敛成一个简短的周流程，通过信号、提示和延续上下文的进度记忆来降低负担。",
+    "features": [
+      "带一致性追踪的短问卷式周复盘",
+      "可视化的情绪和势能趋势快照",
+      "围绕能量、专注与决策回顾的提示库"
+    ],
+    "challenges": [
+      "让这个仪式足够轻，用户愿意重复，同时又不丢失足够有信号价值的数据",
+      "设计让人感到被支持而不是被评估的进度视图"
+    ],
+    "learnings": [
+      "复盘工具既需要功能清晰，也需要照顾情绪上的易用性。",
+      "一个体量很小的产品，同样值得有强信息架构。"
+    ],
+    "demoUrl": null,
+    "githubUrl": "https://github.com/junbohe/tempo-checkin",
+    "featured": false,
+    "createdAt": "2023-11-02",
+    "updatedAt": "2024-10-18"
+  }
+]
