@@ -7,13 +7,7 @@ export const siteConfig = {
   description:
     "AI-native product explorer building a focused fitness app, a reusable content system, and a long-term personal brand around AIPM practice.",
   url: "https://junbohe.dev",
-  navigation: [
-    { href: "/", key: "home" },
-    { href: "/about", key: "about" },
-    { href: "/books", key: "books" },
-    { href: "/projects", key: "projects" },
-    { href: "/skills", key: "skills" }
-  ] as const
+  navigation: [{ href: "/", key: "home" }] as const
 };
 
 export function absoluteUrl(path = "") {
