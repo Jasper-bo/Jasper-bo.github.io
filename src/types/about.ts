@@ -49,6 +49,7 @@ export interface About {
   focusAreas: FocusArea[];
   tools: ToolGroup[];
   workflow: Workflow;
+  thinkingQuestions: string[];
   now: string[];
   timeline: TimelineItem[];
 }

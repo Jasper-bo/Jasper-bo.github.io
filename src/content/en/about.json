@@ -87,20 +87,8 @@
         "description": "Based on the demand data, I use AI to pressure-test why the product should exist, who it serves, how it can make money, and which features are truly necessary."
       },
       {
-        "title": "Chain MRD through MVP",
-        "description": "I keep one connected context moving from MRD to BRD to PRD to MVP scope so product meaning does not get lost between documents."
-      },
-      {
-        "title": "Complete the core version in one pass",
-        "description": "I prefer clarifying the key loop first and then finishing the core version more completely, instead of relying on frequent version updates to repair direction."
-      },
-      {
-        "title": "Turn markdown into AI-readable design",
-        "description": "Instead of stopping at a traditional prototype, I express design intent in structured markdown so AI can read and act on it directly."
-      },
-      {
         "title": "Translate HTML prototypes into production code",
-        "description": "When I need visual validation, I let AI convert prototype intent into HTML first, then keep pushing it into actual frontend code."
+        "description": "I move from structured markdown and HTML prototypes into actual frontend code so the delivery loop stays short."
       }
     ],
     "principles": [
@@ -110,6 +98,11 @@
       "Let the blog evolve alongside the product so the method becomes part of a lasting personal asset."
     ]
   },
+  "thinkingQuestions": [
+    "What kind of product judgement becomes more valuable, not less, in an AI-native workflow?",
+    "How far should a gym-focused app go before it stops being meaningfully focused?",
+    "What does a strong AIPM personal brand look like when it is built on real shipping instead of abstract claims?"
+  ],
   "now": [
     "Building a fitness app specifically for gym users and trying to remove as much unnecessary complexity as possible.",
     "Refining a reusable method built around AI crawling, demand data, product definition, document generation, and code delivery.",
