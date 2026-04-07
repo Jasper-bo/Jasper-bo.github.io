@@ -28,7 +28,7 @@ export default function NotFound() {
               {dictionary.notFound.backHome}
             </Link>
             <Link
-              href={localizePath("/projects", locale)}
+              href={localizePath("/books", locale)}
               data-liquid
               className="button-secondary"
             >
