@@ -77,7 +77,7 @@ export function BooksPageClient({
         </section>
 
         {filteredBooks.length > 0 ? (
-          <section className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <section className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {filteredBooks.map((book) => (
               <BookCard key={book.id} book={book} locale={locale} />
             ))}
@@ -92,4 +92,3 @@ export function BooksPageClient({
     </div>
   );
 }
-
