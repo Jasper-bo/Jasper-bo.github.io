@@ -38,6 +38,26 @@ interface AppDictionary {
     focusEyebrow: string;
     focusTitle: string;
   };
+  currentBuild: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    audienceLabel: string;
+    problemLabel: string;
+    approachLabel: string;
+  };
+  howIWork: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    principlesLabel: string;
+  };
+  signals: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    action: string;
+  };
   currentFocus: {
     eyebrow: string;
     title: string;
@@ -217,12 +237,35 @@ const dictionaries: Record<Locale, AppDictionary> = {
         "This blog acts as a structured home for my fitness product experiments, reading notes, AI product workflow, and evolving AIPM narrative."
     },
     hero: {
-      badge: "AIPM Builder",
+      badge: "AIPM Explorer",
       ctaProjects: "View projects",
       ctaAbout: "About me",
-      focusEyebrow: "Current focus",
+      focusEyebrow: "Current direction",
       focusTitle:
         "Designing a more focused fitness app for gym users with an AI-first product workflow."
+    },
+    currentBuild: {
+      eyebrow: "Current Build",
+      title: "What I'm Building",
+      description:
+        "One product sits at the center of my current practice: a narrower fitness app designed specifically for gym users, not for everyone who might exercise.",
+      audienceLabel: "Built for",
+      problemLabel: "Why subtraction matters",
+      approachLabel: "How I'm building it"
+    },
+    howIWork: {
+      eyebrow: "How I Work",
+      title: "How I Work",
+      description:
+        "I am trying to make AI part of the product loop itself, so demand capture, product definition, and code delivery stay connected.",
+      principlesLabel: "Working principles"
+    },
+    signals: {
+      eyebrow: "Signals",
+      title: "Three Questions I'm Thinking About Lately",
+      description:
+        "These are the questions currently shaping how I think about product focus, AI-native work, and what an AIPM path should look like in practice.",
+      action: "Browse reading archive"
     },
     currentFocus: {
       eyebrow: "Current Focus",
@@ -333,7 +376,7 @@ const dictionaries: Record<Locale, AppDictionary> = {
       relatedProjects: "Related projects"
     },
     projectDetail: {
-      backToProjects: "Back to projects",
+      backToProjects: "Back home",
       goalEyebrow: "Project goal",
       unavailableSuffix: "unavailable",
       sidebar: {
@@ -360,7 +403,7 @@ const dictionaries: Record<Locale, AppDictionary> = {
       title: "This page could not be found",
       description: "The link may be outdated, or the content has not been published yet.",
       backHome: "Back home",
-      browseProjects: "Browse projects"
+      browseProjects: "Browse reading archive"
     },
     bookStatuses: {
       wishlist: "Wishlist",
@@ -424,11 +467,34 @@ const dictionaries: Record<Locale, AppDictionary> = {
         "这个 blog 既是我的个人品牌主页，也是一个方法论仓库，用来沉淀 fitness app、读书、AI 产品流程和持续迭代中的判断。"
     },
     hero: {
-      badge: "AIPM 进行中",
+      badge: "AIPM 探索者",
       ctaProjects: "查看项目",
       ctaAbout: "了解我",
-      focusEyebrow: "当前聚焦",
+      focusEyebrow: "当前方向",
       focusTitle: "用 AI 原生工作流，打磨一款更聚焦健身房用户的 Fitness App。"
+    },
+    currentBuild: {
+      eyebrow: "当前产品",
+      title: "我在做什么",
+      description:
+        "我现在最核心的实践只围绕一个产品展开：一款只服务健身房用户的 Fitness App，不做泛健身，不做大而全。",
+      audienceLabel: "服务谁",
+      problemLabel: "为什么要做减法",
+      approachLabel: "我如何推进"
+    },
+    howIWork: {
+      eyebrow: "我的方法",
+      title: "我怎么做",
+      description:
+        "我希望让 AI 成为产品流程的一部分，让需求捕捉、产品定义和代码交付处在同一条连续链路里。",
+      principlesLabel: "工作原则"
+    },
+    signals: {
+      eyebrow: "最近信号",
+      title: "最近在思考的三个问题",
+      description:
+        "这三个问题正在持续影响我对产品聚焦、AI 原生工作方式，以及 AIPM 路线的理解。",
+      action: "查看读书归档"
     },
     currentFocus: {
       eyebrow: "当前关注",
@@ -525,7 +591,7 @@ const dictionaries: Record<Locale, AppDictionary> = {
       relatedProjects: "相关项目"
     },
     projectDetail: {
-      backToProjects: "返回项目列表",
+      backToProjects: "返回首页",
       goalEyebrow: "项目目标",
       unavailableSuffix: "暂未提供",
       sidebar: {
@@ -552,7 +618,7 @@ const dictionaries: Record<Locale, AppDictionary> = {
       title: "这个页面没有找到",
       description: "链接可能已经失效，或者这部分内容暂时还没有发布。",
       backHome: "返回首页",
-      browseProjects: "浏览项目"
+      browseProjects: "查看读书归档"
     },
     bookStatuses: {
       wishlist: "想读",

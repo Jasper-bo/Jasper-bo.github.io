@@ -1,14 +1,11 @@
-import { CurrentFocusSection } from "@/components/sections/current-focus-section";
-import { CoreSkillsSection } from "@/components/sections/core-skills-section";
-import { FeaturedProjectsSection } from "@/components/sections/featured-projects-section";
+import { CurrentBuildSection } from "@/components/sections/current-build-section";
 import { HeroSection } from "@/components/sections/hero-section";
-import { ReadingShelfSection } from "@/components/sections/reading-shelf-section";
+import { HowIWorkSection } from "@/components/sections/how-i-work-section";
+import { SignalsSection } from "@/components/sections/signals-section";
 import { getAbout } from "@/lib/about";
-import { getFeaturedBooks } from "@/lib/books";
 import { getDictionary } from "@/lib/dictionaries";
-import { getFeaturedProjects, getProjects } from "@/lib/projects";
+import { getProjectBySlug } from "@/lib/projects";
 import { buildMetadata } from "@/lib/site";
-import { getCoreSkills } from "@/lib/skills";
 import type { Locale } from "@/lib/i18n";
 
 export function getHomePageMetadata(locale: Locale) {
@@ -25,21 +22,26 @@ interface HomePageViewProps {
   locale: Locale;
 }
 
+function getHomepageProject(locale: Locale) {
+  const project = getProjectBySlug("fitness-app", locale);
+
+  if (!project) {
+    throw new Error("Missing required homepage project: fitness-app");
+  }
+
+  return project;
+}
+
 export function HomePageView({ locale }: HomePageViewProps) {
   const about = getAbout(locale);
-  const featuredProjects = getFeaturedProjects(locale);
-  const featuredBooks = getFeaturedBooks(locale);
-  const coreSkills = getCoreSkills(locale);
-  const projects = getProjects(locale);
+  const featuredProject = getHomepageProject(locale);
 
   return (
     <>
       <HeroSection about={about} locale={locale} />
-      <CurrentFocusSection about={about} locale={locale} />
-      <FeaturedProjectsSection projects={featuredProjects} locale={locale} />
-      <ReadingShelfSection books={featuredBooks} locale={locale} />
-      <CoreSkillsSection skills={coreSkills} projects={projects} locale={locale} />
+      <CurrentBuildSection project={featuredProject} locale={locale} />
+      <HowIWorkSection about={about} locale={locale} />
+      <SignalsSection about={about} locale={locale} />
     </>
   );
 }
-

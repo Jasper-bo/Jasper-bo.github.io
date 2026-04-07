@@ -5,7 +5,7 @@ import { getProjects } from "@/lib/projects";
 import { siteConfig } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPaths = ["", "/about", "/books", "/projects", "/skills"];
+  const staticPaths = ["", "/books"];
 
   const staticRoutes = locales.flatMap((locale) =>
     staticPaths.map((path) => ({

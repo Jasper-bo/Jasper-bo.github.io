@@ -207,7 +207,7 @@ export function ProjectDetailPageView({ locale, slug }: ProjectDetailPageViewPro
     <article className="py-12 sm:py-16">
       <Container className="space-y-10">
         <Link
-          href={localizePath("/projects", locale)}
+          href={localizePath("/", locale)}
           data-liquid
           className="surface surface-subtle inline-flex items-center gap-2 rounded-full px-4 py-3 text-sm font-semibold text-muted-foreground transition hover:text-foreground"
         >
