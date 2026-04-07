@@ -34,21 +34,6 @@ export function HowIWorkSection({ about, locale }: HowIWorkSectionProps) {
             </article>
           ))}
         </div>
-
-        <div className="surface p-6 sm:p-8">
-          <p className="eyebrow">{dictionary.howIWork.principlesLabel}</p>
-          <div className="mt-5 grid gap-3 lg:grid-cols-2">
-            {about.workflow.principles.slice(0, 4).map((principle) => (
-              <div
-                key={principle}
-                data-liquid
-                className="surface surface-subtle rounded-[1.5rem] px-4 py-4 text-sm leading-7 text-foreground/82"
-              >
-                {principle}
-              </div>
-            ))}
-          </div>
-        </div>
       </Container>
     </section>
   );

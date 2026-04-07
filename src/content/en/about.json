@@ -1,10 +1,10 @@
 {
   "name": "Junbo He",
-  "title": "AIPM / Computer Science Student / AI-native Product Explorer",
-  "tagline": "I use AI across user research, product definition, and code delivery, and I am currently building a fitness app designed specifically for gym users.",
+  "title": "AIPM / AI-native product explorer",
+  "tagline": "I use AI-native product workflows to study user demand, define products, and push ideas into working software.",
   "bio": [
-    "I am currently a sophomore majoring in Computer Science and Technology. I treat coding, product building, and blogging as one connected growth system: real projects sharpen my judgement, and the lessons become reusable content assets.",
-    "What I care about most is how product work changes in the AI era. For me, AIPM is not a label but an evolving practice: using AI for research capture, product definition, document generation, design translation, and code implementation."
+    "I am a computer science student building in public while exploring what product work looks like in the AI era.",
+    "Right now, my main line of work is a fitness app built specifically for gym users and shaped by deliberate subtraction."
   ],
   "avatar": "/images/avatar-junbo.svg",
   "socials": [
@@ -24,110 +24,25 @@
       "value": "@mniu61934"
     }
   ],
-  "profileHighlights": [
-    {
-      "label": "Current identity",
-      "value": "Sophomore in Computer Science and Technology",
-      "detail": "I want my academic training in engineering to turn into real products and lasting capabilities."
-    },
-    {
-      "label": "Long-term goal",
-      "value": "An AIPM explorer for the AI era",
-      "detail": "I am tracking how AI changes the way product managers research, decide, collaborate, and ship."
-    },
-    {
-      "label": "Current product",
-      "value": "Fitness App",
-      "detail": "Built only for gym users, deliberately narrowed down, and currently under development."
-    },
-    {
-      "label": "Content direction",
-      "value": "Blog + Reading + Product Notes",
-      "detail": "I want projects, books, methods, and growth to become assets I can continuously reuse and improve."
-    }
-  ],
-  "focusAreas": [
-    {
-      "title": "Gym-specific products",
-      "description": "I want to design software around the real flow of gym users and keep only the features that truly matter inside that context."
-    },
-    {
-      "title": "AI-native product workflow",
-      "description": "I treat AI as a participant in the process so research, documents, design intent, and code stay connected."
-    },
-    {
-      "title": "Reusable content systems",
-      "description": "I want the blog to be more than a portfolio page: it should become a durable system for projects, reading, and methods."
-    }
-  ],
-  "tools": [
-    {
-      "category": "Core stack",
-      "items": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js"]
-    },
-    {
-      "category": "AI product workflow",
-      "items": ["AI crawling", "Structured prompts", "MRD / BRD / PRD / MVP", "Markdown-to-Code"]
-    },
-    {
-      "category": "Publishing and capture",
-      "items": ["GitHub", "Markdown", "Vercel", "Content modeling", "Blog system"]
-    }
-  ],
   "workflow": {
-    "title": "AI-native product workflow",
-    "description": "I prefer treating AI as part of the product team instead of a one-off efficiency tool. The current method is built around real demand, structured documents, and direct delivery.",
     "steps": [
       {
-        "title": "Use AI crawlers to capture demand",
-        "description": "I start by collecting recurring complaints, needs, and patterns from gym users so product decisions begin with real samples instead of assumptions."
+        "title": "AI captures demand",
+        "description": "I start by gathering recurring user needs, complaints, and patterns before defining features."
       },
       {
-        "title": "Let AI define the product question",
-        "description": "Based on the demand data, I use AI to pressure-test why the product should exist, who it serves, how it can make money, and which features are truly necessary."
+        "title": "AI defines the product",
+        "description": "I use AI to pressure-test user value, scope, documentation, and the logic behind what deserves to exist."
       },
       {
-        "title": "Translate HTML prototypes into production code",
-        "description": "I move from structured markdown and HTML prototypes into actual frontend code so the delivery loop stays short."
+        "title": "AI helps ship the interface",
+        "description": "I move structured design intent into markdown, HTML, and code so the delivery loop stays short."
       }
-    ],
-    "principles": [
-      "Only build what is truly necessary for gym users instead of copying broad fitness apps.",
-      "Clarify user value and transaction logic before expanding features or interface detail.",
-      "Keep important outputs structured so they are easier to reuse, review, and maintain.",
-      "Let the blog evolve alongside the product so the method becomes part of a lasting personal asset."
     ]
   },
   "thinkingQuestions": [
     "What kind of product judgement becomes more valuable, not less, in an AI-native workflow?",
     "How far should a gym-focused app go before it stops being meaningfully focused?",
     "What does a strong AIPM personal brand look like when it is built on real shipping instead of abstract claims?"
-  ],
-  "now": [
-    "Building a fitness app specifically for gym users and trying to remove as much unnecessary complexity as possible.",
-    "Refining a reusable method built around AI crawling, demand data, product definition, document generation, and code delivery.",
-    "Turning the personal blog into a long-term brand hub that can carry projects, reading, methods, and growth over time."
-  ],
-  "timeline": [
-    {
-      "period": "Starting point",
-      "title": "Moved from learning code toward understanding products and users",
-      "description": "I began to see that shipping features is only the beginning; what matters more is understanding why people use something and why they stay."
-    },
-    {
-      "period": "University phase",
-      "title": "Connected computer science training with product awareness",
-      "description": "I kept building up engineering basics while using real projects to test my understanding of demand, structure, and delivery."
-    },
-    {
-      "period": "Public writing",
-      "title": "Started using a blog to store reading, projects, and methods",
-      "description": "The website gradually shifted from a showcase page into a system for long-term knowledge capture and clearer storytelling."
-    },
-    {
-      "period": "Now",
-      "title": "Iterating around gym products and an AIPM path",
-      "description": "I am pushing an AI-native workflow into real product building while continuously improving how I present my work and thinking."
-    }
   ]
 }

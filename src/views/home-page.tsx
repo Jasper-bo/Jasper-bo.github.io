@@ -4,7 +4,7 @@ import { HowIWorkSection } from "@/components/sections/how-i-work-section";
 import { SignalsSection } from "@/components/sections/signals-section";
 import { getAbout } from "@/lib/about";
 import { getDictionary } from "@/lib/dictionaries";
-import { getProjectBySlug, getProjects } from "@/lib/projects";
+import { getProjectBySlug } from "@/lib/projects";
 import { buildMetadata } from "@/lib/site";
 import type { Locale } from "@/lib/i18n";
 
@@ -22,10 +22,19 @@ interface HomePageViewProps {
   locale: Locale;
 }
 
+function getHomepageProject(locale: Locale) {
+  const project = getProjectBySlug("fitness-app", locale);
+
+  if (!project) {
+    throw new Error("Missing required homepage project: fitness-app");
+  }
+
+  return project;
+}
+
 export function HomePageView({ locale }: HomePageViewProps) {
   const about = getAbout(locale);
-  const projects = getProjects(locale);
-  const featuredProject = getProjectBySlug("fitness-app", locale) ?? projects[0];
+  const featuredProject = getHomepageProject(locale);
 
   return (
     <>
