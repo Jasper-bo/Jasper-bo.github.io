@@ -26,11 +26,15 @@ export function SignalsSection({ about, locale }: SignalsSectionProps) {
         <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
           <div className="grid gap-4">
             {about.thinkingQuestions.map((question, index) => (
-              <article key={question} data-liquid className="surface surface-subtle rounded-[1.75rem] p-6">
+              <article
+                key={question.id}
+                data-liquid
+                className="surface surface-subtle rounded-[1.75rem] p-6"
+              >
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
                   Q0{index + 1}
                 </p>
-                <p className="mt-5 text-lg leading-8 text-foreground/88">{question}</p>
+                <p className="mt-5 text-lg leading-8 text-foreground/88">{question.prompt}</p>
               </article>
             ))}
           </div>

@@ -1,48 +1,84 @@
 {
-  "name": "贺俊博",
-  "title": "AIPM / AI 原生产品探索者",
-  "tagline": "我用 AI 原生产品工作流去抓用户需求、定义产品方向，并把想法更快推进到可运行的软件里。",
+  "name": "何俊博",
+  "title": "AIPM / AI-native 产品探索者",
+  "tagline": "我用 AI-native 的产品工作流，把需求信号压缩成清晰的产品判断和可运行的界面。",
+  "worldview": "我在搭建一个安静运行的系统，用来研究什么值得被做、如何收窄范围，以及下一件最清晰的产物应该如何落地。",
   "bio": [
-    "我是计算机专业学生，也是在公开构建中的 AI 时代产品探索者。",
-    "目前最核心的一条主线，是一款只服务健身房用户、并且坚持做减法的 Fitness App。"
+    "我是计算机专业学生，一边公开构建，一边探索 AI 时代的产品工作究竟会长成什么样。",
+    "我当前的重心是一款面向健身房场景的 fitness app，把它当作验证减法、信号捕捉和 AI 辅助交付的方法试验场。"
   ],
   "avatar": "/images/avatar-junbo.svg",
+  "heroSignals": [
+    {
+      "label": "模式",
+      "value": "信号观测站"
+    },
+    {
+      "label": "焦点",
+      "value": "健身产品闭环"
+    },
+    {
+      "label": "状态",
+      "value": "安静推进中"
+    }
+  ],
   "socials": [
     {
       "label": "邮箱",
       "href": "mailto:2909066560@qq.com",
-      "value": "2909066560@qq.com"
+      "value": "2909066560@qq.com",
+      "note": "适合认真、异步的沟通"
     },
     {
       "label": "GitHub",
       "href": "https://github.com/Jasper-bo",
-      "value": "github.com/Jasper-bo"
+      "value": "github.com/Jasper-bo",
+      "note": "查看构建痕迹与代码产物"
     },
     {
       "label": "X",
       "href": "https://x.com/mniu61934",
-      "value": "@mniu61934"
+      "value": "@mniu61934",
+      "note": "公开进行中的思考"
     }
   ],
   "workflow": {
     "steps": [
       {
-        "title": "AI 抓用户需求",
-        "description": "在定义功能之前，先用 AI 收集重复出现的需求、吐槽和行为模式。"
+        "title": "捕捉真实需求",
+        "description": "在定义功能之前，我先收集重复出现的用户需求、抱怨和高频任务，确认什么真的值得进入产品视野。",
+        "output": "信号地图"
       },
       {
-        "title": "AI 定义产品",
-        "description": "让 AI 协助厘清用户价值、范围边界、文档结构，以及为什么这个产品值得存在。"
+        "title": "压缩成产品判断",
+        "description": "我会持续拷问用户价值、范围边界和产品逻辑，直到方向足够简单，也足够不容易被误读。",
+        "output": "产品命题"
       },
       {
-        "title": "AI 推进交付",
-        "description": "把结构化设计说明推进到 markdown、HTML 和代码，让交付链路尽量短。"
+        "title": "翻译成界面与代码",
+        "description": "我把结构化意图推进到 markdown、界面系统和代码里，让想法到表面的距离始终保持很短。",
+        "output": "可运行界面"
       }
     ]
   },
   "thinkingQuestions": [
-    "在 AI 原生工作流里，什么样的产品判断会变得更重要，而不是更廉价？",
-    "一款只服务健身房用户的产品，做到什么程度才算真正聚焦？",
-    "一个真正有说服力的 AIPM 个人品牌，应该如何建立在真实项目而不是空泛标签上？"
+    {
+      "id": "Signal 01",
+      "theme": "AI 产品判断",
+      "status": "进行中",
+      "prompt": "在 AI-native 工作流里，什么样的产品判断会变得更值钱，而不是更廉价？"
+    },
+    {
+      "id": "Signal 02",
+      "theme": "聚焦型软件",
+      "status": "追踪中",
+      "prompt": "一款面向健身房场景的 app 应该延伸到哪里，才不会失去真正的聚焦？"
+    },
+    {
+      "id": "Signal 03",
+      "theme": "个人品牌",
+      "status": "开放问题",
+      "prompt": "当一个 AIPM 个人品牌建立在真实交付而不是抽象口号上时，它应该长成什么样？"
+    }
   ]
 }

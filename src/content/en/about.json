@@ -1,48 +1,84 @@
 {
   "name": "Junbo He",
   "title": "AIPM / AI-native product explorer",
-  "tagline": "I use AI-native product workflows to study user demand, define products, and push ideas into working software.",
+  "tagline": "I design AI-native product loops that turn demand signals into clear product decisions and working interfaces.",
+  "worldview": "I am building a quiet system for studying what deserves to exist, narrowing scope, and shipping the clearest next artifact.",
   "bio": [
     "I am a computer science student building in public while exploring what product work looks like in the AI era.",
-    "Right now, my main line of work is a fitness app built specifically for gym users and shaped by deliberate subtraction."
+    "Right now my center of gravity is a gym-focused fitness app used as a proving ground for subtraction, signal capture, and AI-assisted delivery."
   ],
   "avatar": "/images/avatar-junbo.svg",
+  "heroSignals": [
+    {
+      "label": "Mode",
+      "value": "Signal observatory"
+    },
+    {
+      "label": "Focus",
+      "value": "Gym product loop"
+    },
+    {
+      "label": "Build state",
+      "value": "Quietly shipping"
+    }
+  ],
   "socials": [
     {
       "label": "Email",
       "href": "mailto:2909066560@qq.com",
-      "value": "2909066560@qq.com"
+      "value": "2909066560@qq.com",
+      "note": "Serious async conversations"
     },
     {
       "label": "GitHub",
       "href": "https://github.com/Jasper-bo",
-      "value": "github.com/Jasper-bo"
+      "value": "github.com/Jasper-bo",
+      "note": "Build artifacts and code trails"
     },
     {
       "label": "X",
       "href": "https://x.com/mniu61934",
-      "value": "@mniu61934"
+      "value": "@mniu61934",
+      "note": "Public thinking in motion"
     }
   ],
   "workflow": {
     "steps": [
       {
-        "title": "AI captures demand",
-        "description": "I start by gathering recurring user needs, complaints, and patterns before defining features."
+        "title": "Capture live demand",
+        "description": "I collect recurring user needs, complaints, and high-frequency jobs before deciding what deserves product attention.",
+        "output": "Signal map"
       },
       {
-        "title": "AI defines the product",
-        "description": "I use AI to pressure-test user value, scope, documentation, and the logic behind what deserves to exist."
+        "title": "Compress into judgement",
+        "description": "I pressure-test user value, scope boundaries, and product logic until the direction becomes simpler and harder to misread.",
+        "output": "Product thesis"
       },
       {
-        "title": "AI helps ship the interface",
-        "description": "I move structured design intent into markdown, HTML, and code so the delivery loop stays short."
+        "title": "Translate into interface",
+        "description": "I move structured intent into markdown, interface systems, and code so the distance between idea and surface stays short.",
+        "output": "Working surface"
       }
     ]
   },
   "thinkingQuestions": [
-    "What kind of product judgement becomes more valuable, not less, in an AI-native workflow?",
-    "How far should a gym-focused app go before it stops being meaningfully focused?",
-    "What does a strong AIPM personal brand look like when it is built on real shipping instead of abstract claims?"
+    {
+      "id": "Signal 01",
+      "theme": "AI product judgement",
+      "status": "Active",
+      "prompt": "What kind of product judgement becomes more valuable, not less, in an AI-native workflow?"
+    },
+    {
+      "id": "Signal 02",
+      "theme": "Focused software",
+      "status": "Tracking",
+      "prompt": "How far should a gym-focused app go before it stops being meaningfully focused?"
+    },
+    {
+      "id": "Signal 03",
+      "theme": "Personal brand",
+      "status": "Open",
+      "prompt": "What does a strong AIPM personal brand look like when it is built on real shipping instead of abstract claims?"
+    }
   ]
 }
