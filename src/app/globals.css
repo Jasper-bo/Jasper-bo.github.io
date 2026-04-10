@@ -521,6 +521,85 @@
   backdrop-filter: blur(22px) saturate(150%);
 }
 
+.hero-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 1.2fr) 360px;
+    align-items: stretch;
+  }
+}
+
+.hero-panel {
+  position: relative;
+}
+
+.hero-panel::after {
+  content: "";
+  position: absolute;
+  inset: auto 8% 12% auto;
+  height: 9rem;
+  width: 9rem;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(136, 230, 255, 0.16), transparent 70%);
+  filter: blur(18px);
+}
+
+.hero-thesis-panel {
+  border: 1px solid rgba(168, 214, 235, 0.16);
+  border-radius: 1.5rem;
+  background: rgba(8, 16, 24, 0.52);
+  padding: 1.25rem;
+}
+
+.portrait-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.portrait-panel-frame {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 1.75rem;
+  border: 1px solid rgba(168, 214, 235, 0.18);
+  background: rgba(10, 18, 28, 0.8);
+}
+
+.mission-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .mission-grid {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  }
+}
+
+.mission-panel {
+  position: relative;
+}
+
+.mission-panel::before {
+  content: "";
+  position: absolute;
+  inset: 1.25rem auto auto 1.25rem;
+  width: 6rem;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(136, 230, 255, 0.48), transparent);
+}
+
+.mission-readout {
+  background:
+    linear-gradient(160deg, rgba(12, 22, 34, 0.9), rgba(10, 18, 28, 0.74)),
+    radial-gradient(circle at top right, rgba(136, 230, 255, 0.08), transparent 34%);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

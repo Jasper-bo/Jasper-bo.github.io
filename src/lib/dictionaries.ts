@@ -256,10 +256,10 @@ const dictionaries: Record<Locale, AppDictionary> = {
     },
     currentBuild: {
       eyebrow: "Current Build",
-      title: "What I'm Building",
+      title: "Mission Panel",
       description:
-        "One product sits at the center of my current practice: a narrower fitness app designed specifically for gym users, not for everyone who might exercise.",
-      audienceLabel: "Built for",
+        "The current proof point is a gym-focused product used to test subtraction, signal capture, and AI-assisted delivery inside one narrower software loop.",
+      audienceLabel: "Audience",
       problemLabel: "Why subtraction matters",
       approachLabel: "How I'm building it",
       constraintLabel: "Core constraint",
@@ -492,10 +492,10 @@ const dictionaries: Record<Locale, AppDictionary> = {
     },
     currentBuild: {
       eyebrow: "当前产品",
-      title: "我在做什么",
+      title: "任务面板",
       description:
-        "我现在最核心的实践只围绕一个产品展开：一款只服务健身房用户的 Fitness App，不做泛健身，不做大而全。",
-      audienceLabel: "服务谁",
+        "当前的核心证明点是一款面向健身房场景的产品，用来测试减法、信号捕捉和 AI 辅助交付是否能在一个更窄的软件闭环里成立。",
+      audienceLabel: "目标用户",
       problemLabel: "为什么要做减法",
       approachLabel: "我如何推进",
       constraintLabel: "核心约束",

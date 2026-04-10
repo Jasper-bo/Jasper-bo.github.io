@@ -8,7 +8,7 @@ describe("HomePageView", () => {
     render(<HomePageView locale="en" />);
 
     expect(screen.getByRole("heading", { level: 1, name: /Junbo He/i })).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: /What I'm Building/i })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /Mission Panel/i })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: /Fitness App/i })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: /How I Work/i })).toBeInTheDocument();
     const signalsHeading = screen.getByRole("heading", {
