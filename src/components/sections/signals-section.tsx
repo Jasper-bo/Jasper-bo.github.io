@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import { Container } from "@/components/layout/container";
 import { SectionTitle } from "@/components/shared/section-title";
+import { StatusChip } from "@/components/shared/status-chip";
 import { getDictionary } from "@/lib/dictionaries";
 import { localizePath, type Locale } from "@/lib/i18n";
 import type { About } from "@/types";
@@ -23,23 +24,26 @@ export function SignalsSection({ about, locale }: SignalsSectionProps) {
           description={dictionary.signals.description}
         />
 
-        <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
+        <div className="signals-grid">
           <div className="grid gap-4">
             {about.thinkingQuestions.map((question, index) => (
               <article
                 key={question.id}
                 data-liquid
-                className="surface surface-subtle rounded-[1.75rem] p-6"
+                className={`signal-card surface surface-subtle rounded-[1.75rem] p-6 ${index === 0 ? "signal-card-featured" : ""}`}
               >
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                  Q0{index + 1}
-                </p>
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                    {question.id}
+                  </p>
+                  <StatusChip label={question.status} value={question.theme} />
+                </div>
                 <p className="mt-5 text-lg leading-8 text-foreground/88">{question.prompt}</p>
               </article>
             ))}
           </div>
 
-          <aside className="surface p-6 sm:p-8">
+          <aside className="channel-panel surface p-6 sm:p-8">
             <div className="space-y-3">
               {about.socials.map((item) => (
                 <Link
@@ -48,9 +52,12 @@ export function SignalsSection({ about, locale }: SignalsSectionProps) {
                   target={item.href.startsWith("http") ? "_blank" : undefined}
                   rel={item.href.startsWith("http") ? "noreferrer" : undefined}
                   data-liquid
-                  className="surface surface-subtle flex items-center justify-between rounded-[1.5rem] px-4 py-3"
+                  className="channel-link surface surface-subtle flex items-center justify-between rounded-[1.5rem] px-4 py-4"
                 >
-                  <span className="text-sm font-medium text-foreground">{item.label}</span>
+                  <span className="flex flex-col">
+                    <span className="text-sm font-medium text-foreground">{item.label}</span>
+                    <span className="text-xs leading-6 text-muted-foreground">{item.note}</span>
+                  </span>
                   <span className="text-sm text-muted-foreground">{item.value}</span>
                 </Link>
               ))}

@@ -4,40 +4,33 @@ import { describe, expect, it } from "vitest";
 import { HomePageView } from "@/views/home-page";
 
 describe("HomePageView", () => {
-  it("renders the four-section single-page narrative, keeps fitness-app as the proof point, and closes with signals plus contact links", () => {
+  it("renders the observatory homepage narrative with mission panel, system loop, active signals, and channel cards", () => {
     render(<HomePageView locale="en" />);
 
     expect(screen.getByRole("heading", { level: 1, name: /Junbo He/i })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: /Mission Panel/i })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: /Fitness App/i })).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: /How I Work/i })).toBeInTheDocument();
-    const signalsHeading = screen.getByRole("heading", {
-      name: /Three Questions I'm Thinking About Lately/i
-    });
+    expect(screen.getByRole("heading", { name: /System Loop/i })).toBeInTheDocument();
+    const signalsHeading = screen.getByRole("heading", { name: /Active Signals/i });
     expect(signalsHeading).toBeInTheDocument();
+
     const signalsSection = signalsHeading.closest("section");
 
     expect(signalsSection).not.toBeNull();
+    expect(within(signalsSection as HTMLElement).getByText(/Signal 01/i)).toBeInTheDocument();
     expect(
       within(signalsSection as HTMLElement).getByRole("link", { name: /Browse reading archive/i })
-    ).toHaveAttribute(
-      "href",
-      "/books"
-    );
+    ).toHaveAttribute("href", "/books");
     expect(
-      within(signalsSection as HTMLElement).getByRole("link", { name: /Email/i })
-    ).toHaveAttribute("href", "mailto:2909066560@qq.com");
+      within(signalsSection as HTMLElement).getByText(/Serious async conversations/i)
+    ).toBeInTheDocument();
     expect(
       within(signalsSection as HTMLElement).getByRole("link", { name: /GitHub/i })
     ).toHaveAttribute("href", "https://github.com/Jasper-bo");
-    expect(
-      within(signalsSection as HTMLElement).getByRole("link", { name: /^X@/i })
-    ).toHaveAttribute("href", "https://x.com/mniu61934");
 
-    expect(screen.queryByText(/Current Focus/i)).not.toBeInTheDocument();
-    expect(screen.queryByText(/Selected Work/i)).not.toBeInTheDocument();
-    expect(screen.queryByText(/Capabilities/i)).not.toBeInTheDocument();
-    expect(screen.queryByRole("link", { name: /About me/i })).not.toBeInTheDocument();
-    expect(screen.queryByRole("link", { name: /View projects/i })).not.toBeInTheDocument();
+    expect(screen.queryByRole("heading", { name: /How I Work/i })).not.toBeInTheDocument();
+    expect(
+      screen.queryByRole("heading", { name: /Three Questions I'm Thinking About Lately/i })
+    ).not.toBeInTheDocument();
   });
 });

@@ -600,6 +600,94 @@
     radial-gradient(circle at top right, rgba(136, 230, 255, 0.08), transparent 34%);
 }
 
+.workflow-track {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .workflow-track {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.workflow-node {
+  position: relative;
+  min-height: 220px;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(168, 214, 235, 0.12);
+  background:
+    linear-gradient(160deg, rgba(12, 22, 34, 0.88), rgba(10, 18, 28, 0.74)),
+    radial-gradient(circle at top left, rgba(136, 230, 255, 0.08), transparent 32%);
+  padding: 1.5rem;
+}
+
+.workflow-node::after {
+  content: "";
+  position: absolute;
+  top: 2rem;
+  right: -0.8rem;
+  width: 1.6rem;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(136, 230, 255, 0.3), transparent);
+}
+
+.workflow-node:last-child::after {
+  display: none;
+}
+
+.workflow-output {
+  margin-top: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(168, 214, 235, 0.16);
+  background: rgba(8, 16, 24, 0.56);
+  padding: 0.55rem 0.85rem;
+  font-size: 0.78rem;
+  color: rgba(166, 181, 194, 0.88);
+}
+
+.workflow-output strong {
+  color: rgba(234, 242, 247, 0.92);
+  font-weight: 600;
+}
+
+.signals-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .signals-grid {
+    grid-template-columns: minmax(0, 1.1fr) 320px;
+  }
+}
+
+.signal-card {
+  background:
+    linear-gradient(160deg, rgba(12, 22, 34, 0.9), rgba(10, 18, 28, 0.72)),
+    radial-gradient(circle at top right, rgba(136, 230, 255, 0.08), transparent 36%);
+}
+
+.signal-card-featured {
+  border-color: rgba(136, 230, 255, 0.22);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 0 36px rgba(136, 230, 255, 0.06);
+}
+
+.channel-panel {
+  backdrop-filter: blur(24px) saturate(150%);
+}
+
+.channel-link {
+  background:
+    linear-gradient(160deg, rgba(12, 22, 34, 0.88), rgba(10, 18, 28, 0.7)),
+    radial-gradient(circle at left center, rgba(121, 216, 200, 0.08), transparent 36%);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

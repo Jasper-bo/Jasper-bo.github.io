@@ -267,7 +267,7 @@ const dictionaries: Record<Locale, AppDictionary> = {
     },
     howIWork: {
       eyebrow: "How I Work",
-      title: "How I Work",
+      title: "System Loop",
       description:
         "AI is part of the product loop itself here: demand capture, product judgement, and interface delivery stay connected.",
       outputLabel: "Output",
@@ -275,7 +275,7 @@ const dictionaries: Record<Locale, AppDictionary> = {
     },
     signals: {
       eyebrow: "Signals",
-      title: "Three Questions I'm Thinking About Lately",
+      title: "Active Signals",
       description:
         "These are the questions and channels currently shaping how I think about product focus, AI-native work, and what an AIPM path should look like in practice.",
       action: "Browse reading archive"
@@ -491,7 +491,7 @@ const dictionaries: Record<Locale, AppDictionary> = {
       focusTitle: "用 AI 原生工作流，打磨一款更聚焦健身房用户的 Fitness App。"
     },
     currentBuild: {
-      eyebrow: "当前产品",
+      eyebrow: "当前构建",
       title: "任务面板",
       description:
         "当前的核心证明点是一款面向健身房场景的产品，用来测试减法、信号捕捉和 AI 辅助交付是否能在一个更窄的软件闭环里成立。",
@@ -502,16 +502,16 @@ const dictionaries: Record<Locale, AppDictionary> = {
       thesisLabel: "构建命题"
     },
     howIWork: {
-      eyebrow: "我的方法",
-      title: "我怎么做",
+      eyebrow: "我的工作方式",
+      title: "系统闭环",
       description:
         "这里的 AI 不是外挂工具，而是产品闭环的一部分：需求捕捉、产品判断和界面交付始终相连。",
       outputLabel: "输出",
       principlesLabel: "工作原则"
     },
     signals: {
-      eyebrow: "最近信号",
-      title: "最近在思考的三个问题",
+      eyebrow: "信号",
+      title: "活跃信号",
       description:
         "这些是最近正在塑造我对产品聚焦、AI-native 工作方式，以及 AIPM 路径实践理解的问题和外部接口。",
       action: "查看读书归档"
