@@ -17,6 +17,7 @@ interface AppDictionary {
   };
   nav: {
     role: string;
+    status: string;
     languageLabel: string;
     links: {
       home: string;
@@ -33,6 +34,8 @@ interface AppDictionary {
   };
   hero: {
     badge: string;
+    thesisLabel: string;
+    thesis: string;
     ctaProjects: string;
     ctaAbout: string;
     focusEyebrow: string;
@@ -45,11 +48,14 @@ interface AppDictionary {
     audienceLabel: string;
     problemLabel: string;
     approachLabel: string;
+    constraintLabel: string;
+    thesisLabel: string;
   };
   howIWork: {
     eyebrow: string;
     title: string;
     description: string;
+    outputLabel: string;
     principlesLabel: string;
   };
   signals: {
@@ -221,6 +227,7 @@ const dictionaries: Record<Locale, AppDictionary> = {
     },
     nav: {
       role: "AIPM / AI-native product explorer",
+      status: "Signal observatory online",
       languageLabel: "Language",
       links: {
         home: "Home",
@@ -231,13 +238,16 @@ const dictionaries: Record<Locale, AppDictionary> = {
       }
     },
     footer: {
-      eyebrow: "Keep in touch",
-      title: "Building AI-native products, reusable content systems, and a long-term personal brand around real shipping practice.",
+      eyebrow: "End transmission",
+      title: "The system stays quiet while the work keeps moving.",
       description:
-        "This blog acts as a structured home for my fitness product experiments, reading notes, AI product workflow, and evolving AIPM narrative."
+        "This site tracks the products, questions, and interface experiments shaping my AI-native product practice."
     },
     hero: {
-      badge: "AIPM Explorer",
+      badge: "Quiet system online",
+      thesisLabel: "Current thesis",
+      thesis:
+        "AI can compress the path from signal to software, but judgement still decides what deserves to ship.",
       ctaProjects: "View projects",
       ctaAbout: "About me",
       focusEyebrow: "Current direction",
@@ -246,25 +256,28 @@ const dictionaries: Record<Locale, AppDictionary> = {
     },
     currentBuild: {
       eyebrow: "Current Build",
-      title: "What I'm Building",
+      title: "Mission Panel",
       description:
-        "One product sits at the center of my current practice: a narrower fitness app designed specifically for gym users, not for everyone who might exercise.",
-      audienceLabel: "Built for",
+        "The current proof point is a gym-focused product used to test subtraction, signal capture, and AI-assisted delivery inside one narrower software loop.",
+      audienceLabel: "Audience",
       problemLabel: "Why subtraction matters",
-      approachLabel: "How I'm building it"
+      approachLabel: "How I'm building it",
+      constraintLabel: "Core constraint",
+      thesisLabel: "Build thesis"
     },
     howIWork: {
       eyebrow: "How I Work",
-      title: "How I Work",
+      title: "System Loop",
       description:
-        "I am trying to make AI part of the product loop itself, so demand capture, product definition, and code delivery stay connected.",
+        "AI is part of the product loop itself here: demand capture, product judgement, and interface delivery stay connected.",
+      outputLabel: "Output",
       principlesLabel: "Working principles"
     },
     signals: {
       eyebrow: "Signals",
-      title: "Three Questions I'm Thinking About Lately",
+      title: "Active Signals",
       description:
-        "These are the questions currently shaping how I think about product focus, AI-native work, and what an AIPM path should look like in practice.",
+        "These are the questions and channels currently shaping how I think about product focus, AI-native work, and what an AIPM path should look like in practice.",
       action: "Browse reading archive"
     },
     currentFocus: {
@@ -451,6 +464,7 @@ const dictionaries: Record<Locale, AppDictionary> = {
     },
     nav: {
       role: "AIPM / AI 原生产品探索者",
+      status: "信号观测站在线",
       languageLabel: "切换语言",
       links: {
         home: "首页",
@@ -461,39 +475,45 @@ const dictionaries: Record<Locale, AppDictionary> = {
       }
     },
     footer: {
-      eyebrow: "继续连接",
-      title: "围绕真实产品实践，持续构建 AI 原生产品、可复用内容系统和长期个人品牌。",
+      eyebrow: "结束传输",
+      title: "系统保持安静，工作继续向前。",
       description:
-        "这个 blog 既是我的个人品牌主页，也是一个方法论仓库，用来沉淀 fitness app、读书、AI 产品流程和持续迭代中的判断。"
+        "这个站点记录着正在塑造我 AI-native 产品实践的产品、问题与界面实验。"
     },
     hero: {
-      badge: "AIPM 探索者",
+      badge: "安静系统在线",
+      thesisLabel: "当前命题",
+      thesis:
+        "AI 能压缩从信号到软件的路径，但真正决定什么值得被发布的，依然是判断力。",
       ctaProjects: "查看项目",
       ctaAbout: "了解我",
       focusEyebrow: "当前方向",
       focusTitle: "用 AI 原生工作流，打磨一款更聚焦健身房用户的 Fitness App。"
     },
     currentBuild: {
-      eyebrow: "当前产品",
-      title: "我在做什么",
+      eyebrow: "当前构建",
+      title: "任务面板",
       description:
-        "我现在最核心的实践只围绕一个产品展开：一款只服务健身房用户的 Fitness App，不做泛健身，不做大而全。",
-      audienceLabel: "服务谁",
+        "当前的核心证明点是一款面向健身房场景的产品，用来测试减法、信号捕捉和 AI 辅助交付是否能在一个更窄的软件闭环里成立。",
+      audienceLabel: "目标用户",
       problemLabel: "为什么要做减法",
-      approachLabel: "我如何推进"
+      approachLabel: "我如何推进",
+      constraintLabel: "核心约束",
+      thesisLabel: "构建命题"
     },
     howIWork: {
-      eyebrow: "我的方法",
-      title: "我怎么做",
+      eyebrow: "我的工作方式",
+      title: "系统闭环",
       description:
-        "我希望让 AI 成为产品流程的一部分，让需求捕捉、产品定义和代码交付处在同一条连续链路里。",
+        "这里的 AI 不是外挂工具，而是产品闭环的一部分：需求捕捉、产品判断和界面交付始终相连。",
+      outputLabel: "输出",
       principlesLabel: "工作原则"
     },
     signals: {
-      eyebrow: "最近信号",
-      title: "最近在思考的三个问题",
+      eyebrow: "信号",
+      title: "活跃信号",
       description:
-        "这三个问题正在持续影响我对产品聚焦、AI 原生工作方式，以及 AIPM 路线的理解。",
+        "这些是最近正在塑造我对产品聚焦、AI-native 工作方式，以及 AIPM 路径实践理解的问题和外部接口。",
       action: "查看读书归档"
     },
     currentFocus: {

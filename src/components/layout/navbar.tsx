@@ -11,6 +11,7 @@ import { cn } from "@/lib/utils";
 import { getDictionary } from "@/lib/dictionaries";
 import { getLocaleFromPathname, localizePath } from "@/lib/i18n";
 import { Container } from "@/components/layout/container";
+import { StatusChip } from "@/components/shared/status-chip";
 
 function isActive(pathname: string, href: string, exact = false) {
   if (exact) {
@@ -23,7 +24,7 @@ function isActive(pathname: string, href: string, exact = false) {
 function LanguageSwitcherFallback() {
   return (
     <div className="surface surface-subtle inline-flex items-center gap-1 rounded-full p-1">
-      <span className="rounded-full border border-white/50 bg-white/55 px-3 py-1.5 text-xs font-semibold text-foreground shadow-sm">
+      <span className="rounded-full border border-white/10 bg-white/10 px-3 py-1.5 text-xs font-semibold text-foreground shadow-sm">
         EN
       </span>
       <span className="rounded-full px-3 py-1.5 text-xs font-semibold text-muted-foreground">
@@ -42,22 +43,23 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 px-4 pt-4 sm:px-6 lg:px-8">
       <Container className="max-w-7xl px-0">
-        <div className="surface surface-strong flex flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-5">
-          <Link
-            href={localizePath("/", locale)}
-            data-liquid
-            className="flex items-center gap-3 rounded-[1.75rem] p-1.5 text-sm font-semibold tracking-tight"
-          >
-            <span className="flex h-12 w-12 items-center justify-center rounded-[1.4rem] border border-white/55 bg-white/50 text-base text-foreground shadow-card backdrop-blur-xl">
-              HJ
-            </span>
-            <span className="flex flex-col leading-tight">
-              <span>{about.name}</span>
-              <span className="text-xs font-medium text-muted-foreground">
-                {dictionary.nav.role}
+        <div className="command-surface surface surface-strong flex flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-5">
+          <div className="flex flex-wrap items-center gap-4">
+            <Link
+              href={localizePath("/", locale)}
+              data-liquid
+              className="flex items-center gap-3 rounded-[1.75rem] p-1.5 text-sm font-semibold tracking-tight"
+            >
+              <span className="command-monogram">HJ</span>
+              <span className="flex flex-col leading-tight">
+                <span>{about.name}</span>
+                <span className="text-xs font-medium text-muted-foreground">
+                  {dictionary.nav.role}
+                </span>
               </span>
-            </span>
-          </Link>
+            </Link>
+            <StatusChip label={dictionary.nav.status} />
+          </div>
 
           <div className="flex flex-wrap items-center gap-3">
             <nav aria-label="Primary" className="flex flex-wrap gap-2">
@@ -70,12 +72,7 @@ export function Navbar() {
                     key={item.href}
                     href={href}
                     data-liquid
-                    className={cn(
-                      "nav-pill",
-                      active
-                        ? "nav-pill-active"
-                        : "border border-white/30 bg-white/18 shadow-[inset_0_1px_0_rgba(255,255,255,0.56)] backdrop-blur-xl hover:text-foreground"
-                    )}
+                    className={cn("nav-pill", active ? "nav-pill-active" : "nav-pill-idle")}
                   >
                     {dictionary.nav.links[item.key as keyof typeof dictionary.nav.links]}
                   </Link>

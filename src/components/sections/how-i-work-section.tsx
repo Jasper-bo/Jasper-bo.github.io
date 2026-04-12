@@ -21,9 +21,9 @@ export function HowIWorkSection({ about, locale }: HowIWorkSectionProps) {
           description={dictionary.howIWork.description}
         />
 
-        <div className="grid gap-4 lg:grid-cols-3">
+        <div className="workflow-track surface surface-subtle p-4 sm:p-6">
           {about.workflow.steps.map((step, index) => (
-            <article key={step.title} data-liquid className="surface surface-subtle min-h-[220px] p-6">
+            <article key={step.title} data-liquid className="workflow-node">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
                 0{index + 1}
               </p>
@@ -31,6 +31,10 @@ export function HowIWorkSection({ about, locale }: HowIWorkSectionProps) {
                 {step.title}
               </h3>
               <p className="mt-4 text-base leading-8 text-muted-foreground">{step.description}</p>
+              <div className="workflow-output">
+                <span>{dictionary.howIWork.outputLabel}</span>
+                <strong>{step.output}</strong>
+              </div>
             </article>
           ))}
         </div>
